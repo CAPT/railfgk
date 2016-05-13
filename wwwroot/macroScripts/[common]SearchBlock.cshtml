@@ -1,0 +1,28 @@
+﻿@using umbraco.NodeFactory
+
+@{
+    Node searchNode = null;
+    try { searchNode = (Node as Node).GetAncestorByPathLevel(1).GetChildNodes().Where(x => x.NodeTypeAlias == "pubSearch").First(); }
+    catch { }
+    string defaultValue = Dictionary["[search][common]Caption"];
+    string hint = Dictionary["[search][common]Hint"];
+    if (searchNode != null)
+    {
+        <div class="smallSearch clear">
+            <form id="smallSearchForm" action="@searchNode.Url" method="get">
+                <fieldset>
+                    <input type="text" name="query" value="@defaultValue" class="txt txtSmallSearch fleft" />
+                    <input type="image" src="/dsgn/icoSearch.png" title="@hint" class="btnSmallSearch fleft" />
+                </fieldset>
+            </form>
+        </div>
+        <script type="text/javascript">
+        //<![CDATA[
+            $("#smallSearchForm").on({
+                focus: function() { if (this.value == '@defaultValue') this.value = ''; },
+                blur:  function() { if (this.value == '') this.value = '@defaultValue'; }
+            }, ":text");
+        //]]>
+        </script>
+    }
+}

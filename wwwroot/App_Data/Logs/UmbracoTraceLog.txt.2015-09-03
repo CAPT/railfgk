@@ -1,0 +1,85 @@
+2015-09-03 08:13:57,060 [7] ERROR Umbraco.Web.UmbracoApplication - [Thread 15] An unhandled exception occurred
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.HttpRequest.get_PhysicalPath()
+   at UrlRewritingNet.Web.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-03 09:06:51,485 [7] INFO  Umbraco.Core.PluginManager - [Thread 27] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2015-09-03 09:37:55,842 [7] INFO  Umbraco.Web.UmbracoApplication - [Thread 53] Application shutdown. Reason: MaxRecompilationsReached
+2015-09-03 09:37:58,344 [41] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2015-09-03 09:37:58,404 [41] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2015-09-03 09:37:58,425 [41] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 16ms)
+2015-09-03 09:37:58,740 [41] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 293ms)
+2015-09-03 09:37:58,743 [41] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 1ms)
+2015-09-03 09:37:58,880 [41] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2015-09-03 09:37:58,881 [41] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 1ms)
+2015-09-03 09:37:58,896 [41] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2015-09-03 09:37:58,918 [41] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 9ms)
+2015-09-03 09:37:58,947 [41] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 5ms)
+2015-09-03 09:37:59,140 [41] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 796ms)
+2015-09-03 09:38:02,202 [41] INFO  Umbraco.Core.PluginManager - [Thread 54] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 2ms)
+2015-09-03 09:38:03,541 [41] INFO  Umbraco.Core.PluginManager - [Thread 54] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 2ms)
+2015-09-03 09:38:03,588 [41] INFO  Umbraco.Core.PluginManager - [Thread 54] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 2ms)
+2015-09-03 09:38:29,198 [41] INFO  Umbraco.Core.PluginManager - [Thread 54] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2015-09-03 09:54:38,974 [91] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2015-09-03 09:54:39,012 [91] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2015-09-03 09:54:39,025 [91] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 11ms)
+2015-09-03 09:54:39,217 [41] INFO  Umbraco.Web.UmbracoApplication - [Thread 37] Application shutdown. Reason: MaxRecompilationsReached
+2015-09-03 09:54:39,322 [91] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 284ms)
+2015-09-03 09:54:39,324 [91] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 2ms)
+2015-09-03 09:54:39,438 [91] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2015-09-03 09:54:39,441 [91] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 1ms)
+2015-09-03 09:54:39,447 [91] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2015-09-03 09:54:39,657 [91] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 3ms)
+2015-09-03 09:54:39,666 [91] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 4ms)
+2015-09-03 09:54:39,699 [91] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 724ms)
+2015-09-03 09:54:41,587 [91] INFO  Umbraco.Core.PluginManager - [Thread 28] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 3ms)
+2015-09-03 09:54:43,240 [91] INFO  Umbraco.Core.PluginManager - [Thread 114] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 4ms)
+2015-09-03 09:54:43,280 [91] INFO  Umbraco.Core.PluginManager - [Thread 114] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 3ms)
+2015-09-03 10:00:22,707 [91] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 7ms)
+2015-09-03 13:38:55,485 [91] INFO  Umbraco.Core.PluginManager - [Thread 62] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 1 (took 21ms)
+2015-09-03 14:22:19,931 [91] INFO  Umbraco.Core.PluginManager - [Thread 67] Completed resolution of types of umbraco.cms.businesslogic.media.IMediaFactory, found 2 (took 6ms)
+2015-09-03 14:22:20,706 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 67] Successful upload to parent ID: 3292
+2015-09-03 14:22:21,574 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 50] Successful upload to parent ID: 3292
+2015-09-03 14:22:22,513 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 63] Successful upload to parent ID: 3292
+2015-09-03 14:22:23,736 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 92] Successful upload to parent ID: 3292
+2015-09-03 14:22:24,712 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 62] Successful upload to parent ID: 3292
+2015-09-03 14:22:25,480 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 65] Successful upload to parent ID: 3292
+2015-09-03 14:22:26,253 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 47] Successful upload to parent ID: 3292
+2015-09-03 14:22:27,158 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 63] Successful upload to parent ID: 3292
+2015-09-03 14:22:28,290 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 32] Successful upload to parent ID: 3292
+2015-09-03 14:22:29,080 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 50] Successful upload to parent ID: 3292
+2015-09-03 14:22:30,215 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 62] Successful upload to parent ID: 3292
+2015-09-03 14:22:31,201 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 67] Successful upload to parent ID: 3292
+2015-09-03 14:22:32,059 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 43] Successful upload to parent ID: 3292
+2015-09-03 14:22:32,844 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 92] Successful upload to parent ID: 3292
+2015-09-03 14:22:33,699 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 63] Successful upload to parent ID: 3292
+2015-09-03 14:22:34,589 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 92] Successful upload to parent ID: 3292
+2015-09-03 14:22:35,822 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 51] Successful upload to parent ID: 3292
+2015-09-03 14:22:36,815 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 50] Successful upload to parent ID: 3292
+2015-09-03 14:22:37,763 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 111] Successful upload to parent ID: 3292
+2015-09-03 14:22:38,669 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 43] Successful upload to parent ID: 3292
+2015-09-03 14:22:39,569 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 62] Successful upload to parent ID: 3292
+2015-09-03 14:22:40,757 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 43] Successful upload to parent ID: 3292
+2015-09-03 14:22:41,907 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 32] Successful upload to parent ID: 3292
+2015-09-03 14:22:42,728 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 47] Successful upload to parent ID: 3292
+2015-09-03 14:22:43,568 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 32] Successful upload to parent ID: 3292
+2015-09-03 14:22:44,599 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 65] Successful upload to parent ID: 3292
+2015-09-03 14:22:45,552 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 67] Successful upload to parent ID: 3292
+2015-09-03 14:22:46,353 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 63] Successful upload to parent ID: 3292
+2015-09-03 14:22:47,313 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 62] Successful upload to parent ID: 3292
+2015-09-03 14:22:48,240 [91] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 32] Successful upload to parent ID: 3292
+2015-09-03 16:48:02,084 [91] ERROR Umbraco.Web.UmbracoApplication - [Thread 77] An unhandled exception occurred
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.HttpRequest.get_PhysicalPath()
+   at UrlRewritingNet.Web.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

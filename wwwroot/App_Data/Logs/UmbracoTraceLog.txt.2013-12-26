@@ -1,0 +1,6 @@
+2013-12-26 11:01:57,703 [6] INFO  Umbraco.Core.PluginManager - [Thread 23] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 3ms)
+2013-12-26 12:29:35,218 [6] INFO  Umbraco.Core.PluginManager - [Thread 50] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 1 (took 26ms)
+2013-12-26 12:30:05,562 [6] INFO  Umbraco.Core.PluginManager - [Thread 41] Completed resolution of types of umbraco.cms.businesslogic.media.IMediaFactory, found 2 (took 5ms)
+2013-12-26 12:30:06,765 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 41] Successful upload to parent ID: 1076
+2013-12-26 14:11:24,484 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 36] Successful upload to parent ID: 1076
+2013-12-26 14:23:46,890 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 39] Successful upload to parent ID: 1087

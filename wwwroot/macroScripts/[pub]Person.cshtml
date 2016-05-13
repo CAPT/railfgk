@@ -1,0 +1,16 @@
+@using umbraco.NodeFactory;
+
+@{
+    var model = Node as Node;
+    string imageUrl = "";
+    try { imageUrl = "/thumb/150/" + uQuery.GetMedia(model.GetProperty<string>("picture")).GetImageUrl().Substring(7) + ".ashx"; }
+    catch { }
+    var name = model.GetProperty<string>("name");
+    if (!string.IsNullOrEmpty(imageUrl))
+    {
+        <img class="imgLeft" src="@imageUrl" alt="@name" width="150" />
+    }
+    @Html.Raw(model.GetProperty<string>("bioText"))
+    <div class="clear"></div>
+    <p><a class="back" href="@model.Parent.Url">@model.Parent.Name</a></p>
+}

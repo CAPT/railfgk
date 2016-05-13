@@ -1,0 +1,16 @@
+﻿@using umbraco.NodeFactory
+
+<ul id="regions">
+@try
+{
+    foreach (var node in (Node as Node).GetChildNodes())
+    {
+        <li id="amap-@node.Id" style="background-image: url(/dsgn/areas/@(node.GetProperty<string>("areaBackground")));"></li>
+    }
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}
+</ul>

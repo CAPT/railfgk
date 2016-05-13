@@ -1,0 +1,15 @@
+2016-04-24 13:40:56,468 [7] INFO  Umbraco.Web.UmbracoApplication - [Thread 17] Application shutdown. Reason: HostingEnvironment
+2016-04-24 13:41:48,796 [8] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2016-04-24 13:41:48,827 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2016-04-24 13:41:48,843 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 9ms)
+2016-04-24 13:41:49,093 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 246ms)
+2016-04-24 13:41:49,093 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 1ms)
+2016-04-24 13:41:49,265 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2016-04-24 13:41:49,265 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 1ms)
+2016-04-24 13:41:49,265 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2016-04-24 13:41:49,296 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 9ms)
+2016-04-24 13:41:49,327 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 4ms)
+2016-04-24 13:41:49,452 [8] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 657ms)
+2016-04-24 13:41:49,999 [8] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 3ms)
+2016-04-24 13:42:38,093 [8] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2016-04-24 13:42:38,124 [8] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)

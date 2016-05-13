@@ -1,0 +1,5 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/AJAX.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="contentArea" runat="server">
+	<umbraco:Macro Alias="[ajax]Uncompatable" runat="server" />
+</asp:content>

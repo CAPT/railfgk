@@ -1,0 +1,67 @@
+﻿@using umbraco.NodeFactory
+
+@try
+{
+    var nodes = (Node as Node).GetChildNodes();
+    if (nodes.Any())
+    {
+        int pageSize;
+        int.TryParse(Parameter.pageSize, out pageSize);
+        if (pageSize == 0) { pageSize = 20; }
+        int pageNum;
+        int.TryParse(Parameter.pageNum, out pageNum);
+        if (pageNum == 0) { pageNum = 1; }
+        int i = 0;
+        string imageUrl, title, intro, url;
+        <ul class="pressList">
+        @foreach (var node in nodes.OrderByDescending(x => x.GetProperty<DateTime>("date")).Skip((pageNum - 1) * pageSize).Take(pageSize))
+        {
+            try { imageUrl = "/thumb/130/85/" + uQuery.GetMedia(node.GetProperty<string>("picture")).GetImageUrl().Substring(7) + ".ashx"; }
+            catch { imageUrl = ""; }
+            title = node.GetProperty<string>("title");
+            intro = node.GetProperty<string>("intro");
+            url = node.Url;
+            <li@Html.Raw(i++ == 0 ? " class=\"first\"" : "")>
+                @if (!string.IsNullOrEmpty(imageUrl))
+                {
+                    <a href="@url"><img src="@imageUrl" alt="" /></a>
+                }
+                <span class="pressListDate small">@(node.GetProperty<DateTime>("date").ToString("d"))</span>
+                <div class="pressListHeader"><a href="@url">@title</a></div>
+                @intro
+            </li>
+        }
+        </ul>
+        @UnicoGlobalHelpers.RenderPager(nodes.Count(), pageSize, pageNum)
+    }
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}
+
+@*
+<ul class="pressList">
+    <li class="first">
+        <span class="pressListDate small">18.12.2012</span>
+        <div class="pressListHeader"><a href="#">В ноябре 2012 года общий объем перевезенных грузов в вагонах ОАО «ФГК» составил около 6 млн тонн</a></div>
+        В ноябре 2012 года общий объем перевезенных ОАО «ФГК» грузов составил более 5,8 млн тонн (на 2% больше, чем в октябре текущего года) или более 93 тыс. вагонов, находящихся в самостоятельном управлении Компании.
+    </li>
+    <li>
+        <img src="dsgn/pict.jpg" alt="" />
+        <span class="pressListDate small">18.12.2012</span>
+        <div class="pressListHeader"><a href="#">В ноябре 2012 года общий объем перевезенных грузов в вагонах ОАО «ФГК» составил около 6 млн тонн</a></div>
+        В ноябре 2012 года общий объем перевезенных ОАО «ФГК» грузов составил более 5,8 млн тонн (на 2% больше, чем в октябре текущего года) или более 93 тыс. вагонов, находящихся в самостоятельном управлении Компании.
+    </li>
+</ul>
+<div class="pager fright">
+    <ul>
+        <li class="prev"><a href="#">&laquo;</a></li>
+        <li><a href="#">1</a></li>
+        <li><span>2</span></li>
+        <li><a href="#">3</a></li>
+        <li class="next"><a href="#">&raquo;</a></li>
+    </ul>
+</div>
+*@

@@ -1,0 +1,11 @@
+@using umbraco.NodeFactory
+
+@{
+    var model = Node as Node;
+}
+
+@Html.Raw(model.GetProperty<string>("contents"))
+@if (!string.IsNullOrEmpty(model.GetProperty<string>("date")))
+{
+    <p>@(model.GetProperty<DateTime>("date").ToString("d"))</p>
+}

@@ -1,0 +1,78 @@
+2013-09-12 10:19:58,296 [8] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2013-09-12 13:23:29,203 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-09-12 13:23:29,281 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-09-12 13:23:29,296 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-09-12 13:23:29,906 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 578ms)
+2013-09-12 13:23:29,921 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-09-12 13:23:30,156 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-09-12 13:23:30,156 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 2ms)
+2013-09-12 13:23:30,156 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 3ms)
+2013-09-12 13:23:30,437 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-09-12 13:23:30,500 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 19ms)
+2013-09-12 13:23:30,640 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1440ms)
+2013-09-12 13:23:33,875 [6] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 3ms)
+2013-09-12 13:23:34,859 [6] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-09-12 13:23:34,890 [6] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 5ms)
+2013-09-12 13:24:18,328 [8] INFO  Umbraco.Web.UmbracoApplication - [Thread 19] Application shutdown. Reason: HostingEnvironment
+2013-09-12 14:35:24,421 [6] INFO  Umbraco.Core.PluginManager - [Thread 16] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 3ms)
+2013-09-12 15:47:54,203 [6] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 1 (took 25ms)
+2013-09-12 15:48:09,359 [6] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.cms.businesslogic.media.IMediaFactory, found 2 (took 6ms)
+2013-09-12 15:48:09,968 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 13] Successful upload to parent ID: 2349
+2013-09-12 15:48:10,546 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 16] Successful upload to parent ID: 2349
+2013-09-12 15:48:11,093 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 17] Successful upload to parent ID: 2349
+2013-09-12 15:48:11,671 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 15] Successful upload to parent ID: 2349
+2013-09-12 15:48:12,171 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2349
+2013-09-12 15:48:12,703 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 16] Successful upload to parent ID: 2349
+2013-09-12 15:48:13,218 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2349
+2013-09-12 15:48:13,750 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 15] Successful upload to parent ID: 2349
+2013-09-12 15:48:14,312 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 14] Successful upload to parent ID: 2349
+2013-09-12 15:48:14,828 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 15] Successful upload to parent ID: 2349
+2013-09-12 15:48:15,343 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 11] Successful upload to parent ID: 2349
+2013-09-12 15:48:15,890 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 14] Successful upload to parent ID: 2349
+2013-09-12 15:48:16,453 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 13] Successful upload to parent ID: 2349
+2013-09-12 15:48:16,937 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 15] Successful upload to parent ID: 2349
+2013-09-12 15:48:17,468 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 11] Successful upload to parent ID: 2349
+2013-09-12 15:48:17,984 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 16] Successful upload to parent ID: 2349
+2013-09-12 15:48:18,515 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 13] Successful upload to parent ID: 2349
+2013-09-12 15:48:19,062 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 16] Successful upload to parent ID: 2349
+2013-09-12 15:48:19,593 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 14] Successful upload to parent ID: 2349
+2013-09-12 15:48:20,109 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 15] Successful upload to parent ID: 2349
+2013-09-12 15:48:20,656 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2349
+2013-09-12 15:48:21,234 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 17] Successful upload to parent ID: 2349
+2013-09-12 15:48:21,734 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 14] Successful upload to parent ID: 2349
+2013-09-12 15:52:05,718 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 1 (took 0ms)
+2013-09-12 15:55:41,953 [6] ERROR Umbraco.Web.UmbracoApplication - [Thread 11] An unhandled exception occurred
+System.InvalidOperationException: Request format is unrecognized for URL unexpectedly ending in '/UpdateSortOrder'.
+   at System.Web.Services.Protocols.WebServiceHandlerFactory.CoreGetHandler(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   at System.Web.Services.Protocols.WebServiceHandlerFactory.GetHandler(HttpContext context, String verb, String url, String filePath)
+   at System.Web.Script.Services.ScriptHandlerFactory.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-09-12 15:55:42,937 [6] ERROR Umbraco.Web.UmbracoApplication - [Thread 11] An unhandled exception occurred
+System.InvalidOperationException: Request format is unrecognized for URL unexpectedly ending in '/UpdateSortOrder'.
+   at System.Web.Services.Protocols.WebServiceHandlerFactory.CoreGetHandler(Type type, HttpContext context, HttpRequest request, HttpResponse response)
+   at System.Web.Services.Protocols.WebServiceHandlerFactory.GetHandler(HttpContext context, String verb, String url, String filePath)
+   at System.Web.Script.Services.ScriptHandlerFactory.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-09-12 15:56:49,687 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 25] Successful upload to parent ID: 2349
+2013-09-12 15:56:50,265 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 27] Successful upload to parent ID: 2349
+2013-09-12 15:56:50,859 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 24] Successful upload to parent ID: 2349
+2013-09-12 15:56:51,468 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 28] Successful upload to parent ID: 2349
+2013-09-12 15:56:52,125 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 27] Successful upload to parent ID: 2349
+2013-09-12 15:56:52,718 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 28] Successful upload to parent ID: 2349
+2013-09-12 15:56:53,312 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 25] Successful upload to parent ID: 2349
+2013-09-12 15:56:53,890 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 24] Successful upload to parent ID: 2349
+2013-09-12 15:56:54,515 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 28] Successful upload to parent ID: 2349
+2013-09-12 15:56:55,046 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 24] Successful upload to parent ID: 2349
+2013-09-12 15:56:55,656 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 28] Successful upload to parent ID: 2349
+2013-09-12 15:56:56,234 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 25] Successful upload to parent ID: 2349
+2013-09-12 15:56:56,875 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 27] Successful upload to parent ID: 2349
+2013-09-12 15:56:57,484 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 24] Successful upload to parent ID: 2349
+2013-09-12 15:56:58,109 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 28] Successful upload to parent ID: 2349
+2013-09-12 15:56:58,718 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 24] Successful upload to parent ID: 2349
+2013-09-12 15:56:59,312 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 28] Successful upload to parent ID: 2349
+2013-09-12 15:56:59,937 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 25] Successful upload to parent ID: 2349
+2013-09-12 15:57:00,546 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 24] Successful upload to parent ID: 2349
+2013-09-12 15:57:01,109 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 25] Successful upload to parent ID: 2349
+2013-09-12 15:57:01,687 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 26] Successful upload to parent ID: 2349

@@ -1,0 +1,11 @@
+2016-03-18 01:58:19,072 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2016-03-18 01:58:19,119 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2016-03-18 01:58:19,134 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 10ms)
+2016-03-18 01:58:19,462 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 332ms)
+2016-03-18 01:58:19,478 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 2ms)
+2016-03-18 01:58:19,697 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 3ms)
+2016-03-18 01:58:19,697 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 2ms)
+2016-03-18 01:58:19,712 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2016-03-18 01:58:19,744 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 8ms)
+2016-03-18 01:58:19,791 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 3ms)
+2016-03-18 01:58:20,025 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 965ms)

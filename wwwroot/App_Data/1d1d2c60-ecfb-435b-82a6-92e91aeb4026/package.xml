@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>ContentMaintenanceDashboard.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>ContentMaintenanceDashboard.dll</orgName>
+    </file>
+    <file>
+      <guid>ContentMaintenanceDashboard.ascx</guid>
+      <orgPath>/usercontrols</orgPath>
+      <orgName>ContentMaintenanceDashboard.ascx</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>Content Maintenance Dashboard</name>
+      <version>1.2</version>
+      <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+      <url>http://our.umbraco.org/projects/developer-tools/content-maintenance-dashboard-package</url>
+      <requirements>
+        <major>4</major>
+        <minor>5</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Richard Soeteman</name>
+      <website>http://www.richardsoeteman.net</website>
+    </author>
+    <readme><![CDATA[This package helps you with bulk publlish, unpublish, move and delete of content items.
+
+This package let's you also search into the document properties]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+  <Actions>
+    <Action runat="install" undo="true" alias="addDashboardSection" dashboardAlias="Content Maintenance">
+      <section>
+        <areas>
+          <area>developer</area>
+        </areas>
+        <tab caption="Content Maintenance">
+          <control>/usercontrols/ContentMaintenanceDashboard.ascx</control>
+        </tab>
+      </section>
+    </Action>
+  </Actions>
+</umbPackage>

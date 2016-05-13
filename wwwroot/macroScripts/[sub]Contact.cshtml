@@ -1,0 +1,9 @@
+﻿@using umbraco.NodeFactory
+
+@{
+    var iframe = ((Node as Node).GetProperty<string>("googleMapIframe"));
+    if (!string.IsNullOrEmpty(iframe))
+    {
+        @Html.Raw(iframe)
+    }
+}

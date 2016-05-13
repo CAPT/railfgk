@@ -1,0 +1,100 @@
+2015-10-12 08:47:19,739 [7] INFO  Umbraco.Core.PluginManager - [Thread 5] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 3ms)
+2015-10-12 14:36:22,489 [98] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2015-10-12 14:36:22,530 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2015-10-12 14:36:22,546 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 13ms)
+2015-10-12 14:36:22,941 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 375ms)
+2015-10-12 14:36:22,952 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 3ms)
+2015-10-12 14:36:23,137 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2015-10-12 14:36:23,140 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 2ms)
+2015-10-12 14:36:23,148 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2015-10-12 14:36:23,175 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 12ms)
+2015-10-12 14:36:23,204 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 4ms)
+2015-10-12 14:36:23,383 [7] INFO  Umbraco.Web.UmbracoApplication - [Thread 76] Application shutdown. Reason: MaxRecompilationsReached
+2015-10-12 14:36:23,459 [98] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 968ms)
+2015-10-12 14:36:25,650 [98] INFO  Umbraco.Core.PluginManager - [Thread 79] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 3ms)
+2015-10-12 14:36:25,692 [98] INFO  Umbraco.Core.PluginManager - [Thread 5] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 0ms)
+2015-10-12 14:36:26,063 [98] INFO  Umbraco.Core.PluginManager - [Thread 5] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 3ms)
+2015-10-12 14:36:26,117 [98] INFO  Umbraco.Core.PluginManager - [Thread 5] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 2ms)
+2015-10-12 14:38:29,784 [85] INFO  Umbraco.Core.CoreBootManager - [Thread 97] Umbraco application starting
+2015-10-12 14:38:29,827 [85] INFO  Umbraco.Core.PluginManager - [Thread 97] Determining hash of code files on disk
+2015-10-12 14:38:29,841 [85] INFO  Umbraco.Core.PluginManager - [Thread 97] Hash determined (took 12ms)
+2015-10-12 14:38:30,175 [85] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 318ms)
+2015-10-12 14:38:30,179 [85] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 3ms)
+2015-10-12 14:38:30,430 [98] INFO  Umbraco.Web.UmbracoApplication - [Thread 81] Application shutdown. Reason: MaxRecompilationsReached
+2015-10-12 14:38:30,450 [85] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2015-10-12 14:38:30,450 [85] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 1ms)
+2015-10-12 14:38:30,460 [85] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2015-10-12 14:38:30,626 [85] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 8ms)
+2015-10-12 14:38:30,654 [85] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 3ms)
+2015-10-12 14:38:30,732 [85] INFO  Umbraco.Core.CoreBootManager - [Thread 97] Umbraco application startup complete (took 947ms)
+2015-10-12 14:38:32,769 [85] INFO  Umbraco.Core.PluginManager - [Thread 79] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 3ms)
+2015-10-12 14:38:33,235 [85] INFO  Umbraco.Core.PluginManager - [Thread 79] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 3ms)
+2015-10-12 14:38:33,253 [85] INFO  Umbraco.Core.PluginManager - [Thread 79] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 2ms)
+2015-10-12 14:43:44,385 [18] INFO  Umbraco.Core.CoreBootManager - [Thread 96] Umbraco application starting
+2015-10-12 14:43:44,428 [18] INFO  Umbraco.Core.PluginManager - [Thread 96] Determining hash of code files on disk
+2015-10-12 14:43:44,443 [18] INFO  Umbraco.Core.PluginManager - [Thread 96] Hash determined (took 13ms)
+2015-10-12 14:43:44,731 [18] INFO  Umbraco.Core.PluginManager - [Thread 96] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 249ms)
+2015-10-12 14:43:44,735 [18] INFO  Umbraco.Core.PluginManager - [Thread 96] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 3ms)
+2015-10-12 14:43:45,008 [18] INFO  Umbraco.Core.PluginManager - [Thread 96] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 3ms)
+2015-10-12 14:43:45,012 [18] INFO  Umbraco.Core.PluginManager - [Thread 96] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 3ms)
+2015-10-12 14:43:45,021 [18] INFO  Umbraco.Core.PluginManager - [Thread 96] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 3ms)
+2015-10-12 14:43:45,033 [85] INFO  Umbraco.Web.UmbracoApplication - [Thread 73] Application shutdown. Reason: MaxRecompilationsReached
+2015-10-12 14:43:45,229 [18] INFO  Umbraco.Core.PluginManager - [Thread 96] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 3ms)
+2015-10-12 14:43:45,239 [18] INFO  Umbraco.Core.PluginManager - [Thread 96] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2015-10-12 14:43:45,276 [18] INFO  Umbraco.Core.CoreBootManager - [Thread 96] Umbraco application startup complete (took 889ms)
+2015-10-12 14:43:45,863 [18] INFO  Umbraco.Core.PluginManager - [Thread 80] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 2ms)
+2015-10-12 14:43:45,870 [18] INFO  Umbraco.Core.PluginManager - [Thread 45] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 0ms)
+2015-10-12 14:43:47,297 [18] INFO  Umbraco.Core.PluginManager - [Thread 45] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 2ms)
+2015-10-12 14:43:47,357 [18] INFO  Umbraco.Core.PluginManager - [Thread 45] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 2ms)
+2015-10-12 14:48:16,082 [18] INFO  Umbraco.Core.PluginManager - [Thread 73] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2015-10-12 15:05:12,740 [18] INFO  Umbraco.Web.UmbracoApplication - [Thread 70] Application shutdown. Reason: MaxRecompilationsReached
+2015-10-12 15:05:14,233 [87] INFO  Umbraco.Core.CoreBootManager - [Thread 97] Umbraco application starting
+2015-10-12 15:05:14,262 [87] INFO  Umbraco.Core.PluginManager - [Thread 97] Determining hash of code files on disk
+2015-10-12 15:05:14,275 [87] INFO  Umbraco.Core.PluginManager - [Thread 97] Hash determined (took 11ms)
+2015-10-12 15:05:14,541 [87] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 249ms)
+2015-10-12 15:05:14,557 [87] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 5ms)
+2015-10-12 15:05:14,708 [87] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2015-10-12 15:05:14,710 [87] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 1ms)
+2015-10-12 15:05:14,718 [87] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2015-10-12 15:05:14,863 [87] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 11ms)
+2015-10-12 15:05:14,887 [87] INFO  Umbraco.Core.PluginManager - [Thread 97] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 2ms)
+2015-10-12 15:05:14,929 [87] INFO  Umbraco.Core.CoreBootManager - [Thread 97] Umbraco application startup complete (took 694ms)
+2015-10-12 15:05:17,206 [87] INFO  Umbraco.Core.PluginManager - [Thread 86] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 3ms)
+2015-10-12 15:05:25,318 [87] INFO  Umbraco.Core.PluginManager - [Thread 93] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 3ms)
+2015-10-12 15:05:25,382 [87] INFO  Umbraco.Core.PluginManager - [Thread 93] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 2ms)
+2015-10-12 16:59:10,952 [87] ERROR Umbraco.Web.UmbracoApplication - [Thread 92] An unhandled exception occurred
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.HttpRequest.get_PhysicalPath()
+   at UrlRewritingNet.Web.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-10-12 16:59:29,347 [87] ERROR Umbraco.Web.UmbracoApplication - [Thread 85] An unhandled exception occurred
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.HttpRequest.get_PhysicalPath()
+   at UrlRewritingNet.Web.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-10-12 17:52:41,155 [87] INFO  Umbraco.Core.PluginManager - [Thread 82] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2015-10-12 18:08:07,753 [87] INFO  Umbraco.Web.UmbracoApplication - [Thread 94] Application shutdown. Reason: HostingEnvironment
+2015-10-12 18:08:09,670 [8] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2015-10-12 18:08:09,719 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2015-10-12 18:08:09,732 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 11ms)
+2015-10-12 18:08:10,086 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 340ms)
+2015-10-12 18:08:10,103 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 4ms)
+2015-10-12 18:08:10,315 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 4ms)
+2015-10-12 18:08:10,318 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 2ms)
+2015-10-12 18:08:10,356 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2015-10-12 18:08:10,390 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 9ms)
+2015-10-12 18:08:10,425 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 4ms)
+2015-10-12 18:08:10,698 [8] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1017ms)
+2015-10-12 18:08:11,618 [8] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 2ms)
+2015-10-12 18:08:36,163 [8] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2015-10-12 18:08:36,184 [8] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 2ms)

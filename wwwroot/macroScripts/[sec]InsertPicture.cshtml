@@ -1,0 +1,16 @@
+﻿@using umbraco.NodeFactory
+
+@{
+    string imageUrl = "";
+    try { imageUrl = uQuery.GetMedia((Node as Node).GetProperty<string>("picture")).GetImageUrl(); } catch { }
+    if (!string.IsNullOrEmpty(imageUrl))
+    {
+        <div class="sliderBlock">
+            <div class="sliderMain genLay">
+                <ul class="frames">
+                    <li class="current"><div style="background-image: url('@imageUrl')"></div></li>
+                </ul>
+            </div>
+        </div>
+    }
+}

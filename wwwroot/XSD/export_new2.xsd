@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="ЭКСПОРТ">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Вагон" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Договор"/>
+							<xs:element name="ЭЦП"/>
+							<xs:element name="СотрудникиДепо"/>
+							<xs:element name="ПредставителиДепо"/>
+							<xs:element name="ПредставителиСобственника"/>
+							<xs:element name="КоментарииКВагону"/>
+							<xs:element name="РДВ"/>
+							<xs:element name="АктВыбраковки"/>
+							<xs:element name="ВУ36М"/>
+							<xs:element name="МХ1"/>
+							<xs:element name="МХ3"/>
+							<xs:element name="ЛистКомплектации"/>
+							<xs:element name="ВУ4М"/>
+						</xs:sequence>
+						<xs:attribute name="Код" use="required" type="xs:long"/>
+						<xs:attribute name="НДС" use="required" type="xs:decimal"/>
+						<xs:attribute name="ЭЦП" use="required" type="xs:string"/>
+						<xs:attribute name="Номер" use="required" type="xs:int"/>
+						<xs:attribute name="ДатаСФ" use="required" type="xs:string"/>
+						<xs:attribute name="Скидка" use="required" type="xs:byte"/>
+						<xs:attribute name="Удален" use="required" type="xs:byte"/>
+						<xs:attribute name="КодДепо" use="required" type="xs:short"/>
+						<xs:attribute name="НомерСФ" use="required" type="xs:string"/>
+						<xs:attribute name="Проверка" use="required" type="xs:string"/>
+						<xs:attribute name="СтавкаНДС" use="required" type="xs:byte"/>
+						<xs:attribute name="ТипВагона" use="required" type="xs:byte"/>
+						<xs:attribute name="ГодВыпуска" use="required" type="xs:short"/>
+						<xs:attribute name="ТипРемонта" use="required" type="xs:byte"/>
+						<xs:attribute name="ИзНихЗаРемонтКП" use="required" type="xs:byte"/>
+						<xs:attribute name="СтоимостьБезНДС" use="required" type="xs:decimal"/>
+						<xs:attribute name="СтоимостьУборки" use="required" type="xs:decimal"/>
+						<xs:attribute name="ДатаВводаВсистему" use="required" type="xs:string"/>
+						<xs:attribute name="НомерАктаВыпРабот" use="required" type="xs:short"/>
+						<xs:attribute name="ПробегНакопленный" use="required" type="xs:byte"/>
+						<xs:attribute name="ПробегМежремонтный" use="required" type="xs:byte"/>
+						<xs:attribute name="СтоимостьВзвешивания" use="required" type="xs:decimal"/>
+						<xs:attribute name="ПлановоеНачалоРемонта" use="required" type="xs:string"/>
+						<xs:attribute name="ПроверкаСобственником" use="required" type="xs:string"/>
+						<xs:attribute name="ПробегПослеКапитального" use="required" type="xs:byte"/>
+						<xs:attribute name="ПлановоеОкончаниеРемонта" use="required" type="xs:string"/>
+						<xs:attribute name="ФактическоеОкончаниеРемонта" use="required" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="ВЕРСИЯ" use="required" type="xs:byte"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

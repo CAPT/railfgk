@@ -1,0 +1,19 @@
+2015-11-05 13:11:29,855 [7] INFO  Umbraco.Core.PluginManager - [Thread 38] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2015-11-05 23:57:51,206 [7] INFO  Umbraco.Web.UmbracoApplication - [Thread 34] Application shutdown. Reason: HostingEnvironment
+2015-11-05 23:57:53,718 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2015-11-05 23:57:53,886 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2015-11-05 23:57:53,947 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 60ms)
+2015-11-05 23:57:57,065 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 3123ms)
+2015-11-05 23:57:57,072 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 4ms)
+2015-11-05 23:57:57,520 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 3ms)
+2015-11-05 23:57:57,524 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 3ms)
+2015-11-05 23:57:57,588 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 6ms)
+2015-11-05 23:57:57,648 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 18ms)
+2015-11-05 23:57:57,686 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 5ms)
+2015-11-05 23:57:58,082 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 4370ms)
+2015-11-05 23:58:01,004 [7] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 2ms)
+2015-11-05 23:58:01,006 [7] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 0ms)
+2015-11-05 23:58:01,074 [7] WARN  umbraco.macro - [Thread 9] Error loading MacroEngine script (file: [common]Title.cshtml, Type: ''. Exception: umbraco.cms.businesslogic.macro.MacroEngineException: No MacroEngine found for extension 'cshtml'
+   at umbraco.cms.businesslogic.macro.MacroEngineFactory.GetByExtension(String extension)
+   at umbraco.macro.loadMacroScript(MacroModel macro)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)

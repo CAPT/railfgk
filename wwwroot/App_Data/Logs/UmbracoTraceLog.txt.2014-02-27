@@ -1,0 +1,74 @@
+2014-02-27 03:20:36,938 [7] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 22] Error executing query delete from umbracoLog where datestamp < @oldestPermittedLogEntry and logHeader in ('open','system')
+System.Data.SqlClient.SqlException (0x80131904): SHUTDOWN is in progress.
+Login failed for user 'fgkwebserveruser'.
+A severe error occurred on the current command.  The results, if any, should be discarded.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteNonQuery(String commandText, IParameter[] parameters)
+ClientConnectionId:7689577b-ebf9-4526-a449-96b500c56d74
+2014-02-27 03:20:37,297 [7] INFO  Umbraco.Web.UmbracoApplication - [Thread 22] Application shutdown. Reason: HostingEnvironment
+2014-02-27 03:22:25,977 [10] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2014-02-27 03:22:26,477 [10] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2014-02-27 03:22:26,524 [10] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 34ms)
+2014-02-27 03:22:28,118 [10] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1574ms)
+2014-02-27 03:22:28,180 [10] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 4ms)
+2014-02-27 03:22:32,930 [10] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 9ms)
+2014-02-27 03:22:32,946 [10] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 5ms)
+2014-02-27 03:22:33,259 [10] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2014-02-27 03:22:33,337 [10] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 33ms)
+2014-02-27 03:22:33,540 [10] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 15ms)
+2014-02-27 03:22:34,915 [10] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 8885ms)
+2014-02-27 03:22:38,899 [10] ERROR Umbraco.Web.UmbracoApplication - [Thread 5] An unhandled exception occurred
+System.ArgumentException: An item with the same key has already been added.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at umbraco.cms.businesslogic.ContentType.GetDataType(String contentTypeAlias, String propertyTypeAlias)
+   at umbraco.cms.businesslogic.ContentType.GetDataType(String contentTypeAlias, String propertyTypeAlias)
+   at umbraco.cms.businesslogic.ContentType.GetDataType(String contentTypeAlias, String propertyTypeAlias)
+   at umbraco.cms.businesslogic.ContentType.GetDataType(String contentTypeAlias, String propertyTypeAlias)
+   at Umbraco.Core.PublishedContentExtensions.GetPropertyValue[T](IPublishedContent prop, String alias, Boolean recursive, T ifCannotConvert)
+   at Umbraco.Web.Routing.PublishedContentRequestBuilder.FollowInternalRedirects()
+   at Umbraco.Web.Routing.PublishedContentRequestBuilder.LookupDocument2()
+   at Umbraco.Web.Routing.PublishedContentRequestBuilder.LookupDocument()
+   at Umbraco.Web.Routing.PublishedContentRequest.ProcessRequest(HttpContextBase httpContext, UmbracoContext umbracoContext, Action`1 onSuccess)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-02-27 03:22:47,399 [10] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 9ms)
+2014-02-27 03:22:47,415 [10] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 0ms)
+2014-02-27 03:22:59,587 [10] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 8ms)
+2014-02-27 03:22:59,680 [10] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 5ms)
+2014-02-27 04:57:08,602 [10] ERROR Umbraco.Web.UmbracoApplication - [Thread 20] An unhandled exception occurred
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.HttpRequest.get_PhysicalPath()
+   at UrlRewritingNet.Web.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-02-27 09:54:08,024 [10] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 18ms)
+2014-02-27 10:06:05,415 [10] INFO  Umbraco.Web.UmbracoApplication - [Thread 26] Application shutdown. Reason: MaxRecompilationsReached
+2014-02-27 10:06:05,649 [297] INFO  Umbraco.Core.CoreBootManager - [Thread 298] Umbraco application starting
+2014-02-27 10:06:05,743 [297] INFO  Umbraco.Core.PluginManager - [Thread 298] Determining hash of code files on disk
+2014-02-27 10:06:05,759 [297] INFO  Umbraco.Core.PluginManager - [Thread 298] Hash determined (took 12ms)
+2014-02-27 10:06:06,196 [297] INFO  Umbraco.Core.PluginManager - [Thread 298] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 415ms)
+2014-02-27 10:06:06,227 [297] INFO  Umbraco.Core.PluginManager - [Thread 298] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2014-02-27 10:06:07,665 [297] INFO  Umbraco.Core.PluginManager - [Thread 298] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 5ms)
+2014-02-27 10:06:07,665 [297] INFO  Umbraco.Core.PluginManager - [Thread 298] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 2ms)
+2014-02-27 10:06:07,727 [297] INFO  Umbraco.Core.PluginManager - [Thread 298] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2014-02-27 10:06:07,759 [297] INFO  Umbraco.Core.PluginManager - [Thread 298] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 10ms)
+2014-02-27 10:06:07,790 [297] INFO  Umbraco.Core.PluginManager - [Thread 298] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 6ms)
+2014-02-27 10:06:08,212 [297] INFO  Umbraco.Core.CoreBootManager - [Thread 298] Umbraco application startup complete (took 2544ms)
+2014-02-27 10:06:09,540 [297] INFO  Umbraco.Core.PluginManager - [Thread 104] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 5ms)
+2014-02-27 10:06:09,555 [297] INFO  Umbraco.Core.PluginManager - [Thread 89] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 0ms)
+2014-02-27 10:06:09,571 [297] INFO  Umbraco.Core.PluginManager - [Thread 93] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 0ms)
+2014-02-27 10:06:12,134 [297] INFO  Umbraco.Core.PluginManager - [Thread 104] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 3ms)
+2014-02-27 10:06:12,212 [297] INFO  Umbraco.Core.PluginManager - [Thread 104] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 2ms)
+2014-02-27 10:26:21,837 [297] INFO  Umbraco.Core.PluginManager - [Thread 254] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 8ms)

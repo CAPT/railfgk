@@ -1,0 +1,57 @@
+﻿@using umbraco.NodeFactory
+
+@{
+    var model = Node as Node;
+    string caption, link;
+    <div class="moduleBlock moduleClient">
+        <div class="header">@(model.GetProperty<string>("clientCaption"))</div>
+        <div class="moduleBody">
+            <ul>
+            @{
+                caption = model.GetProperty<string>("offerCaption");
+                link = model.GetProperty<string>("offerLink");
+                if (!string.IsNullOrEmpty(link))
+                { <li><img src="/dsgn/icoOffer.jpg" alt="" /><a href="@link" title="@caption">@caption</a></li> }
+				
+                caption = model.GetProperty<string>("proposalCaption");
+                try { link = uQuery.GetNode(model.GetProperty<string>("proposalLink")).Url; }
+                catch { link = ""; }
+                if (!string.IsNullOrEmpty(link))
+                { <li><img src="/dsgn/icoComm.jpg" alt="" /><a href="@link" title="@caption">@caption</a></li> }
+				
+                caption = model.GetProperty<string>("contractCaption");
+                try { link = uQuery.GetNode(model.GetProperty<string>("contractLink")).Url; }
+                catch { link = ""; }
+                if (!string.IsNullOrEmpty(link))
+                { <li><img src="/dsgn/icoContract.jpg" alt="" /><a href="@link" title="@caption">@caption</a></li> }
+				
+				
+				
+				
+               
+				
+				
+				
+				
+                caption = model.GetProperty<string>("clientServiceCaption");
+                link = model.GetProperty<string>("clientServiceLink");
+                if (!string.IsNullOrEmpty(link))
+                { <li><img src="/dsgn/icoSys.jpg" alt="" /><a href="@link" title="@caption">@caption</a></li> }
+				
+				 { <li><img src="/dsgn/bk.png" alt=""  style="height: 20px;"/><a href="/klientam-partneram/spravochnik-gruzovladelca/" title="Справочник грузовладельца">Справочник грузовладельца</a></li> }
+			
+                if (!string.IsNullOrEmpty(link))
+                { <li><img src="/dsgn/1dialog.png" alt="" /><a href="/about/feedback" title="Обратная связь">Обратная связь</a></li> }
+				
+				
+				
+				
+            }                
+            </ul>
+        </div>
+				
+				
+
+			
+    </div>
+}

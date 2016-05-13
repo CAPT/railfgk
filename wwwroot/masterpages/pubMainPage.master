@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/master.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="headDataArea" runat="server">
+    <script type="text/javascript" src="/scripts/dsgn-init.js"></script>
+	 <script type="text/javascript" src="/scripts/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+</asp:content>
+
+<asp:content ContentPlaceHolderId="headerArea" runat="server">
+    <umbraco:Macro Alias="[mainPage]Slider" runat="server" />
+</asp:content>
+	
+
+<asp:content ContentPlaceHolderId="contentArea" runat="server">
+    <div id="contentMain" class="genLay clear"><!--Content-->
+
+        <div class="leftBlock fleft"><!--LeftBlock-->
+            <umbraco:Macro Alias="[mainPage]News" runat="server" />
+			<umbraco:Macro Alias="[mainPage]Media" runat="server" />
+			 
+        </div><!--EndLeftBlock-->
+
+        <div class="textBlock fleft"><!--CenterBlock-->
+            <umbraco:Macro Alias="[mainPage]CenterBlock" runat="server" />
+         <umbraco:Item field="contents" runat="server" /> 
+        </div><!--EndCenterBlock-->
+
+        <div class="rightBlock fright"><!--RightBlock-->
+			 <umbraco:Macro Alias="[mainPage]ClientBlock" runat="server" /> 
+			<!---<form runat="server" id="Poll_form">
+				   <link rel="stylesheet" type="text/css" href="/css/Nibble.Umb.Poll.css">
+					<asp:ScriptManager runat="server">
+					</asp:ScriptManager>
+					<umbraco:Macro PollNodeId="2689"  DisplayOnly="0" SubmitOnSelect="1" HideSubmit="0" SortResults="1" WidthTotalVotes="1" HideQuestion="0" RandomPoll="0" Alias="Poll" runat="server"></umbraco:Macro>
+				</form> -->
+			<umbraco:Macro Alias="[mainPage]SubscriptionBlock" runat="server" />
+			<a href="/klientam-partneram/oferta-fgk-rzhd/akcii-i-specpredlozheniya/" target="_blank">
+				<img src="/media/80989/fgk_5-10.gif" style="width: 235px;">
+			</a>
+
+			<p class="tblTxt">
+			<iframe width="232" height="124" src="https://www.youtube.com/embed/YLA3RYr4tCU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</p>
+			
+		
+
+			 
+        </div><!--EndRightBlock-->
+
+    </div><!--EndContent-->
+</asp:content>

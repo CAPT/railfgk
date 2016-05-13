@@ -1,0 +1,1051 @@
+2013-02-25 10:41:45,442 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-25 10:41:45,633 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-25 10:41:45,670 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 34ms)
+2013-02-25 10:41:48,006 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2311ms)
+2013-02-25 10:41:48,028 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-25 10:41:48,535 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-25 10:41:48,540 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 10:41:48,582 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 10:41:49,477 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 10:41:49,555 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 6ms)
+2013-02-25 10:41:49,824 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 4363ms)
+2013-02-25 10:42:05,694 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-25 10:42:05,907 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 11:32:34,480 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 8] Application shutdown. Reason: ConfigurationChange
+2013-02-25 11:32:37,274 [16] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application starting
+2013-02-25 11:32:37,406 [16] INFO  Umbraco.Core.PluginManager - [Thread 13] Determining hash of code files on disk
+2013-02-25 11:32:37,426 [16] INFO  Umbraco.Core.PluginManager - [Thread 13] Hash determined (took 16ms)
+2013-02-25 11:32:37,901 [16] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 451ms)
+2013-02-25 11:32:37,921 [16] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-25 11:32:38,098 [16] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-25 11:32:38,103 [16] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 11:32:38,120 [16] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 11:32:38,415 [16] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 11:32:38,469 [16] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 11:32:38,599 [16] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application startup complete (took 1305ms)
+2013-02-25 11:35:11,020 [16] INFO  Umbraco.Core.PluginManager - [Thread 19] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 11:35:11,845 [16] INFO  Umbraco.Core.PluginManager - [Thread 19] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-25 11:35:11,915 [16] INFO  Umbraco.Core.PluginManager - [Thread 19] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 11:35:28,267 [16] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2013-02-25 11:54:46,972 [16] INFO  Umbraco.Web.UmbracoApplication - [Thread 15] Application shutdown. Reason: ConfigurationChange
+2013-02-25 11:54:49,185 [21] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application starting
+2013-02-25 11:54:49,318 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Determining hash of code files on disk
+2013-02-25 11:54:49,337 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Hash determined (took 16ms)
+2013-02-25 11:54:49,803 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 441ms)
+2013-02-25 11:54:49,831 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 14ms)
+2013-02-25 11:54:50,012 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-25 11:54:50,016 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 11:54:50,034 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 11:54:50,088 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 11:54:50,150 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 11:54:50,510 [21] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application startup complete (took 1304ms)
+2013-02-25 11:54:59,008 [21] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 5ms)
+2013-02-25 11:55:00,039 [21] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-25 11:55:00,071 [21] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 11:55:11,267 [21] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-25 12:08:04,368 [21] WARN  umbraco.macro - [Thread 20] Error loading MacroEngine script (file: [pub]SitemapLink.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-25 12:11:16,942 [21] INFO  Umbraco.Web.UmbracoApplication - [Thread 3] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-25 12:11:19,399 [22] INFO  Umbraco.Core.CoreBootManager - [Thread 10] Umbraco application starting
+2013-02-25 12:11:19,574 [22] INFO  Umbraco.Core.PluginManager - [Thread 10] Determining hash of code files on disk
+2013-02-25 12:11:19,594 [22] INFO  Umbraco.Core.PluginManager - [Thread 10] Hash determined (took 16ms)
+2013-02-25 12:11:20,493 [22] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 875ms)
+2013-02-25 12:11:20,512 [22] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-25 12:11:21,302 [22] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-25 12:11:21,306 [22] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 12:11:21,324 [22] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 12:11:21,697 [22] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 12:11:21,752 [22] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 12:11:21,860 [22] INFO  Umbraco.Core.CoreBootManager - [Thread 10] Umbraco application startup complete (took 2440ms)
+2013-02-25 12:11:31,340 [22] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 12:11:32,371 [22] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-25 12:11:32,439 [22] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 12:13:20,866 [22] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-25 12:48:40,218 [22] INFO  Umbraco.Web.UmbracoApplication - [Thread 7] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-25 12:48:41,828 [21] INFO  Umbraco.Core.CoreBootManager - [Thread 10] Umbraco application starting
+2013-02-25 12:48:41,960 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Determining hash of code files on disk
+2013-02-25 12:48:41,979 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Hash determined (took 16ms)
+2013-02-25 12:48:42,447 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 445ms)
+2013-02-25 12:48:42,467 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-25 12:48:42,644 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-25 12:48:42,649 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 12:48:42,667 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 12:48:42,961 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 12:48:43,010 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 12:48:43,192 [21] INFO  Umbraco.Core.CoreBootManager - [Thread 10] Umbraco application startup complete (took 1344ms)
+2013-02-25 12:53:15,192 [21] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 12:55:17,833 [21] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 12:55:19,012 [21] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-25 13:46:39,668 [21] WARN  umbraco.macro - [Thread 14] Error loading MacroEngine script (file: [pub]Seacrh.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]Seacrh.cshtml(58): error CS0103: The name 'searchStr' does not exist in the current context
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-25 13:59:16,803 [21] INFO  Umbraco.Web.UmbracoApplication - [Thread 15] Application shutdown. Reason: CodeDirChangeOrDirectoryRename
+2013-02-25 13:59:39,504 [18] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application starting
+2013-02-25 13:59:39,645 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Determining hash of code files on disk
+2013-02-25 13:59:39,664 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Hash determined (took 15ms)
+2013-02-25 13:59:39,945 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 256ms)
+2013-02-25 13:59:39,965 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-25 13:59:40,152 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-25 13:59:40,157 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 13:59:40,175 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 13:59:40,485 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 13:59:40,558 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 13:59:40,670 [18] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application startup complete (took 1147ms)
+2013-02-25 13:59:45,037 [18] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 14:00:10,717 [18] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 6ms)
+2013-02-25 14:00:10,844 [18] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2013-02-25 14:01:25,144 [18] INFO  Umbraco.Web.UmbracoApplication - [Thread 6] Application shutdown. Reason: ConfigurationChange
+2013-02-25 14:01:29,103 [21] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application starting
+2013-02-25 14:01:29,235 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Determining hash of code files on disk
+2013-02-25 14:01:29,255 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Hash determined (took 16ms)
+2013-02-25 14:01:29,726 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 447ms)
+2013-02-25 14:01:29,746 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-25 14:01:29,930 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-25 14:01:29,935 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 14:01:29,953 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 14:01:30,007 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 14:01:30,065 [21] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 14:01:30,423 [21] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application startup complete (took 1300ms)
+2013-02-25 14:01:37,929 [21] INFO  Umbraco.Web.UmbracoApplication - [Thread 14] Application shutdown. Reason: ConfigurationChange
+2013-02-25 14:01:40,289 [18] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application starting
+2013-02-25 14:01:40,423 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Determining hash of code files on disk
+2013-02-25 14:01:40,441 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Hash determined (took 16ms)
+2013-02-25 14:01:40,910 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 444ms)
+2013-02-25 14:01:40,931 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-25 14:01:41,113 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-25 14:01:41,118 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 14:01:41,137 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 14:01:41,451 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 14:01:41,501 [18] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 14:01:41,598 [18] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application startup complete (took 1288ms)
+2013-02-25 14:01:42,797 [18] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 14:04:24,684 [18] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 14:13:34,455 [18] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-25 14:40:39,735 [18] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-25 14:45:37,920 [18] WARN  umbraco.macro - [Thread 7] Error loading MacroEngine script (file: [pub]Seacrh.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]Seacrh.cshtml(81): error CS1026: ) expected
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-25 14:48:01,177 [18] WARN  umbraco.macro - [Thread 19] Error loading MacroEngine script (file: [pub]Seacrh.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]Seacrh.cshtml(60): error CS1061: 'string' does not contain a definition for 'NamedFormat' and no extension method 'NamedFormat' accepting a first argument of type 'string' could be found (are you missing a using directive or an assembly reference?)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-25 14:48:48,807 [18] INFO  Umbraco.Web.UmbracoApplication - [Thread 19] Application shutdown. Reason: CodeDirChangeOrDirectoryRename
+2013-02-25 14:48:54,634 [12] INFO  Umbraco.Core.CoreBootManager - [Thread 3] Umbraco application starting
+2013-02-25 14:48:54,769 [12] INFO  Umbraco.Core.PluginManager - [Thread 3] Determining hash of code files on disk
+2013-02-25 14:48:54,788 [12] INFO  Umbraco.Core.PluginManager - [Thread 3] Hash determined (took 16ms)
+2013-02-25 14:48:55,074 [12] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 261ms)
+2013-02-25 14:48:55,095 [12] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-25 14:48:55,919 [12] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-25 14:48:55,924 [12] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 14:48:55,941 [12] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 14:48:56,253 [12] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 14:48:56,302 [12] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 14:48:56,406 [12] INFO  Umbraco.Core.CoreBootManager - [Thread 3] Umbraco application startup complete (took 1752ms)
+2013-02-25 14:48:58,445 [12] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 14:48:58,535 [12] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 14:52:32,316 [12] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-25 14:56:02,548 [12] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-25 15:02:08,581 [12] WARN  umbraco.macro - [Thread 14] Error loading MacroEngine script (file: [pub]Seacrh.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]Seacrh.cshtml(40): error CS0165: Use of unassigned local variable 'filter'
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-25 15:10:55,517 [12] INFO  Umbraco.Web.UmbracoApplication - [Thread 6] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-25 15:11:00,213 [21] INFO  Umbraco.Core.CoreBootManager - [Thread 10] Umbraco application starting
+2013-02-25 15:11:00,345 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Determining hash of code files on disk
+2013-02-25 15:11:00,365 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Hash determined (took 16ms)
+2013-02-25 15:11:00,836 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 448ms)
+2013-02-25 15:11:00,858 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-25 15:11:01,061 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-25 15:11:01,066 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 15:11:01,083 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 15:11:01,435 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 15:11:01,486 [21] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 6ms)
+2013-02-25 15:11:01,586 [21] INFO  Umbraco.Core.CoreBootManager - [Thread 10] Umbraco application startup complete (took 1302ms)
+2013-02-25 15:11:03,111 [21] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 15:11:24,990 [21] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-25 15:11:25,511 [21] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 15:13:55,144 [21] INFO  Umbraco.Web.UmbracoApplication - [Thread 19] Application shutdown. Reason: ConfigurationChange
+2013-02-25 15:13:57,106 [22] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-25 15:13:57,239 [22] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-25 15:13:57,259 [22] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 16ms)
+2013-02-25 15:13:57,735 [22] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 453ms)
+2013-02-25 15:13:57,755 [22] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-25 15:13:58,369 [22] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-25 15:13:58,374 [22] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 15:13:58,390 [22] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 15:13:58,747 [22] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 15:13:58,798 [22] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 15:13:58,900 [22] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1773ms)
+2013-02-25 15:14:08,161 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1076
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:08,336 [22] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-25 15:14:08,368 [22] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 15:14:08,529 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1077
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:08,595 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1078
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:08,643 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1087
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:08,661 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1088
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:08,703 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1089
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:08,745 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1090
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:08,795 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1091
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:08,843 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1092
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:08,892 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1093
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:08,935 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1120
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:08,953 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1121
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,003 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1125
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,052 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1127
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,092 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1129
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,140 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1131
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,182 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1133
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,224 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1135
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,272 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1137
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,313 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1145
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,332 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1146
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,381 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1149
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,430 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1150
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,478 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1151
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,597 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1156
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,615 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1157
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,662 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1160
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,712 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1161
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,762 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1162
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,810 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1163
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,859 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1220
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,896 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1345
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,939 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1221
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,958 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1227
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:09,991 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1228
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,021 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1229
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,051 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1230
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,080 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1231
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,109 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1232
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,139 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1233
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,168 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1234
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,197 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1470
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,228 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1471
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,247 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1472
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,276 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1473
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,307 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1474
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,343 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1475
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,373 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1476
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,390 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1477
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,419 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1478
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,448 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1479
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,478 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1480
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,510 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1222
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,526 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1223
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,545 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1224
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,560 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1225
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,577 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1226
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,598 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1251
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,616 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1439
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,651 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1440
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,688 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1468
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,730 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1261
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,748 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1483
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,766 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1484
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,930 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1485
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:10,986 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1486
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,035 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1487
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,087 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1488
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,135 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1489
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,183 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1497
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,234 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1498
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,281 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1499
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,328 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1500
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,431 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1501
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,479 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1502
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,526 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1491
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,545 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1492
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,595 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1493
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,642 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1494
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,690 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1495
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,737 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1496
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,787 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1268
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,807 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1505
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,856 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1507
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,906 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1270
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,925 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1504
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,968 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1364
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:11,987 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1365
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,006 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1379
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,023 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1390
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,075 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1391
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,099 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1392
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,118 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1510
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,137 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1511
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,185 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1512
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,235 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1513
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,284 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1514
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,333 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1366
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,351 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1393
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,368 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1406
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,385 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1419
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,401 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1367
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,418 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1394
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,434 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1407
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,451 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1420
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,467 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1368
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,485 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1395
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,502 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1408
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,518 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1421
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,564 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1369
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,583 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1396
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,599 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1409
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,616 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1422
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,633 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1370
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,651 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1397
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,668 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1410
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,714 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1423
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,797 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1371
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,839 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1398
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,897 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1411
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,936 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1424
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,962 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1372
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:12,989 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1399
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,013 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1412
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,038 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1425
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,063 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1373
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,091 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1400
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,116 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1413
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,143 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1426
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,159 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1374
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,176 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1401
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,192 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1414
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,209 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1427
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,225 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1375
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,242 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1402
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,259 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1415
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,274 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1428
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,291 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1376
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,307 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1403
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,324 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1416
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,340 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1429
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,356 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1377
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,373 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1404
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,404 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1417
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,421 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1430
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,437 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1378
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,454 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1405
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,469 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1418
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,486 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1431
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:13,510 [22] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 18] Error executing query select xml from cmsContentXml where nodeID = 1438
+System.ArgumentException: The query didn't return a value.
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, P[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteXmlReader(String commandText, IParameter[] parameters)
+2013-02-25 15:14:19,589 [22] INFO  Umbraco.Core.PluginManager - [Thread 16] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 15:15:12,690 [22] INFO  Umbraco.Web.UmbracoApplication - [Thread 18] Application shutdown. Reason: ConfigurationChange
+2013-02-25 15:15:14,253 [21] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-25 15:15:14,385 [21] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-25 15:15:14,404 [21] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 16ms)
+2013-02-25 15:15:14,870 [21] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 442ms)
+2013-02-25 15:15:14,889 [21] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-25 15:15:15,067 [21] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-25 15:15:15,072 [21] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 15:15:15,090 [21] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 15:15:15,404 [21] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 15:15:15,459 [21] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 15:15:15,588 [21] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1314ms)
+2013-02-25 15:15:16,748 [21] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 15:18:55,950 [21] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-25 15:18:55,982 [21] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 15:31:57,825 [21] INFO  Umbraco.Core.PluginManager - [Thread 14] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 6ms)
+2013-02-25 16:36:52,352 [21] ERROR Umbraco.Web.UmbracoApplication - [Thread 19] An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.ArgumentException: No id 4 exists in dictionary
+   at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(Int32 id)
+   at umbraco.settings.EditDictionaryItem.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at umbraco.BasePages.BasePage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-02-25 16:39:59,169 [21] ERROR Umbraco.Web.UmbracoApplication - [Thread 14] An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.ArgumentException: No id 18 exists in dictionary
+   at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(Int32 id)
+   at umbraco.settings.EditDictionaryItem.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at umbraco.BasePages.BasePage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-02-25 16:41:31,004 [21] INFO  Umbraco.Web.UmbracoApplication - [Thread 16] Application shutdown. Reason: CodeDirChangeOrDirectoryRename
+2013-02-25 16:41:35,919 [3] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application starting
+2013-02-25 16:41:36,055 [3] INFO  Umbraco.Core.PluginManager - [Thread 13] Determining hash of code files on disk
+2013-02-25 16:41:36,074 [3] INFO  Umbraco.Core.PluginManager - [Thread 13] Hash determined (took 16ms)
+2013-02-25 16:41:36,385 [3] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 285ms)
+2013-02-25 16:41:36,404 [3] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-25 16:41:36,606 [3] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-25 16:41:36,610 [3] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 16:41:36,628 [3] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 16:41:36,674 [3] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 16:41:36,744 [3] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 16:41:37,120 [3] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application startup complete (took 1181ms)
+2013-02-25 16:41:39,134 [3] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 16:41:39,503 [3] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-25 16:42:28,676 [3] ERROR Umbraco.Web.UmbracoApplication - [Thread 15] An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.ArgumentException: No id 3 exists in dictionary
+   at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(Int32 id)
+   at umbraco.settings.EditDictionaryItem.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at umbraco.BasePages.BasePage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-02-25 16:48:08,392 [3] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 5ms)
+2013-02-25 16:48:13,024 [3] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 6ms)
+2013-02-25 16:54:14,469 [3] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 0ms)
+2013-02-25 16:57:26,288 [3] ERROR Umbraco.Web.UmbracoApplication - [Thread 19] An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.ArgumentException: No id 47 exists in dictionary
+   at umbraco.cms.businesslogic.Dictionary.DictionaryItem..ctor(Int32 id)
+   at umbraco.settings.EditDictionaryItem.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at umbraco.BasePages.BasePage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-02-25 18:34:53,680 [3] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 0ms)
+2013-02-25 18:35:21,848 [3] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 0ms)
+2013-02-25 18:36:58,706 [3] ERROR Umbraco.Web.UmbracoApplication - [Thread 7] An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Xml.XPath.XPathException: Expression must evaluate to a node-set.
+   at MS.Internal.Xml.XPath.XPathParser.ParseNodeTest(AstNode qyInput, AxisType axisType, XPathNodeType nodeType)
+   at MS.Internal.Xml.XPath.XPathParser.ParseStep(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParseRelativeLocationPath(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParsePathExpr(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParseUnionExpr(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParseMultiplicativeExpr(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParseRelationalExpr(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParseEqualityExpr(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParseOrExpr(AstNode qyInput)
+   at MS.Internal.Xml.XPath.QueryBuilder.Build(String query, Boolean allowVar, Boolean allowKey)
+   at System.Xml.XPath.XPathExpression.Compile(String xpath, IXmlNamespaceResolver nsResolver)
+   at System.Xml.XPath.XPathNavigator.Select(String xpath)
+   at umbraco.editorControls.MultiNodeTreePicker.FilteredContentTree.get_DefinedStartNodeDoc()
+   at umbraco.editorControls.MultiNodeTreePicker.FilteredContentTree.get_StartNodeID()
+   at umbraco.cms.presentation.Trees.XmlTreeNode.CreateRoot(BaseTree bTree)
+   at umbraco.cms.presentation.Trees.BaseTree.CreateRootNode()
+   at umbraco.cms.presentation.Trees.BaseTree.SetTreeParameters(ITreeService treeParams)
+   at umbraco.controls.Tree.TreeControl.Initialize()
+   at umbraco.controls.Tree.TreeControl.OnPreRender(EventArgs e)
+   at umbraco.controls.Tree.CustomTreeControl.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-02-25 18:37:12,113 [3] ERROR Umbraco.Web.UmbracoApplication - [Thread 12] An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Xml.XPath.XPathException: Expression must evaluate to a node-set.
+   at MS.Internal.Xml.XPath.XPathParser.ParseNodeTest(AstNode qyInput, AxisType axisType, XPathNodeType nodeType)
+   at MS.Internal.Xml.XPath.XPathParser.ParseStep(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParseRelativeLocationPath(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParsePathExpr(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParseUnionExpr(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParseMultiplicativeExpr(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParseRelationalExpr(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParseEqualityExpr(AstNode qyInput)
+   at MS.Internal.Xml.XPath.XPathParser.ParseOrExpr(AstNode qyInput)
+   at MS.Internal.Xml.XPath.QueryBuilder.Build(String query, Boolean allowVar, Boolean allowKey)
+   at System.Xml.XPath.XPathExpression.Compile(String xpath, IXmlNamespaceResolver nsResolver)
+   at System.Xml.XPath.XPathNavigator.Select(String xpath)
+   at umbraco.editorControls.MultiNodeTreePicker.FilteredContentTree.get_DefinedStartNodeDoc()
+   at umbraco.editorControls.MultiNodeTreePicker.FilteredContentTree.get_StartNodeID()
+   at umbraco.cms.presentation.Trees.XmlTreeNode.CreateRoot(BaseTree bTree)
+   at umbraco.cms.presentation.Trees.BaseTree.CreateRootNode()
+   at umbraco.cms.presentation.Trees.BaseTree.SetTreeParameters(ITreeService treeParams)
+   at umbraco.controls.Tree.TreeControl.Initialize()
+   at umbraco.controls.Tree.TreeControl.OnPreRender(EventArgs e)
+   at umbraco.controls.Tree.CustomTreeControl.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-02-25 18:50:25,128 [3] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 0ms)
+2013-02-25 18:51:01,774 [3] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 0ms)
+2013-02-25 18:51:18,725 [3] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 0ms)
+2013-02-25 18:51:28,680 [3] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 0ms)
+2013-02-25 19:04:48,501 [3] WARN  umbraco.macro - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>[Thread 16] Error loading MacroEngine script (file: [common]Rss.cshtml, Type: ''. Exception: System.Web.HttpParseException (0x80004005): The try block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)</format><args>{}</args></log4net.Error>
+2013-02-25 20:16:22,166 [3] INFO  Umbraco.Web.UmbracoApplication - [Thread 18] Application shutdown. Reason: ConfigurationChange
+2013-02-25 20:16:26,729 [23] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application starting
+2013-02-25 20:16:26,901 [23] INFO  Umbraco.Core.PluginManager - [Thread 13] Determining hash of code files on disk
+2013-02-25 20:16:26,920 [23] INFO  Umbraco.Core.PluginManager - [Thread 13] Hash determined (took 16ms)
+2013-02-25 20:16:27,470 [23] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 526ms)
+2013-02-25 20:16:27,490 [23] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-25 20:16:27,685 [23] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-25 20:16:27,689 [23] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 20:16:27,706 [23] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 20:16:28,059 [23] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 20:16:28,110 [23] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 20:16:28,216 [23] INFO  Umbraco.Core.CoreBootManager - [Thread 13] Umbraco application startup complete (took 1466ms)
+2013-02-25 20:16:42,218 [23] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 20:16:42,331 [23] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-25 20:37:42,213 [23] INFO  Umbraco.Web.UmbracoApplication - [Thread 12] Application shutdown. Reason: HostingEnvironment
+2013-02-25 20:58:12,748 [5] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-25 20:58:12,915 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-25 20:58:12,944 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 26ms)
+2013-02-25 20:58:14,203 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1234ms)
+2013-02-25 20:58:14,245 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-25 20:58:14,724 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-25 20:58:14,728 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 20:58:14,747 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 20:58:15,065 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 16ms)
+2013-02-25 20:58:15,137 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 20:58:15,346 [5] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 2571ms)
+2013-02-25 20:58:34,572 [5] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-25 20:58:34,810 [5] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 20:59:50,895 [5] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 20:59:51,682 [5] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-25 21:03:16,491 [5] WARN  umbraco.macro - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>[Thread 7] Error loading MacroEngine script (file: [rss]RenderFeed.cshtml, Type: ''. Exception: System.Web.HttpParseException (0x80004005): The code block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)</format><args>{}</args></log4net.Error>
+2013-02-25 21:04:13,411 [5] WARN  umbraco.macro - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>[Thread 14] Error loading MacroEngine script (file: [rss]RenderFeed.cshtml, Type: ''. Exception: System.Web.HttpParseException (0x80004005): The code block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)</format><args>{}</args></log4net.Error>
+2013-02-25 21:10:26,210 [5] INFO  Umbraco.Core.PluginManager - [Thread 23] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 0ms)
+2013-02-25 21:19:39,861 [5] INFO  Umbraco.Web.UmbracoApplication - [Thread 18] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-25 21:19:40,508 [15] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-25 21:19:40,640 [15] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-25 21:19:40,660 [15] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 16ms)
+2013-02-25 21:19:41,098 [15] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 414ms)
+2013-02-25 21:19:41,125 [15] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-25 21:19:42,026 [15] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 10ms)
+2013-02-25 21:19:42,033 [15] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 7ms)
+2013-02-25 21:19:42,061 [15] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 7ms)
+2013-02-25 21:19:42,107 [15] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 21:19:42,177 [15] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 20ms)
+2013-02-25 21:19:42,543 [15] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 2016ms)
+2013-02-25 21:19:43,546 [15] INFO  Umbraco.Core.PluginManager - [Thread 17] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 22:44:11,061 [15] INFO  Umbraco.Web.UmbracoApplication - [Thread 9] Application shutdown. Reason: HostingEnvironment
+2013-02-25 23:00:50,499 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-25 23:00:50,636 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-25 23:00:50,657 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-02-25 23:00:51,193 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 508ms)
+2013-02-25 23:00:51,217 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-25 23:00:51,478 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-25 23:00:51,483 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 23:00:51,502 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 23:00:51,798 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 16ms)
+2013-02-25 23:00:51,847 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 23:00:51,994 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1475ms)
+2013-02-25 23:12:10,801 [6] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 23:12:11,433 [6] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-25 23:12:11,467 [6] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-25 23:21:09,167 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 11] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-25 23:21:10,495 [15] INFO  Umbraco.Core.CoreBootManager - [Thread 12] Umbraco application starting
+2013-02-25 23:21:10,628 [15] INFO  Umbraco.Core.PluginManager - [Thread 12] Determining hash of code files on disk
+2013-02-25 23:21:10,647 [15] INFO  Umbraco.Core.PluginManager - [Thread 12] Hash determined (took 16ms)
+2013-02-25 23:21:11,128 [15] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 457ms)
+2013-02-25 23:21:11,148 [15] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-25 23:21:11,328 [15] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-25 23:21:11,333 [15] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-25 23:21:11,350 [15] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-25 23:21:11,389 [15] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-25 23:21:11,444 [15] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-25 23:21:11,804 [15] INFO  Umbraco.Core.CoreBootManager - [Thread 12] Umbraco application startup complete (took 1289ms)
+2013-02-25 23:21:12,798 [15] INFO  Umbraco.Core.PluginManager - [Thread 11] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-25 23:21:50,753 [15] INFO  Umbraco.Core.PluginManager - [Thread 17] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 6ms)
+2013-02-25 23:25:15,676 [15] INFO  Umbraco.Core.PluginManager - [Thread 11] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-25 23:25:16,220 [15] INFO  Umbraco.Core.PluginManager - [Thread 11] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-25 23:50:50,556 [15] INFO  Umbraco.Web.UmbracoApplication - [Thread 17] Application shutdown. Reason: HostingEnvironment

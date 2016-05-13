@@ -1,0 +1,3 @@
+2016-02-12 10:20:26,115 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2016-02-12 10:20:26,407 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2016-02-12 10:20:26,448 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 41ms)

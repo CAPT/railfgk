@@ -1,0 +1,9 @@
+User-Agent: *
+Disallow: /cgi-bin
+Disallow: /*openstat*
+Disallow: /*utm*
+Disallow: /*from*
+Disallow: /*gclid*
+Disallow: /search
+Host: ru.railfgk.ru
+Sitemap: http://ru.railfgk.ru/sitemap.xml

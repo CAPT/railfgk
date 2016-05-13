@@ -1,0 +1,25 @@
+2015-04-27 04:30:11,778 [7] INFO  Umbraco.Web.UmbracoApplication - [Thread 16] Application shutdown. Reason: HostingEnvironment
+2015-04-27 04:30:47,536 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2015-04-27 04:30:47,739 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2015-04-27 04:30:47,770 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 20ms)
+2015-04-27 04:30:49,707 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1946ms)
+2015-04-27 04:30:49,707 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 3ms)
+2015-04-27 04:30:50,395 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 4ms)
+2015-04-27 04:30:50,395 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 3ms)
+2015-04-27 04:30:50,457 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 5ms)
+2015-04-27 04:30:50,520 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 17ms)
+2015-04-27 04:30:50,582 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 9ms)
+2015-04-27 04:30:50,911 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 3391ms)
+2015-04-27 04:30:52,239 [7] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 3ms)
+2015-04-27 04:31:40,839 [7] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 6ms)
+2015-04-27 04:31:40,870 [7] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 3ms)
+2015-04-27 11:15:53,940 [7] ERROR Umbraco.Web.UmbracoApplication - [Thread 12] An unhandled exception occurred
+System.ArgumentNullException: Value cannot be null.
+Parameter name: structure
+   at System.Runtime.InteropServices.Marshal.StructureToPtr(Object structure, IntPtr ptr, Boolean fDeleteOld)
+   at System.Drawing.Imaging.EncoderParameters.ConvertToMemory()
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at Unico.Imaginary.ImaginaryUtils.GetCachedImageUrl(FileInfo srcFI, Size desiredImageSize, Boolean fill, ImaginaryWatermarkMode wMode)
+   at Unico.Imaginary.Imaginary.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

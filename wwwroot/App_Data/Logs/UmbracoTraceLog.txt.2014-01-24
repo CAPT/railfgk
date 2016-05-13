@@ -1,0 +1,3 @@
+2014-01-24 00:04:02,828 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 63] Application shutdown. Reason: HostingEnvironment
+2014-01-24 00:04:03,156 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 3ms)
+2014-01-24 00:04:03,203 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)

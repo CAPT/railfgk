@@ -1,0 +1,29 @@
+﻿@using umbraco.NodeFactory
+@{
+    var model = Node as Node;
+    var caption = model.GetProperty<string>("subscriptionCaption");
+    var html = model.GetProperty<string>("uniSenderHtml");
+    if (!string.IsNullOrEmpty(html))
+    {
+        <div class="moduleBlock moduleSubscribe">
+            <div class="header">@caption</div>
+            <div class="moduleBody">
+            @Html.Raw(html)
+            </div>
+        </div>
+    }
+}
+@*
+        <form id="subscribeForm" method="post" action="/subscribe">
+              <fieldset>
+                <span class="errorMsg">Укажите Ваше имя</span>
+                <label>Имя</label>
+                <input type="text" class="txt" />
+                <span class="errorMsg">Укажите Ваш E-mail</span>
+                <label>E-mail</label>
+                <input type="text" class="txt" />
+                <button type="submit" class="fright" title="Подписаться" disabled="disabled" style="cursor: default;">Подписаться</button>
+                <button type="submit" class="fright" title="Подписаться">Подписаться</button>
+            </fieldset>
+          </form>
+*@

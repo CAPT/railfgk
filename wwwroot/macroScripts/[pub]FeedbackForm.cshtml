@@ -1,0 +1,91 @@
+﻿@using umbraco.NodeFactory
+
+@try
+{
+    var HARDCODED_Настройкисайта = 1070;
+    if (uQuery.GetNode(HARDCODED_Настройкисайта).GetProperty<bool>("enableFeedback"))
+    {
+        <div class="forms fbForm">
+         @*   <div class="header zoom">@Dictionary["[forms][feedback]Caption"]</div>
+             <div class="formsBlock">
+                <form id="fbForm" method="post" action="/sendFeedback">
+                    <fieldset>
+                        <div class="infoMsg">@Dictionary["[forms][feedback]SuccessMess"]</div>
+                        <span class="errorMsg" style="display: none;">@Dictionary["[forms][feedback]NameValMess"]</span>
+                        <label for="name">@Dictionary["[forms][feedback]NameLabel"] <sup>*</sup></label>
+                        <input type="text" class="txt" title="@Dictionary["[forms][feedback]NameHint"]" id="name" name="name" />
+                        <span class="errorMsg" style="display: none;">@Dictionary["[forms][feedback]EmailValMess"]</span>
+                        <label for="email">@Dictionary["[forms][feedback]EmailLabel"] <sup>*</sup></label>
+                        <input type="text" class="txt" title="@Dictionary["[forms][feedback]EmailHint"]" id="email" name="email" />
+                        <span class="errorMsg" style="display: none;">@Dictionary["[forms][feedback]MessageValMess"]</span>
+                        <label for="message">@Dictionary["[forms][feedback]MessageLabel"] <sup>*</sup></label>
+                        <textarea class="ta" rows="5" cols="77" id="message" name="message"></textarea>  *@
+                        @*<input type="submit" class="btn fright" value="Отправить" />*@
+                     @*    <button id="go" class="fright" title="@Dictionary["[forms][feedback]SendHint"]" type="submit">@Dictionary["[forms][feedback]SendLabel"]</button>
+                        <div class="errorMsgImp" style="display: none;">@Dictionary["[forms][feedback]FailMess"]</div>
+                    </fieldset>
+                </form>
+            </div> *@
+        </div>
+       @* <script>
+        //<![CDATA[
+            var sending = false;
+            $("#fbForm").on("submit", function() {
+                $(".infoMsg, .errorMsgImp").hide();
+                var $form = $(this);
+                var valid = true; *@
+                @*поля проверяются в обратном порядке для более логичной фокусировки ошибочных полей*@
+            @*     var $message = $("[name=message]", $form);
+                if ($.trim($message.val()) == "") {
+                    $message.prev().prev().show();
+                    $message[0].focus();
+                    valid = false;
+                }
+                else { $message.prev().prev().hide(); }
+                var $email = $("[name=email]", $form);
+                if (!/@Dictionary["[forms][common]EmailRegex"]/.test($.trim($email.val()))) {
+                    $email.prev().prev().show();
+                    $email[0].focus();
+                    valid = false;
+                }
+                else { $email.prev().prev().hide(); }
+                var $name = $("[name=name]", $form);
+                if ($.trim($name.val()) == "") {
+                    $name.prev().prev().show();
+                    $name[0].focus();
+                    valid = false;
+                }
+                else { $name.prev().prev().hide(); }
+                if (!valid) return false;
+                if (sending) return false;
+                sending = true;
+                var $button = $("[type=submit]", $form);
+                $button.width($button.outerWidth());
+                var buttonText = $button.html();
+                $button.html("<img src='/dsgn/sending.gif' alt='' />");
+                $.ajax({
+                    url: $form[0].action,
+                    type: "POST",
+                    data: $form.serialize(),
+                    success: function() {
+                        $(".infoMsg", $form).show();
+                    },
+                    error: function() {
+                        $(".errorMsgImp", $form).show();
+                    },
+                    complete: function() {
+                        $button.html(buttonText);
+                        sending = false;
+                    }
+                });
+                return false;
+            });
+        //]]>
+        </script> *@
+    }
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}

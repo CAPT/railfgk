@@ -1,0 +1,5 @@
+2014-10-31 14:14:34,866 [8] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2014-10-31 14:14:34,912 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2014-10-31 14:14:34,912 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 9ms)
+2014-10-31 14:14:35,209 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 279ms)
+2014-10-31 14:14:35,225 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 3ms)

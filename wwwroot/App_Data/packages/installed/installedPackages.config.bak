@@ -1,0 +1,818 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<packages>
+  <package id="2" version="4.5.0.1" url="" name="FALM Housekeeping" folder="27eabf3e-254f-4d81-a9c6-5e354e6ced88" packagepath="" repositoryGuid="65194810-1f85-11dd-bd0b-0800200c9a66" packageGuid="784b2300-6bbb-4147-bb64-d425c8908b85" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+    <author url="http://our.umbraco.org/projects/backoffice-extensions/falm-housekeeping">Adriano Fabri and Marco Lusini</author>
+    <readme><![CDATA[*************************************
+********** ATTENTION **********
+*************************************
+This version requires that the SQL User is "db_owner" (or has the correct privileges to manage foreign keys) because the SQL scripts will modify the "FK_cmsPreviewXml_cmsContentVersion" constraint of the table "cmsPreviewXml" to enable the "ON CASCADE DELETE" rule.
+**************************************
+**************************************
+
+This package adds a tree node to the developer section with the following tools:
+- Umbraco logs manager
+  N.B.: in order to improve the performance of the log viewer, you can add SQL indexes to the coloumns DateStamp, UserId and LogHeader of umbracoLog table.
+- Media folder cleanup
+  N.B.: in the current release this feature works only with "UploadAllowDirectories" set to "true".
+- Delete users
+- Version manager
+
+Versions History:
+v4.5.0.1 - Fixed issue for no removing version in 4.5 version (*** db_owner required ***)
+v4.5.0.0 - Version compatible with Umbraco v4.5
+v1.1.0.0 - Version compatible with Umbraco v4.0
+- Logs manager:
+    - Added filtering capabilities on NodeId
+    - Improved date filter: now you can select a range between two dates
+- Media folder cleanup:
+    - Various fixes in the search algorithm.
+- Delete users:
+    - Changed sort order and display of disabled users to match standard Umbraco behaviour
+- Version manager:
+    - Added filtering capabilities on NodeId
+    - Improved date filter: now you can select a range between two dates
+    - Added paging
+    - Rewritten code with direct access to DB to make performance way faster
+v1.0.0.0 - Initial release]]></readme>
+    <actions>
+      <Action runat="install" alias="addApplicationTree" silent="false" initialize="true" sortOrder="6" applicationAlias="developer" treeAlias="housekeeping" treeTitle="Housekeeping" iconOpened="folder_o.gif" iconClosed="folder.gif" assemblyName="FALMHousekeepingAppTree" treeHandlerType="loadHousekeeping" action="" />
+    </actions>
+    <datatypes>
+    </datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>
+    </macros>
+    <files>
+      <file>/bin/FALMHousekeepingAppTree.dll</file>
+      <file>/bin/FALMHousekeepingTools.dll</file>
+      <file>/umbraco/FALMHousekeeping/images/logs_cleanup.gif</file>
+      <file>/umbraco/FALMHousekeeping/images/logs_viewer.gif</file>
+      <file>/umbraco/FALMHousekeeping/images/media_folder_cleanup.gif</file>
+      <file>/umbraco/FALMHousekeeping/images/users_delete.gif</file>
+      <file>/umbraco/FALMHousekeeping/images/versions_cleanup.gif</file>
+      <file>/umbraco/FALMHousekeeping/images/versions_view.gif</file>
+      <file>/umbraco/FALMHousekeeping/logs/cleanupLogs.aspx</file>
+      <file>/umbraco/FALMHousekeeping/logs/showLogs.aspx</file>
+      <file>/umbraco/FALMHousekeeping/media/cleanupMediaFS.aspx</file>
+      <file>/umbraco/FALMHousekeeping/users/deleteUsersBySelection.aspx</file>
+      <file>/umbraco/FALMHousekeeping/versions/cleanupVersionsByCount.aspx</file>
+      <file>/umbraco/FALMHousekeeping/versions/cleanupVersionsByDate.aspx</file>
+      <file>/umbraco/FALMHousekeeping/versions/showVersions.aspx</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+  <package id="3" version="2.0" url="" name="Config Tree" folder="4c62b141-0a3d-4184-b541-a395d9ad5489" packagepath="" repositoryGuid="65194810-1f85-11dd-bd0b-0800200c9a66" packageGuid="a2c29dd0-86ab-4ff4-bb43-6e35788a82bb" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+    <author url="http://www.nibble.be">Tim Geyssens</author>
+    <readme><![CDATA[Add an extra tree to the developer section, called "Config Files".
+This lists all the config files, including in sub-folders, to be edited.
+
+In this version the Web.config is also available to edit.]]></readme>
+    <actions>
+      <Action runat="install" alias="addApplicationTree" silent="false" initialize="true" sortOrder="6" applicationAlias="developer" treeAlias="configFiles" treeTitle="Config Files" iconOpened="folder_o.gif" iconClosed="folder.gif" assemblyName="Our.Umbraco.Tree.Config" treeHandlerType="LoadConfigFiles" action="" />
+    </actions>
+    <datatypes>
+    </datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>
+    </macros>
+    <files>
+      <file>/bin/Our.Umbraco.Tree.Config.dll</file>
+      <file>/umbraco/developer/Config/config.gif</file>
+      <file>/umbraco/developer/Config/editConfigFile.aspx</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+  <package id="4" version="1.2" url="" name="Content Maintenance Dashboard" folder="36a38059-e97b-494e-8bf0-5a80b014b95b" packagepath="" repositoryGuid="65194810-1f85-11dd-bd0b-0800200c9a66" packageGuid="0f1dd8ed-e06b-4dbb-a7b4-d427b8561419" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+    <author url="http://www.richardsoeteman.net">Richard Soeteman</author>
+    <readme><![CDATA[This package helps you with bulk publlish, unpublish, move and delete of content items.
+
+This package let's you also search into the document properties]]></readme>
+    <actions>
+      <Action runat="install" undo="true" alias="addDashboardSection" dashboardAlias="Content Maintenance">
+        <section>
+          <areas>
+            <area>developer</area>
+          </areas>
+          <tab caption="Content Maintenance">
+            <control>/usercontrols/ContentMaintenanceDashboard.ascx</control>
+          </tab>
+        </section>
+      </Action>
+    </actions>
+    <datatypes>
+    </datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>
+    </macros>
+    <files>
+      <file>/bin/ContentMaintenanceDashboard.dll</file>
+      <file>/usercontrols/ContentMaintenanceDashboard.ascx</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+  <package id="5" version="1.0" url="" name="Examine Dashboard" folder="9897cb86-074b-48d1-a6ad-8bc9545c1bff" packagepath="" repositoryGuid="" packageGuid="" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+    <author url="http://www.darren-ferguson.com/">Darren Ferguson</author>
+    <readme><![CDATA[Copyright (c) 2012 Moriyama
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.]]></readme>
+    <actions>
+      <Action runat="install" undo="true" alias="addDashboardSection" dashboardAlias="ExamineDash">
+        <section>
+          <areas>
+            <area>developer</area>
+          </areas>
+          <tab caption="Examine">
+            <control>/usercontrols/IndexStatus.ascx</control>
+          </tab>
+        </section>
+      </Action>
+    </actions>
+    <datatypes>
+    </datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>
+    </macros>
+    <files>
+      <file>/bin/FergusonMoriyama.Umbraco.ExamineGui.dll</file>
+      <file>/umbraco/plugins/ExamineDash/Actions.asmx</file>
+      <file>/usercontrols/IndexStatus.ascx</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+  <package id="6" version="0.91" url="" name="RazorVisualizer" folder="aab7c335-f2ee-4acb-a8aa-b4d31f9644af" packagepath="" repositoryGuid="" packageGuid="" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+    <author url="joeriks.wordpress.com">Jonas Eriksson</author>
+    <readme><![CDATA[Razor visualizer renders a saved Razor script directly from within the code editor. On visualize you get the option to choose a content node id for the context (model) for the execution (like xsltVisualizer).
+
+Razor visualizer is suitable both for testing of macro scripts and running maintenance scripts. 
+
+0.91 Added a textbox you can use to add an option to your script. For example in a maintenance script where you first view and then execute something:
+
+@forech(var c in Model.Children)
+{
+  <p>Node: @c.Name</p>
+  @if (Parameter.VisualizeOption=="RUN") { 
+    // execute something on c       
+  }
+}
+
+I'd be very happy for feedback. Current status "works on my machine". I have tested it on a 4.7.1 (nightly) and 4.7 installation.
+
+The package consists of 3 files:
+/bin/prg.RazorExtensions.RenderRazor.dll
+/umbraco/developer/python/razorVisualize.aspx - a copy of xsltVisualizer with some changes.
+/umbraco/developer/python/razorVisualize.aspx.cs - rendering the file]]></readme>
+    <actions>
+    </actions>
+    <datatypes>
+    </datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>
+    </macros>
+    <files>
+      <file>/bin/prg.RazorExtensions.RenderRazor.dll</file>
+      <file>/umbraco/developer/Python/razorVisualize.aspx</file>
+      <file>/umbraco/developer/Python/razorVisualize.aspx.cs</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+  <package id="9" version="5.3.2" url="" name="uComponents" folder="0ded8188-e0cd-4c48-a7cf-99bf5dd75392" packagepath="" repositoryGuid="65194810-1f85-11dd-bd0b-0800200c9a66" packageGuid="1c483a78-6667-4b45-a329-f99613788767" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+    <author url="http://ucomponents.org">uComponents Team</author>
+    <readme><![CDATA[uComponents is a collaborative project for creating components for Umbraco including data types, XSLT extensions, controls and more.
+
+Containing over 30 data-types, 10 XSLT extension libraries, keyboard short-cuts, drag-n-drop functionality, as well as great developer utilities - uComponents is one of the must-have packages for any Umbraco-powered website!
+
+Full documentation can be found here: http://ucomponents.org
+
+Visit the CodePlex site for full details, documentation, roadmap and source code.
+http://ucomponents.codeplex.com
+]]></readme>
+    <actions>
+      <Action runat="install" undo="true" alias="uComponents_Uninstaller" />
+    </actions>
+    <datatypes>
+    </datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>
+    </macros>
+    <files>
+      <file>/bin/uComponents.Controls.dll</file>
+      <file>/bin/uComponents.Core.dll</file>
+      <file>/bin/uComponents.DataTypes.dll</file>
+      <file>/bin/uComponents.Installer.dll</file>
+      <file>/bin/uComponents.Legacy.dll</file>
+      <file>/bin/uComponents.MacroEngines.dll</file>
+      <file>/bin/uComponents.Mapping.dll</file>
+      <file>/bin/uComponents.NotFoundHandlers.dll</file>
+      <file>/bin/uComponents.UI.dll</file>
+      <file>/bin/uComponents.XsltExtensions.dll</file>
+      <file>/umbraco/plugins/uComponents/uComponentsInstaller.ascx</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+  <package id="10" version="0.3" url="" name="Vizioz.Relationships" folder="20f900ab-cf49-40d9-b839-1c4af3ca4f55" packagepath="" repositoryGuid="" packageGuid="" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+    <author url="http://www.vizioz.com">Vizioz Limited</author>
+    <readme><![CDATA[When you install this package you should have a Relationship datatype, if not you will need to do the following:
+
+1) Add a datatype as a Umbraco Usercontrol Wrapper 
+2) Select the DocumentRelationsDateType.ascx
+3) Add this datatype to your document type 
+
+There is an optional web.config key called: 
+
+"ViziozNumberOfRelationships"
+
+This can have a numerical value indicating how many relationships are required, so for a two language site it is likely to be just "1" this is added in the same way as all the Umbraco properties.]]></readme>
+    <actions>
+    </actions>
+    <datatypes>1245</datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>
+    </macros>
+    <files>
+      <file>/bin/Vizioz.Relationships.dll</file>
+      <file>/usercontrols/DocumentRelationsDataType.ascx</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+  <package id="11" version="0.6.1" url="" name="Refactored Content Views" folder="cea391bb-ad47-4a26-80c3-f40f9bf944bc" packagepath="" repositoryGuid="" packageGuid="" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+    <author url="http://refactored.com.au/blog">Robert Foster</author>
+    <readme><![CDATA[The Refactored Content Views package is essentially a content views (number of times  viewed) counter.  The current functionality offered by this package includes:
+
+* Optional Data Type that allows for configuring view counters with various categories and the ability to instruct Macros etc. to “hide” the view Count yet still increment it.
+
+* Optional incrementing when displaying the view count (useful when you want to display the view count in a content listing, for example)
+
+* Example Razor Script and Macro.
+* Example ViewCountExample.xslt file (no macro provided)
+
+* Library methods to manipulate the counters and retrieve details as an XML fragment for use with XSLT.
+
+* Update: added GetViewCountSince methods to retrieve the number of Views since a particular date if View Count History is enabled.
+
+UPDATED in 0.6.1: fixed a bug where the XSLT library function GetViews would increment the view count twice.  Now only incrementing once.
+]]></readme>
+    <actions>
+    </actions>
+    <datatypes>1263</datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>15</macros>
+    <files>
+      <file>/macroScripts/PageViews.cshtml</file>
+      <file>/bin/Refactored.UmbracoExtensions.dll</file>
+      <file>/bin/Refactored.UmbracoViewCounter.dll</file>
+      <file>/bin/PackageActionsContrib.dll</file>
+      <file>/xslt/ViewCountExample.xslt</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+  <package id="12" version="5.3.2" url="" name="uComponents" folder="83ff22c2-06b1-47b6-826f-181a54d6f5b7" packagepath="" repositoryGuid="65194810-1f85-11dd-bd0b-0800200c9a66" packageGuid="1c483a78-6667-4b45-a329-f99613788767" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+    <author url="http://ucomponents.org">uComponents Team</author>
+    <readme><![CDATA[uComponents is a collaborative project for creating components for Umbraco including data types, XSLT extensions, controls and more.
+
+Containing over 30 data-types, 10 XSLT extension libraries, keyboard short-cuts, drag-n-drop functionality, as well as great developer utilities - uComponents is one of the must-have packages for any Umbraco-powered website!
+
+Full documentation can be found here: http://ucomponents.org
+
+Visit the CodePlex site for full details, documentation, roadmap and source code.
+http://ucomponents.codeplex.com
+]]></readme>
+    <actions>
+      <Action runat="install" undo="true" alias="uComponents_Uninstaller" />
+    </actions>
+    <datatypes>
+    </datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>
+    </macros>
+    <files>
+      <file>/bin/uComponents.Controls.dll</file>
+      <file>/bin/uComponents.Core.dll</file>
+      <file>/bin/uComponents.DataTypes.dll</file>
+      <file>/bin/uComponents.Installer.dll</file>
+      <file>/bin/uComponents.Legacy.dll</file>
+      <file>/bin/uComponents.MacroEngines.dll</file>
+      <file>/bin/uComponents.Mapping.dll</file>
+      <file>/bin/uComponents.NotFoundHandlers.dll</file>
+      <file>/bin/uComponents.UI.dll</file>
+      <file>/bin/uComponents.XsltExtensions.dll</file>
+      <file>/umbraco/plugins/uComponents/uComponentsInstaller.ascx</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+  <package id="13" version="2.5" url="" name="Digibiz Advanced Media Picker" folder="12e4c627-8deb-4bca-8548-9436b1a5ec33" packagepath="" repositoryGuid="" packageGuid="" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+    <author url="http://our.umbraco.org/member/4297">Jeroen Breuer</author>
+    <readme><![CDATA[The Digibiz Advanced Media Picker 2.5 (DAMP 2.5) is a media picker with many awesome features. It can be used instead of the default media picker and is very user friendly. Here is a list of things it can do: 
+
+- Store the complete media item in the umbraco xml (umbraco.config) or only the id. 
+- Store a single or multiple media items in the media picker. 
+- Define a minimum and maximum amount of media items. 
+- Define a start node for the media tree. This can be done by a picker or XPath. 
+- Choose which file extensions are allowed. 
+- Choose which Media Types are allowed for selection and creation. 
+- Edit the media item from the content section. 
+- Use Pixlr (photoshop look a like) to modify images. 
+- Fast performance using the Umbraco cache.
+- Search]]></readme>
+    <actions>
+    </actions>
+    <datatypes>
+    </datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>
+    </macros>
+    <files>
+      <file>/bin/DigibizAdvancedMediaPicker.dll</file>
+      <file>/bin/DigibizTree.dll</file>
+      <file>//crossdomain.xml</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Audio_icon.png</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/CreateMediaItem.aspx</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/DAMPScript.js</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/DAMPStyles.css</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/DAMP_ImagePreview.ashx</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Delete.gif</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/DigibizAdvancedMediaPicker.ascx</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/DigibizService.asmx</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Doc_icon.png</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/EditDAMP.aspx</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Excel_icon.png</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/File_icon.png</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Folder_icon.png</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Installer.ascx</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Logo.png</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Pdf_icon.png</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Pixlr.aspx</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Power_icon.png</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/SavePixlr.aspx</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/SelectMediaItem.aspx</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Text_icon.png</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Video_icon.png</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Zip_icon.png</file>
+      <file>/Umbraco/plugins/DigibizAdvancedMediaPicker/Installer.ascx</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+  <package id="14" version="1.0" url="" name="Goyaweb Multi-Language tools" folder="1be2a7cd-bbbb-42a9-b684-784c43329585" packagepath="" repositoryGuid="" packageGuid="" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+    <author url="http://www.goyaweb.nl">Yannick Smits</author>
+    <readme><![CDATA[This package will add 2 macro's, 6 razor scripts, 2 C# files 270 flag images and 1 CSS file to your umbraco install.
+The Metadata macro will add meta data to your head section so that search engines know that the page has been translated.
+The Language Switcher macro renders your installed languages as a link list, a dropdown or a list of flags depending on the Render Type parameter.]]></readme>
+    <actions>
+    </actions>
+    <datatypes>
+    </datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>36</macros>
+    <files>
+      <file>/macroScripts//MultiLanguage/Metadata.cshtml</file>
+      <file>/app_code/MultiLanguage/Data.cs</file>
+      <file>/app_code/MultiLanguage/Functions.cshtml</file>
+      <file>/macroScripts/MultiLanguage/Metadata.cshtml</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+  <package id="15" version="3.0.18" url="" name="Umbraco Contour" folder="9c9ec0c3-e616-4432-8a16-090c6c401069" packagepath="" repositoryGuid="65194810-1f85-11dd-bd0b-0800200c9a66" packageGuid="6da629d5-177a-4ace-875b-a06b13ccec48" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">Umbraco Commercial License</license>
+    <author url="http://umbraco.org">Umbraco Corp</author>
+    <readme><![CDATA[
+          <p>Thank you for installing Contour - the tool that makes creating contact forms, entry forms and questionnaires just as easy as using Word.</p>
+          
+                    
+          <p>IMPORTANT: This installer will need modify rights to folders: /bin, /umbraco, /usercontrols and the web.config, 
+             as well as be allowed to create tables in the database to be able to perform the following changes:</p>
+          
+          <ul>
+            <li>Install the Contour Database schema</li>
+            <li>Modify the web.config if needed</li>
+            <li>Add the contour application to the current user</li>
+            <li>Add the Contour xslt library</li>
+            <li>Modify the /umbraco/config/create/ui.xml file</li>
+          </ul>
+          
+          <p>
+            If your permissions or other settings is in conflict with the above changes, we advice you to use the manual installation which is available 
+            from the same location you downloaded this package from.
+          </p>
+        ]]></readme>
+    <actions>
+    </actions>
+    <datatypes>
+    </datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>
+    </macros>
+    <files>
+      <file>/App_Plugins/Contour/formpicker.controller.js</file>
+      <file>/App_Plugins/Contour/formpicker.html</file>
+      <file>/App_Plugins/Contour/package.manifest</file>
+      <file>/bin/Umbraco.Forms.CodeFirst.dll</file>
+      <file>/bin/Umbraco.Forms.CodeFirst.pdb</file>
+      <file>bin/Umbraco.Forms.Core.dll</file>
+      <file>/bin/Umbraco.Forms.Core.Providers.dll</file>
+      <file>/bin/Umbraco.Forms.Core.Providers.pdb</file>
+      <file>/bin/Umbraco.Forms.Core.Providers.V6.dll</file>
+      <file>/bin/Umbraco.Forms.Core.Providers.V6.pdb</file>
+      <file>/bin/Umbraco.Forms.Core.Providers.V7.dll</file>
+      <file>/bin/Umbraco.Forms.Core.Providers.V7.pdb</file>
+      <file>/bin/Umbraco.Forms.Mvc.dll</file>
+      <file>/bin/Umbraco.Forms.Mvc.pdb</file>
+      <file>/bin/Umbraco.Forms.References.dll</file>
+      <file>/bin/Umbraco.Forms.UI.dll</file>
+      <file>/bin/Umbraco.Licensing.dll</file>
+      <file>/macroScripts/MvcRenderContourForm.cshtml</file>
+      <file>/umbraco/images/tray/contour.png</file>
+      <file>/umbraco/images/umbraco/icon_archive.png</file>
+      <file>/umbraco/images/umbraco/icon_datasource.gif</file>
+      <file>/umbraco/images/umbraco/icon_entries.gif</file>
+      <file>/umbraco/images/umbraco/icon_exportform.gif</file>
+      <file>/umbraco/images/umbraco/icon_folder.gif</file>
+      <file>/umbraco/images/umbraco/icon_form.gif</file>
+      <file>/umbraco/images/umbraco/icon_importform.gif</file>
+      <file>/umbraco/images/umbraco/icon_prevaluesource.gif</file>
+      <file>/umbraco/images/umbraco/icon_workflow.gif</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/add.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/add_grey.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/add_small.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/add_small_grey.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/bullet_arrow_down.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/bullet_arrow_up.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/contextMenuBg.gif</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/copy_small.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/datasource_small.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/delete.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/delete_small.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/delete_small_grey.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/edit.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/edit_small.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/edit_small_grey.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/entries.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/options.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/options_grey.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/remove_gray.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-bg_flat_0_aaaaaa_40x100.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-bg_flat_75_ffffff_40x100.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-bg_glass_55_fbf9ee_1x400.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-bg_glass_65_ffffff_1x400.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-bg_glass_75_dadada_1x400.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-bg_glass_75_e6e6e6_1x400.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-bg_glass_95_fef1ec_1x400.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-bg_highlight-soft_75_cccccc_1x100.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-icons_222222_256x240.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-icons_2e83ff_256x240.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-icons_454545_256x240.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-icons_888888_256x240.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/ui-icons_cd0a0a_256x240.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/workflow.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/img/x.png</file>
+      <file>/umbraco/plugins/umbracoContour/css/datatables.css</file>
+      <file>/umbraco/plugins/umbracoContour/css/dd.css</file>
+      <file>/umbraco/plugins/umbracoContour/css/dd_arrow.gif</file>
+      <file>/umbraco/plugins/umbracoContour/css/defaultform.css</file>
+      <file>/umbraco/plugins/umbracoContour/css/dialogs.css</file>
+      <file>/umbraco/plugins/umbracoContour/css/dialogsv7.css</file>
+      <file>/umbraco/plugins/umbracoContour/css/jquery-ui-1.8.18.custom.css</file>
+      <file>/umbraco/plugins/umbracoContour/css/style.css</file>
+      <file>/umbraco/plugins/umbracoContour/css/stylev7.css</file>
+      <file>/umbraco/plugins/umbracoContour/css/TableTools.css</file>
+      <file>/umbraco/plugins/umbracoContour/images/fieldtypes/checkbox.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/fieldtypes/checkboxlist.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/fieldtypes/datepicker.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/fieldtypes/dropdownlist.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/fieldtypes/hiddenfield.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/fieldtypes/passwordfield.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/fieldtypes/radiobuttonlist.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/fieldtypes/recaptcha-example.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/fieldtypes/recaptcha.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/fieldtypes/textarea.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/fieldtypes/textfield.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/fieldtypes/upload.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/recordviewericons/approve.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/recordviewericons/copy.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/recordviewericons/copy_hover.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/recordviewericons/csv.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/recordviewericons/csv_hover.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/recordviewericons/delete.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/recordviewericons/edit.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/recordviewericons/email.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/recordviewericons/print.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/recordviewericons/print_hover.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/recordviewericons/xls.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/recordviewericons/xls_hover.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/back.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/Calendar.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/down-arrow.gif</file>
+      <file>/umbraco/plugins/umbracoContour/images/drag.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/forward.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/icon_bug.gif</file>
+      <file>/umbraco/plugins/umbracoContour/images/icon_export.gif</file>
+      <file>/umbraco/plugins/umbracoContour/images/icon_field.gif</file>
+      <file>/umbraco/plugins/umbracoContour/images/icon_fieldset.gif</file>
+      <file>/umbraco/plugins/umbracoContour/images/icon_page.gif</file>
+      <file>/umbraco/plugins/umbracoContour/images/icon_preview.gif</file>
+      <file>/umbraco/plugins/umbracoContour/images/icon_settings.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/icon_workflow.gif</file>
+      <file>/umbraco/plugins/umbracoContour/images/sort_asc.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/sort_both.png</file>
+      <file>/umbraco/plugins/umbracoContour/images/sort_dsc.png</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/Frontend/contourform.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/designsurface.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery-1.3.2.min.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery-1.5.1.min.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery-ui-1.7.2.custom.min.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery-ui-1.8.11.min.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery.datatables.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery.dd.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery.inlineedit.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery.jeditable.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery.jfeed.pack.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery.simplemodal-1.2.3.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery.validate.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery.validate.min.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/jquery.validate.unobtrusive.min.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/TableTools.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/umbracoforms.designsurface.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/umbracoforms.documentmapper.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/umbracoforms.editformpage.eventhandlers.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/umbracoforms.eventhandlers.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/umbracoforms.fieldmapper.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/umbracoforms.formpickercreateformdialog.eventhandlers.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/umbracoforms.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/umbracoforms.limitedmode.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/umbracoforms.readonlymode.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/ZeroClipboard.js</file>
+      <file>/umbraco/plugins/umbracoContour/scripts/ZeroClipboard.swf</file>
+      <file>/umbraco/plugins/umbracoContour/templates/Comment form.ucf</file>
+      <file>/umbraco/plugins/umbracoContour/templates/Contact form.ucf</file>
+      <file>/umbraco/plugins/umbracoContour/tinymce/insertForm.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/Views/Forms/Readme.txt</file>
+      <file>/umbraco/plugins/umbracoContour/Views/Comment form.ucf</file>
+      <file>/umbraco/plugins/umbracoContour/Views/Contact form.ucf</file>
+      <file>/umbraco/plugins/umbracoContour/Views/ContourForm.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/FieldType.CheckBox.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/FieldType.CheckBoxList.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/FieldType.DatePicker.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/FieldType.DropDownList.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/FieldType.FileUpload.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/FieldType.HiddenField.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/FieldType.Password.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/FieldType.PasswordField.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/FieldType.RadioButtonList.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/Fieldtype.Recaptcha.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/FieldType.Textarea.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/FieldType.Textfield.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/Form.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/Script.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/Views/Web.config</file>
+      <file>/umbraco/plugins/umbracoContour/Views/_ViewStart.cshtml</file>
+      <file>/umbraco/plugins/umbracoContour/webservices/RecordActions.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/webservices/Records.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/xslt/DataTables_json.xslt</file>
+      <file>/umbraco/plugins/umbracoContour/xslt/DataTables_json_medtrust.xslt</file>
+      <file>/umbraco/plugins/umbracoContour/xslt/excel.xslt</file>
+      <file>/umbraco/plugins/umbracoContour/xslt/Html.xslt</file>
+      <file>/umbraco/plugins/umbracoContour/xslt/postAsXmlSample.xslt</file>
+      <file>/umbraco/plugins/umbracoContour/xslt/sendXsltEmailSample.xslt</file>
+      <file>/umbraco/plugins/umbracoContour/xslt/xml.xslt</file>
+      <file>/umbraco/plugins/umbracoContour/Analyzer.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/archiveForm.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/createForm.ascx</file>
+      <file>/umbraco/plugins/umbracoContour/createFormFromDataSourceDialog.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/Designer.asmx</file>
+      <file>/umbraco/plugins/umbracoContour/editDataSource.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/editForm.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/editFormEntries.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/editFormsSecurity.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/editFormWorkflows.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/editPrevalueProvider.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/editPrevalues.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/editPrevalueSource.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/editWorkflow.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/editWorkflowDialog.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/EntriesDashboard.ascx</file>
+      <file>/umbraco/plugins/umbracoContour/executeRecordAction.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/exportForm.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/ExportFormEntries.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/exportFormEntriesDialog.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/FeedProxy.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/FileProxy.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/formPickerChooseFormDialog.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/formPickerCreateFormDialog.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/formPickerDialog.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/Forms.asmx</file>
+      <file>/umbraco/plugins/umbracoContour/FormsDashboard.ascx</file>
+      <file>/umbraco/plugins/umbracoContour/importForm.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/previewFormDialog.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/previewFormDialogMvc.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/test.asmx</file>
+      <file>/umbraco/plugins/umbracoContour/UmbracoContour.config</file>
+      <file>/umbraco/plugins/umbracoContour/Upgrade.aspx</file>
+      <file>/umbraco/plugins/umbracoContour/Workflows.asmx</file>
+      <file>/umbraco/xslt/templates/Schema2/UmbracoContourListComments.xslt</file>
+      <file>/umbraco/xslt/templates/UmbracoContourListComments.xslt</file>
+      <file>/usercontrols/umbracoContour/EditForm.ascx</file>
+      <file>/usercontrols/umbracoContour/Installer.ascx</file>
+      <file>/usercontrols/umbracoContour/RenderForm.ascx</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+  <package id="16" version="0.0.6" url="" name="Contour Contrib" folder="05eac001-58a7-4b47-acaa-bb9fa45e8788" packagepath="" repositoryGuid="65194810-1f85-11dd-bd0b-0800200c9a66" packageGuid="9b11e874-1831-4035-99db-91e8d35b35e9" hasUpdate="False" enableSkins="False" skinRepoGuid="00000000-0000-0000-0000-000000000000">
+    <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+    <author url="http://contourcontrib.codeplex.com">Sebastiaan Janssen</author>
+    <readme><![CDATA[Contour contrib shares several DataSourceTypes, FieldTypes, PrevalueTypes and WorkflowTypes for Umbraco Contour.
+
+Updates
+v0.0.1 - WorkflowType: Send form through e-mail and specify the reply-to address (that way you can immediately reply to the sender for example).
+v0.0.2 - Added ReCaptcha fieldtype. Don't make it mandatory, it won't work. But if it's on the form it still is always mandatory. If you want to provide custom translations, just look at the API (http://code.google.com/apis/recaptcha/docs/customization.html) and turn the contents of "custom_translations" into one long comma-seperated string. Don't forget the private and public key!
+v0.0.3 - Updated workflows send e-mail and send XSLT transformed e-mail to support a reply-to address, send attachments and use dictionary items better.
+v0.0.4 - Ability to send e-mail through SSL protected SMTP servers (like Gmail)
+v0.0.5 - Ability to do custom theming of the Recaptcha fieldtype
+v0.0.6 - New "Are you a human" captcha field type added.
+
+For documentation, please refer to: http://contourcontrib.codeplex.com/documentation]]></readme>
+    <actions>
+    </actions>
+    <datatypes>
+    </datatypes>
+    <content nodeId="" loadChildNodes="False">
+    </content>
+    <templates>
+    </templates>
+    <stylesheets>
+    </stylesheets>
+    <documenttypes>
+    </documenttypes>
+    <macros>
+    </macros>
+    <files>
+      <file>/bin/AreYouAHuman.dll</file>
+      <file>/bin/Contour.Contrib.dll</file>
+      <file>/bin/Recaptcha.dll</file>
+      <file>/umbraco/plugins/umbracoContour/images/ayah-example.gif</file>
+      <file>/umbraco/plugins/umbracoContour/images/recaptcha-example.gif</file>
+    </files>
+    <languages>
+    </languages>
+    <dictionaryitems>
+    </dictionaryitems>
+    <loadcontrol>
+    </loadcontrol>
+  </package>
+</packages>

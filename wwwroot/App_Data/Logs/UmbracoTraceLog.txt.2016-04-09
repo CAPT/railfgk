@@ -1,0 +1,2 @@
+2016-04-09 06:40:33,307 [8] INFO  Umbraco.Core.PluginManager - [Thread 14] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 1 (took 23ms)
+2016-04-09 06:40:33,338 [8] INFO  Umbraco.Core.PluginManager - [Thread 14] Completed resolution of types of umbraco.presentation.umbracobase.RestExtension, found 3 (took 11ms)

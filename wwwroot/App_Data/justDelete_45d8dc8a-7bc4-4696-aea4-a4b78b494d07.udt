@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>* мастер-тип *</Name>
+    <Alias>masterDocType</Alias>
+    <Icon>.sprTreeDeveloperMacro</Icon>
+    <Thumbnail>template.png</Thumbnail>
+    <Description>Общий предок для всех документов</Description>
+    <AllowedTemplates />
+    <DefaultTemplate></DefaultTemplate>
+  </Info>
+  <Structure />
+  <GenericProperties>
+    <GenericProperty>
+      <Name>Адрес страницы (URL)</Name>
+      <Alias>umbracoUrlName</Alias>
+      <Type>ec15c1e5-9d90-422a-aa52-4f7622c63bea</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab></Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Альтернативные адреса</Name>
+      <Alias>umbracoUrlAlias</Alias>
+      <Type>ec15c1e5-9d90-422a-aa52-4f7622c63bea</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab></Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Скрывать в навигации</Name>
+      <Alias>umbracoNaviHide</Alias>
+      <Type>38b352c1-e9f8-4fd8-9324-9a2eab06d97a</Type>
+      <Definition>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</Definition>
+      <Tab></Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Документ для перенаправления</Name>
+      <Alias>umbracoRedirect</Alias>
+      <Type>158aa029-24ed-4948-939e-c3da209e5fba</Type>
+      <Definition>a6857c73-d6e9-480c-b6e6-f15f6ad11125</Definition>
+      <Tab></Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Документ для внутреннего перенаправления</Name>
+      <Alias>umbracoInternalRedirectId</Alias>
+      <Type>158aa029-24ed-4948-939e-c3da209e5fba</Type>
+      <Definition>a6857c73-d6e9-480c-b6e6-f15f6ad11125</Definition>
+      <Tab></Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+  </GenericProperties>
+  <Tabs />
+</DocumentType>

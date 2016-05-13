@@ -1,0 +1,3 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/pubInnerPage.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="headerAreaInner" runat="server"><umbraco:Macro Alias="[sec]InsertPicture" runat="server" /></asp:content>

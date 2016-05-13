@@ -1,0 +1,50 @@
+@using umbraco.NodeFactory
+
+@helper RenderPager(int numberOfItems, int itemsPerPage, int currentPage)
+{
+    var model = new Node();
+    var previousLabel = umbraco.library.GetDictionaryItem("[pager]previousLabel");
+    var nextLabel = umbraco.library.GetDictionaryItem("[pager]nextLabel");
+    var previousHint = umbraco.library.GetDictionaryItem("[pager]previousHint");
+    var nextHint = umbraco.library.GetDictionaryItem("[pager]nextHint");
+    var toPageHint = umbraco.library.GetDictionaryItem("[pager]toPageHint");
+
+    currentPage--;
+    var numberOfPages = numberOfItems % itemsPerPage == 0 ?
+        Math.Ceiling((decimal)(numberOfItems / itemsPerPage)) :
+        Math.Ceiling((decimal)(numberOfItems / itemsPerPage))+1;
+    if ((int)numberOfPages > 1)
+    {
+        var queryString = string.IsNullOrEmpty(Request.QueryString["query"]) ? "" : "?query=" + Request.QueryString["query"];
+        <div class="pager fright">
+            <ul>
+            @{
+                var Pages = Enumerable.Range(1, (int)numberOfPages);
+                if (currentPage > 0)
+                {
+                    <li class="prev"><a href="@(model.Url)page/@(currentPage)@queryString"
+                    title="@previousHint">@previousLabel</a></li>
+                }
+                foreach(var number in Pages)
+                {
+                    if (number-1 != currentPage)
+                    {
+                        var pageHint = string.Format(toPageHint, @number);
+                        <li><a href="@(model.Url)page/@(number)@queryString"
+                        title="@pageHint">@number</a></li>
+                    }
+                    else
+                    {
+                        <li><span>@number</span></li>
+                    }
+                }
+                if (currentPage < Pages.Count()-1)
+                {
+                    <li class="next"><a href="@(model.Url)page/@(currentPage+2)@queryString"
+                    title="@nextHint">@nextLabel</a></li>
+                }
+            }
+            </ul>
+        </div>
+    }
+}

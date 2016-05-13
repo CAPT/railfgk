@@ -1,0 +1,110 @@
+2013-09-27 01:20:03,005 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 16] Application shutdown. Reason: HostingEnvironment
+2013-09-27 01:20:06,661 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-09-27 01:20:06,771 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-09-27 01:20:06,786 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-09-27 01:20:07,396 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 586ms)
+2013-09-27 01:20:07,411 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-09-27 01:20:07,630 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-09-27 01:20:07,630 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 2ms)
+2013-09-27 01:20:07,661 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-09-27 01:20:07,943 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 17ms)
+2013-09-27 01:20:07,990 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-09-27 01:20:08,146 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1442ms)
+2013-09-27 01:20:09,255 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 3ms)
+2013-09-27 01:20:09,974 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-09-27 01:20:10,021 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 2ms)
+2013-09-27 09:20:01,099 [6] INFO  Umbraco.Core.PluginManager - [Thread 19] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2013-09-27 16:58:43,115 [6] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 1 (took 24ms)
+2013-09-27 17:00:21,396 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of umbraco.cms.businesslogic.media.IMediaFactory, found 2 (took 4ms)
+2013-09-27 17:00:22,161 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:00:23,599 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:00:24,708 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:00:25,880 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:00:27,052 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:00:28,349 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:00:29,474 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:00:30,677 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:00:31,802 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:00:33,036 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:00:34,240 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:00:35,365 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:00:36,521 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:00:37,724 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:00:38,880 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:00:39,990 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:00:41,240 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:00:42,411 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:00:43,646 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:00:44,677 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 7] Successful upload to parent ID: 2440
+2013-09-27 17:00:45,865 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:00:47,380 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:00:48,521 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:00:49,896 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:00:51,177 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:00:51,958 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:00:53,115 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:00:54,583 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:00:55,958 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:00:57,052 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:00:58,193 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:00:59,536 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:01:00,833 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:01:02,036 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:01:03,271 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:01:04,036 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:01:05,193 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:01:06,552 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:01:07,740 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:01:08,786 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:01:10,240 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:01:11,552 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:01:12,771 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:01:14,099 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:01:15,443 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:01:16,333 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:01:17,583 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:01:19,271 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:01:20,333 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:01:21,771 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:01:23,177 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:01:24,630 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:01:25,990 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:01:27,193 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:01:28,240 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:01:29,505 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:01:30,724 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:01:32,224 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:01:33,693 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 7] Successful upload to parent ID: 2440
+2013-09-27 17:01:34,849 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:01:36,380 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 7] Successful upload to parent ID: 2440
+2013-09-27 17:01:37,927 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:01:39,349 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:01:40,302 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:01:41,708 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 7] Successful upload to parent ID: 2440
+2013-09-27 17:01:43,271 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:01:45,193 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:01:46,552 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:01:47,974 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:01:49,349 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:01:50,802 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 7] Successful upload to parent ID: 2440
+2013-09-27 17:01:52,255 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:01:53,208 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 7] Successful upload to parent ID: 2440
+2013-09-27 17:01:54,802 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:01:56,240 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 7] Successful upload to parent ID: 2440
+2013-09-27 17:01:57,505 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:01:59,021 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:02:00,099 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:02:01,661 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 7] Successful upload to parent ID: 2440
+2013-09-27 17:02:03,036 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:02:04,411 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:02:05,286 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:02:06,615 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 21] Successful upload to parent ID: 2440
+2013-09-27 17:02:07,927 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 7] Successful upload to parent ID: 2440
+2013-09-27 17:02:09,286 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:02:10,536 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:02:12,036 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:02:13,396 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 20] Successful upload to parent ID: 2440
+2013-09-27 17:02:14,880 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 23] Successful upload to parent ID: 2440
+2013-09-27 17:02:16,333 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 12] Successful upload to parent ID: 2440
+2013-09-27 17:02:17,458 [6] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 8] Successful upload to parent ID: 2440
+2013-09-27 17:05:20,443 [6] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 20] Couldn't find any page with nodeId=1564. This is most likely caused by the page not being published.

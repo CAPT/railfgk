@@ -1,0 +1,40 @@
+﻿@using Unico
+
+@try
+{
+    var HARDCODED_Настройкисайта = 1070;
+    //System.Threading.Thread.Sleep(5000);
+    string name = Request.Form["name"];
+    string email = Request.Form["email"].Trim();
+    string message = Request.Form["message"];
+    if (
+        string.IsNullOrEmpty(name) ||
+        (!System.Text.RegularExpressions.Regex.IsMatch(email, Dictionary["[forms][common]EmailRegex"])) ||
+        string.IsNullOrEmpty(message)
+    )
+    {
+        throw new Exception("Неверные параметры пользователя.");
+    }
+    var settingsNode = uQuery.GetNode(HARDCODED_Настройкисайта);
+    if (settingsNode == null) { throw new Exception("Не найден узел настроек сервера."); }
+    var addrTo = settingsNode.GetProperty("sysToEmail").Value;
+    var mailSubject = Dictionary["[forms][feedback]MailSubject"];
+    var messageBody = (Dictionary["[forms][feedback]ContactsMailBody"] as string).NamedFormat(new {
+        name = name,
+        email = email,
+        message = message
+    });
+    //throw new Exception();
+    SiteUtils.SendMail(
+        null, null,
+        addrTo, "",
+        mailSubject,
+        messageBody,
+        false
+    );
+}
+catch (Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, 0, "Ошибка отправки сообщения обратной связи: " + e.ToString());
+    Response.StatusCode = 500;
+}

@@ -1,0 +1,6 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/pubInnerPage.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="contentAreaInner" runat="server">
+    <umbraco:Item field="contents" runat="server" />
+    <umbraco:Macro Alias="[pub]FeedbackForm" runat="server" />
+</asp:content>

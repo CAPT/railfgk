@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/master.master" AutoEventWireup="true" %>
+
+
+<asp:content ContentPlaceHolderId="headDataArea" runat="server">
+	
+	<asp:ContentPlaceHolder Id="headDataAreaInner" runat="server" />
+</asp:content>
+
+<asp:content ContentPlaceHolderId="headerArea" runat="server">
+	<asp:ContentPlaceHolder Id="headerAreaInner" runat="server" />
+	
+</asp:content>
+
+<asp:content ContentPlaceHolderId="contentArea" runat="server">
+    <div id="contentInner" class="genLay clear"><!--Content-->
+
+            <div class="leftBlock fleft"><!--LeftBlock-->
+                <umbraco:Macro Alias="[pub]SideMenu" runat="server" />
+            </div><!--EndLeftBlock-->
+
+            <div class="textBlock fleft"><!--TextBlock-->
+                <asp:ContentPlaceHolder Id="titleArea" runat="server"><h1><umbraco:Item field="title" useIfEmpty="metaTitle" runat="server" /></h1></asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder Id="contentAreaInner" runat="server"><umbraco:Item field="contents" runat="server" /></asp:ContentPlaceHolder>
+            </div><!--EndTextBlock-->
+
+        </div><!--EndContent-->
+</asp:content>

@@ -1,0 +1,45 @@
+2014-11-06 09:45:14,709 [8] INFO  Umbraco.Core.PluginManager - [Thread 23] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 7ms)
+2014-11-06 11:00:56,772 [8] ERROR umbraco.editorControls.tinymce.tinyMCEImageHelper - [Thread 60] Error resizing image in editor
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.DoResize(IDictionary attributes, Int32& finalWidth, Int32& finalHeight)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.cleanImages(String html)
+2014-11-06 11:01:35,350 [8] ERROR umbraco.editorControls.tinymce.tinyMCEImageHelper - [Thread 29] Error resizing image in editor
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.DoResize(IDictionary attributes, Int32& finalWidth, Int32& finalHeight)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.cleanImages(String html)
+2014-11-06 11:02:08,678 [8] ERROR umbraco.editorControls.tinymce.tinyMCEImageHelper - [Thread 43] Error resizing image in editor
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.DoResize(IDictionary attributes, Int32& finalWidth, Int32& finalHeight)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.cleanImages(String html)
+2014-11-06 11:30:28,412 [8] INFO  Umbraco.Core.PluginManager - [Thread 62] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 1 (took 24ms)
+2014-11-06 15:14:35,897 [8] INFO  Umbraco.Web.UmbracoApplication - [Thread 59] Application shutdown. Reason: HostingEnvironment
+2014-11-06 15:14:56,600 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2014-11-06 15:14:56,647 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2014-11-06 15:14:56,662 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 11ms)
+2014-11-06 15:14:56,944 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 272ms)
+2014-11-06 15:14:56,944 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 2ms)
+2014-11-06 15:14:57,084 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2014-11-06 15:14:57,084 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 1ms)
+2014-11-06 15:14:57,100 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2014-11-06 15:14:57,131 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 9ms)
+2014-11-06 15:14:57,162 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 3ms)
+2014-11-06 15:14:57,319 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 708ms)
+2014-11-06 15:14:57,819 [7] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2014-11-06 15:15:00,569 [7] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2014-11-06 15:15:00,600 [7] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 3ms)
+2014-11-06 19:59:22,100 [7] ERROR Umbraco.Web.UmbracoApplication - [Thread 28] An unhandled exception occurred
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.HttpRequest.get_PhysicalPath()
+   at UrlRewritingNet.Web.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

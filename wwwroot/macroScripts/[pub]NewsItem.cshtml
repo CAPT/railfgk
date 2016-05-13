@@ -1,0 +1,20 @@
+﻿@using umbraco.NodeFactory;
+
+@{
+    var model = Node as Node;
+    string imageUrl = "", alt = "";
+    try
+    {
+        var media = uQuery.GetMedia(model.GetProperty<string>("picture"));
+        imageUrl = media.GetImageUrl();
+        alt = media.GetProperty<string>("title");
+    }
+    catch { }
+    if (!string.IsNullOrEmpty(imageUrl))
+    {
+        <img class="imgLeft" src="@imageUrl" alt="@alt" />
+    }
+    @Html.Raw(model.GetProperty<string>("contents"))
+    <div class="clear"></div>
+    <p><a class="back" href="@model.Parent.Url">@model.Parent.Name</a></p>
+}

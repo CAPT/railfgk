@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>Vizioz.Relationships.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>Vizioz.Relationships.dll</orgName>
+    </file>
+    <file>
+      <guid>DocumentRelationsDataType.ascx</guid>
+      <orgPath>/usercontrols</orgPath>
+      <orgName>DocumentRelationsDataType.ascx</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>Vizioz.Relationships</name>
+      <version>0.3</version>
+      <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+      <url>http://www.vizioz.com</url>
+      <requirements>
+        <major>3</major>
+        <minor>0</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Vizioz Limited</name>
+      <website>http://www.vizioz.com</website>
+    </author>
+    <readme><![CDATA[When you install this package you should have a Relationship datatype, if not you will need to do the following:
+
+1) Add a datatype as a Umbraco Usercontrol Wrapper 
+2) Select the DocumentRelationsDateType.ascx
+3) Add this datatype to your document type 
+
+There is an optional web.config key called: 
+
+"ViziozNumberOfRelationships"
+
+This can have a numerical value indicating how many relationships are required, so for a two language site it is likely to be just "1" this is added in the same way as all the Umbraco properties.]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes>
+    <DataType Name="Relationship" Id="d15e1281-e456-4b24-aa86-1dda3e4299d5" Definition="d2ab9cd1-28bc-43fe-b366-1d8fef90a331">
+      <PreValues>
+        <PreValue Id="191" Value="usercontrols/DocumentRelationsDataType.ascx" />
+      </PreValues>
+    </DataType>
+  </DataTypes>
+</umbPackage>

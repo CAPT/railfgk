@@ -1,0 +1,40 @@
+2014-06-30 06:11:16,367 [8] INFO  Umbraco.Web.UmbracoApplication - [Thread 16] Application shutdown. Reason: HostingEnvironment
+2014-06-30 06:11:20,821 [8] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2014-06-30 06:11:20,852 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2014-06-30 06:11:20,852 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 12ms)
+2014-06-30 06:11:21,133 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 245ms)
+2014-06-30 06:11:21,133 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 2ms)
+2014-06-30 06:11:21,258 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2014-06-30 06:11:21,274 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 2ms)
+2014-06-30 06:11:21,274 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2014-06-30 06:11:21,430 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 3ms)
+2014-06-30 06:11:21,430 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 3ms)
+2014-06-30 06:11:21,492 [8] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 676ms)
+2014-06-30 06:11:22,039 [8] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2014-06-30 06:11:22,914 [8] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 2ms)
+2014-06-30 06:11:22,946 [8] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 2ms)
+2014-06-30 09:46:50,586 [8] INFO  Umbraco.Core.PluginManager - [Thread 19] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 3ms)
+2014-06-30 14:39:07,164 [8] ERROR umbraco.editorControls.tinymce.tinyMCEImageHelper - [Thread 63] Error resizing image in editor
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.DoResize(IDictionary attributes, Int32& finalWidth, Int32& finalHeight)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.cleanImages(String html)
+2014-06-30 14:40:05,039 [8] ERROR umbraco.editorControls.tinymce.tinyMCEImageHelper - [Thread 65] Error resizing image in editor
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.DoResize(IDictionary attributes, Int32& finalWidth, Int32& finalHeight)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.cleanImages(String html)
+2014-06-30 14:41:27,180 [8] ERROR umbraco.editorControls.tinymce.tinyMCEImageHelper - [Thread 67] Error resizing image in editor
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.DoResize(IDictionary attributes, Int32& finalWidth, Int32& finalHeight)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.cleanImages(String html)
+2014-06-30 15:36:13,602 [8] ERROR umbraco.editorControls.tinymce.tinyMCEImageHelper - [Thread 16] Error resizing image in editor
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.DoResize(IDictionary attributes, Int32& finalWidth, Int32& finalHeight)
+   at umbraco.editorControls.tinymce.tinyMCEImageHelper.cleanImages(String html)

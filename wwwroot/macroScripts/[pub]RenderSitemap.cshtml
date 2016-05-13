@@ -1,0 +1,45 @@
+﻿@using umbraco.NodeFactory
+
+@functions
+{
+    private bool nodeFilter(Node x)
+    {
+        string[] nodeTypeAliases = { "pubPerson", "subPerson", "subNewsItem", "pubNewsItem" };
+        //subAffiliate шаблона не имеет, но выводиться должен, т. к. с него настроен редирект
+        return (x.template != 0 || x.NodeTypeAlias == "subAffiliate") && !nodeTypeAliases.Contains(x.NodeTypeAlias);
+    }
+}
+
+@helper RenderLevel(Node node)
+{
+    @:<li>
+    var title = node.GetProperty<string>("title");
+    if (string.IsNullOrEmpty(title)) { title = node.Name; }
+    var children = node.GetChildNodes().Where(nodeFilter);
+    <a href="@node.Url" title="@node.Name">@title</a>
+    if (children.Any())
+    {
+        <ul>
+        @foreach (var subNode in children)
+        {
+            @RenderLevel(subNode)
+        }
+        </ul>
+    }
+    @:</li>
+}
+
+@try
+{
+    <ul>
+    @foreach (var node in (Node as Node).GetAncestorByPathLevel(1).GetChildNodes().Where(x => x.NodeTypeAlias != "pubSiteMap"))
+    {
+        @RenderLevel(node);
+    }
+    </ul>
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}

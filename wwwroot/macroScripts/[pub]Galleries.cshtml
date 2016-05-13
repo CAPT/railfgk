@@ -1,0 +1,96 @@
+﻿@using umbraco.NodeFactory
+@using umbraco.cms.businesslogic.Tags
+@using Refactored.UmbracoViewCounter
+
+@helper RenderFilter(IEnumerable<Node> nodes)
+{
+    //Ввиду многоязычности теги одной категории встречаются в разных языковых ветвях, нужно выбрать только теги, принадлежащие текущим обрабатываемым узлам
+    /*IEnumerable<Tag> tags = null;
+    try { tags = Tag.GetTags("galleries"); } catch { }*/
+    var tags = nodes.SelectMany<Node, Tag>(x => Tag.GetTags(x.Id)).Distinct(new Unico.TagEqualityComparer());
+    if (tags.Count() > 1)
+    {
+        <div class="catFilter">
+            <div class="header">
+                <a href="javascript:void(0)">@Dictionary["[galleries]filterCaption"]</a>
+            </div>
+            <div class="catFilterBody" id="catFilterBody" style="display: none;">
+                <a href="javascript:void(0)">@Dictionary["[galleries]allTagsCaption"]</a>
+                @foreach (var tag in tags)
+                {
+                    <a href="javascript:void(0)" class="selected">@tag.TagCaption</a>
+                }
+            </div>
+        </div>
+    }
+}
+
+@{
+    var galleries = (Node as Node).GetChildNodes();
+    if (galleries.Any())
+    {
+        string imageUrl = "", title, tags = "";
+        int pictureQty = 0;
+        if (galleries.Count() > 1) { @RenderFilter(galleries) }
+        <div class="photoAlbumRow clear">
+        @foreach (var gallery in galleries.OrderByDescending(x => x.GetProperty<DateTime>("date")))
+        {
+            try { pictureQty = uQuery.GetMedia(gallery.GetProperty<string>("imageFolder")).GetChildMedia().Count(); }
+            catch { pictureQty = 0; }
+            if (pictureQty == 0) { continue; }
+            try { imageUrl = "/thumb/232/135/" + uQuery.GetMedia(gallery.GetProperty<string>("picture")).GetImageUrl().Substring(7) + ".ashx"; }
+            catch { imageUrl = ""; }
+            title = gallery.GetProperty<string>("title");
+            if (title == "") { title = gallery.Name; }
+            try { tags = string.Join(",", Tag.GetTags(gallery.Id, "galleries").Select(x => x.TagCaption)); }
+            catch { tags = ""; }
+            <div class="photoAlbumItem">
+                @if (!string.IsNullOrEmpty(imageUrl)) { <img src="@imageUrl" width="232" height="135" alt="" /> }
+                <div class="header">@title</div>
+                <div class="intro">
+                    <span class="date">@(gallery.GetProperty<DateTime>("date").ToString("d"))</span>
+                    <h2>@title</h2>
+                    <div class="photoAlbumItemCounter">@Dictionary["[galleries]qtyCaption"] @pictureQty<br /><span>@ViewCount.GetViewCount(gallery.Id)</span></div>
+                    <div class="toAll"><a href="@gallery.Url" rel="@tags">@Dictionary["[galleries]browseCaption"]</a></div>
+                </div>
+            </div>
+        }
+        </div>
+    }
+}
+
+<script type="text/javascript">
+    $(".catFilter .header, .catFilterBody a").on("selectstart, mousedown", function() { return false; });
+    $(".catFilter .header a").on("click", function() {
+        $(".catFilterBody").slideToggle(50);
+    });
+    $(".catFilterBody a").on("click", function() {
+        var $this = $(this);
+        $this.toggleClass("selected");
+        if ($this.index() == 0) {
+            $(".catFilterBody a").slice(1).addClass("selected");
+            $this.removeClass("selected");
+        }
+        var selectedTags = [];
+        var $tagElements = $(".catFilterBody a.selected");
+        $(".catFilterBody a.selected").each(function() {
+            selectedTags[selectedTags.length] = $(this).text();
+        });
+        function cross(tags1, tags2) {
+            for (var i in tags1) {
+                for (var j in tags2) {
+                    if (tags1[i] == tags2[j]) return true;
+                }
+            }
+            return false;
+        }
+        $(".photoAlbumItem").each(function() {
+            if (cross(selectedTags, $(this).find("a").attr("rel").split(","))) $(this).show();
+            else $(this).hide();
+        });
+    });
+    $(".photoAlbumItem").on({
+        mouseenter: function() { $(this).find(".intro").fadeIn(100); },
+        mouseleave:  function() { $(this).find(".intro").fadeOut(100); }
+    });
+</script>

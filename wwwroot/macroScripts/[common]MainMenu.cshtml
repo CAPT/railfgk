@@ -1,0 +1,34 @@
+﻿@using umbraco.NodeFactory
+
+@try
+{
+    var model = Node as Node;
+    var homePage = model.GetAncestorByPathLevel(1);
+    var nodes = homePage.GetChildNodes().Where(x => x.GetProperty<int>("umbracoNaviHide") == 0);
+    <table><tbody><tr>
+    @if (model.Id != homePage.Id)
+    {
+        <td class="first"><table><tbody><tr><td><img alt="" src="/dsgn/rl.png" /></td><td class="middle"><a href="@homePage.Url">@Html.Raw(homePage.Name)</a></td><td><img alt="" src="/dsgn/rr.png" /></td></tr></tbody></table></td>
+    }
+    else
+    {
+        <td class="first"><table><tbody><tr><td><img alt="" src="/dsgn/gl.png" /></td><td class="middle middleActive"><a href="@homePage.Url">@Html.Raw(homePage.Name)</a></td><td><img alt="" src="/dsgn/gr.png" /></td></tr></tbody></table></td>
+    }
+    @foreach (var node in nodes)
+    {
+        if (!model.Path.Contains(node.Id.ToString()))
+        {
+            <td><table><tbody><tr><td><img alt="" src="/dsgn/rl.png" /></td><td class="middle"><a href="@node.Url">@Html.Raw(node.Name)</a></td><td><img alt="" src="/dsgn/rr.png" /></td></tr></tbody></table></td>
+        }
+        else
+        {
+            <td><table><tbody><tr><td><img alt="" src="/dsgn/gl.png" /></td><td class="middle middleActive"><a href="@node.Url">@Html.Raw(node.Name)</a></td><td><img alt="" src="/dsgn/gr.png" /></td></tr></tbody></table></td>
+        }
+    }
+    </tr></tbody></table>
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}

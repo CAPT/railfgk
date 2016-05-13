@@ -1,0 +1,42 @@
+2015-06-30 00:14:24,333 [7] ERROR Umbraco.Web.UmbracoApplication - [Thread 32] An unhandled exception occurred
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.HttpRequest.get_PhysicalPath()
+   at UrlRewritingNet.Web.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-30 01:10:34,099 [7] ERROR Umbraco.Web.UmbracoApplication - [Thread 29] An unhandled exception occurred
+System.UriFormatException: Invalid URI: The hostname could not be parsed.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Web.Util.UriUtil.BuildUriImpl(String scheme, String serverName, String port, String path, String queryString, Boolean useLegacyRequestUrlGeneration)
+   at System.Web.HttpRequest.BuildUrl(Func`1 pathAccessor)
+   at System.Web.HttpRequest.get_Url()
+   at Umbraco.Web.UmbracoModule.BeginRequest(HttpContextBase httpContext)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-30 08:53:57,521 [7] INFO  Umbraco.Core.PluginManager - [Thread 32] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2015-06-30 15:21:32,349 [7] INFO  Umbraco.Core.PluginManager - [Thread 37] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 1 (took 42ms)
+2015-06-30 15:21:44,286 [7] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.cms.businesslogic.media.IMediaFactory, found 2 (took 7ms)
+2015-06-30 15:21:45,364 [7] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 15] Successful upload to parent ID: 1395
+2015-06-30 15:27:02,958 [7] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 37] Successful upload to parent ID: 1404
+2015-06-30 15:32:55,771 [7] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 17] Successful upload to parent ID: 1396
+2015-06-30 15:35:16,021 [7] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 17] Successful upload to parent ID: 1400
+2015-06-30 15:38:16,396 [7] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 31] Successful upload to parent ID: 1403
+2015-06-30 17:08:24,411 [7] INFO  Umbraco.Web.UmbracoApplication - [Thread 14] Application shutdown. Reason: HostingEnvironment
+2015-06-30 17:08:44,989 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2015-06-30 17:08:45,052 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2015-06-30 17:08:45,068 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 10ms)
+2015-06-30 17:08:45,364 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 278ms)
+2015-06-30 17:08:45,364 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 2ms)
+2015-06-30 17:08:45,568 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2015-06-30 17:08:45,568 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 2ms)
+2015-06-30 17:08:45,583 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2015-06-30 17:08:45,614 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 16ms)
+2015-06-30 17:08:45,646 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 3ms)
+2015-06-30 17:08:45,802 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 806ms)
+2015-06-30 17:08:46,802 [7] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2015-06-30 17:08:53,958 [7] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 4ms)
+2015-06-30 17:08:53,989 [7] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 3ms)

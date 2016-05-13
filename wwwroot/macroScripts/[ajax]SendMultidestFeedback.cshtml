@@ -1,0 +1,68 @@
+﻿@using Unico
+@try
+{
+    var HARDCODED_Настройкисайта = 1070;
+    //System.Threading.Thread.Sleep(5000);
+    string name = Request.Form["name"];
+    string email = Request.Form["email"].Trim();
+    string phone = Request.Form["phone"];
+    string category = Request.Form["category"];	
+    string message = Request.Form["message"];
+	
+    string category_name;
+    string addrTo="";
+	
+	
+	
+	
+    if (
+        string.IsNullOrEmpty(name) ||
+        (!System.Text.RegularExpressions.Regex.IsMatch(email, Dictionary["[forms][common]EmailRegex"])) ||
+        string.IsNullOrEmpty(message)
+    )
+    {
+        throw new Exception("Неверные параметры пользователя.");
+    }
+    var settingsNode = uQuery.GetNode(HARDCODED_Настройкисайта);
+    if (settingsNode == null) { throw new Exception("Не найден узел настроек сервера."); }
+	switch (category)
+	{
+	    case "1":
+    addrTo = settingsNode.GetProperty("msgToEmail").Value;
+    category_name = @Dictionary["[forms][feedback]Category1"];		
+    break;
+	    case "2":
+    addrTo = settingsNode.GetProperty("qualityToEmail").Value;
+    category_name = @Dictionary["[forms][feedback]Category2"];
+    break;
+	    case "3":
+    addrTo = settingsNode.GetProperty("diverieToEmail").Value;
+    category_name = @Dictionary["[forms][feedback]Category3"];
+    break;
+	    default:
+    addrTo = settingsNode.GetProperty("msgToEmail").Value;
+    category_name = @Dictionary["[forms][feedback]Category1"];
+    break;
+	}
+    var mailSubject = Dictionary["[forms][feedback]MailSubject"];
+    var messageBody = (Dictionary["[forms][feedback]MailMessageBody"] as string).NamedFormat(new {
+        name = name,
+        email = email,
+		category = category_name,	
+        phone = phone,
+        message = message
+    });
+    //throw new Exception();
+    SiteUtils.SendMail(
+        null, null,
+        addrTo, "",
+        mailSubject,
+        HttpUtility.HtmlDecode(messageBody),
+        true
+    );
+}
+catch (Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, 0, "Ошибка отправки сообщения обратной связи: " + e.ToString());
+    Response.StatusCode = 500;
+}

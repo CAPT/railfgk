@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/pubInnerPage.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="headDataAreaInner" runat="server">
+	
+</asp:content>
+
+<asp:content ContentPlaceHolderId="headerAreaInner" runat="server">
+	
+</asp:content>
+
+<asp:content ContentPlaceHolderId="titleArea" runat="server">
+	
+</asp:content>
+
+<asp:content ContentPlaceHolderId="contentAreaInner" runat="server">
+	<p>ОАО «ФГК» - дочернее общество ОАО «РЖД» - создано в соответствии с решением Совета директоров ОАО «РЖД» 26 августа 2010 года и является одним из крупнейших грузовых железнодорожных операторов в России. Согласно бизнес-плану, доля ФГК в общем грузообороте по сети российских железных дорог к 2015 году достигнет 22,5%.</p>
+	<ul>
+		<li>Перевозки чёрных металлов</li>
+		<li>Перевозки угля</li>
+		<li>Перевозки минеральных грузов и удобрений</li>
+		<li>Перевозки строительных грузов</li>
+	</ul>	
+	<ol>
+		<li>Перевозки чёрных металлов</li>
+		<li>Перевозки угля</li>
+		<li>Перевозки минеральных грузов и удобрений</li>
+		<li>Перевозки строительных грузов</li>
+	</ol>					
+				
+	<table class="tbl">
+		<thead>
+			<td colspan="2">Годовая бухгалтерская отчетность за 2011 год</td>
+		</thead>
+		<tbody>
+			<tr class="splitter"><td colspan="2">&nbsp;</td></tr>
+			<tr><th>dcsdv</th><th>dcsdv</th></tr>
+			<tr class="splitter"><td colspan="2">&nbsp;</td></tr>
+			<tr class="first"><td>dcsdv</td><td>dcsdv</td></tr>
+			<tr><td>dcsdv</td><td>dcsdv</td></tr>
+		</tbody>
+	</table>
+</asp:content>

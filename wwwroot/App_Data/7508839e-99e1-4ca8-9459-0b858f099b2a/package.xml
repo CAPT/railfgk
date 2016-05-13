@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>FergusonMoriyama.Umbraco.ExamineGui.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>FergusonMoriyama.Umbraco.ExamineGui.dll</orgName>
+    </file>
+    <file>
+      <guid>Actions.asmx</guid>
+      <orgPath>/umbraco/plugins/ExamineDash</orgPath>
+      <orgName>Actions.asmx</orgName>
+    </file>
+    <file>
+      <guid>IndexStatus.ascx</guid>
+      <orgPath>/usercontrols</orgPath>
+      <orgName>IndexStatus.ascx</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>Examine Dashboard</name>
+      <version>1.0</version>
+      <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+      <url>http://www.darren-ferguson.com/</url>
+      <requirements>
+        <major>4</major>
+        <minor>8</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Darren Ferguson</name>
+      <website>http://www.darren-ferguson.com/</website>
+    </author>
+    <readme><![CDATA[Copyright (c) 2012 Moriyama
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+  <Actions>
+    <Action runat="install" undo="true" alias="addDashboardSection" dashboardAlias="ExamineDash">
+      <section>
+        <areas>
+          <area>developer</area>
+        </areas>
+        <tab caption="Examine">
+          <control>/usercontrols/IndexStatus.ascx</control>
+        </tab>
+      </section>
+    </Action>
+  </Actions>
+</umbPackage>

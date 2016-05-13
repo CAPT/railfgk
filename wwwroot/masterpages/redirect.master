@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+<%@ Import Namespace="umbraco.BusinessLogic" %>
+<%@ Import Namespace="umbraco.cms.businesslogic.web" %>
+<%@ Import Namespace="umbraco.NodeFactory" %>
+<script runat="server">
+  void Page_Load(object sender, System.EventArgs e)
+  {
+    // Get the current page
+    Node currentNode = Node.GetCurrent();
+    // verify that the property "URL" is not null and that it is not empty; then redirect 
+    if (currentNode.GetProperty("URL") != null && currentNode.GetProperty("URL").Value.ToString().Trim() != "")
+    {
+        Response.Redirect(currentNode.GetProperty("URL").Value.ToString().Trim());
+    }
+  }
+</script>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+</asp:Content>

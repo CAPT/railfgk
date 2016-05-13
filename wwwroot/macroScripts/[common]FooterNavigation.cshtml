@@ -1,0 +1,15 @@
+﻿@using umbraco.NodeFactory
+
+@{
+    var nodes = uQuery.GetNodesByCsv((Node as Node).GetAncestorByPathLevel(1).GetProperty<string>("footerNavigation"));
+    if (nodes.Any())
+    {
+        int currentNodeId = Node.Id;
+        <div class="footerMenu fleft"><ul>
+        @foreach (var node in nodes)
+        {
+            <li>@if (node.Id == currentNodeId) {<span>@node.Name</span>} else {<a href="@node.Url">@node.Name</a>}</li>
+        }
+        </ul></div>
+    }
+}

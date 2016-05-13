@@ -1,0 +1,108 @@
+﻿@using umbraco.NodeFactory
+@using umbraco.cms.businesslogic.Tags
+@using uComponents.DataTypes.UrlPicker.Dto
+@using Refactored.UmbracoViewCounter
+
+@helper RenderFilter(IEnumerable<Node> nodes)
+{
+    //Ввиду многоязычности теги одной категории встречаются в разных языковых ветвях, нужно выбрать только теги, принадлежащие текущим обрабатываемым узлам
+    /*IEnumerable<Tag> tags = null;
+    try { tags = Tag.GetTags("videoArchive"); } catch { }*/
+    var tags = nodes.SelectMany<Node, Tag>(x => Tag.GetTags(x.Id, "videoArchive")).Distinct(new Unico.TagEqualityComparer());
+    if (tags.Count() > 1)
+    {
+        <div class="catFilter">
+            <div class="header">
+                <a href="javascript:void(0)">@Dictionary["[videoArchive]filterCaption"]</a>
+            </div>
+            <div class="catFilterBody" id="catFilterBody" style="display: none;">
+                <a href="javascript:void(0)">@Dictionary["[videoArchive]allTagsCaption"]</a>
+                @foreach (var tag in tags)
+                {
+                    <a href="javascript:void(0)" class="selected">@tag.TagCaption</a>
+                }
+            </div>
+        </div>
+    }
+}
+
+@try
+{
+    var videos = (Node as Node).GetChildNodes();
+    if (videos.Any())
+    {
+        string imageUrl = "", videoUrl = "", title, tags = "";
+        DateTime date;
+        if (videos.Count() > 1) { @RenderFilter(videos) }
+        <ul class="videoArchiveList">
+        @foreach (var video in videos.OrderByDescending(x => x.GetProperty<string>("date") == "" ? x.CreateDate : x.GetProperty<DateTime>("date")))
+        {
+            try
+            {
+                //imageUrl = "/thumb/192/141/" + uQuery.GetMedia(video.GetProperty<string>("picture")).GetImageUrl().Substring(7) + ".ashx";
+                imageUrl = uQuery.GetMedia(video.GetProperty<string>("picture")).GetImageUrl();
+            }
+            catch { imageUrl = ""; }
+            try { videoUrl = UrlPickerState.Deserialize(video.GetProperty<string>("videoUrl")).Url; }
+            catch { videoUrl = ""; }
+            if (string.IsNullOrEmpty(videoUrl)) { continue; }
+            title = video.GetProperty<string>("title");
+            if (title == "") { title = video.Name; }
+            if (string.IsNullOrEmpty(video.GetProperty<string>("date")))
+            { date = video.CreateDate; }
+            else
+            { date = video.GetProperty<DateTime>("date"); }
+            try { tags = video.GetProperty<string>("tags"); }
+            catch { tags = ""; }
+            <li id="id@(video.Id)">
+                @if (!string.IsNullOrEmpty(imageUrl)) { <div class="movieBlock fleft"><a href="@videoUrl" rel="@tags"><span style="display: none;">@video.Id</span><img src="@imageUrl" width="192" height="141" alt="" /></a></div> }
+                <span class="videoArchiveDate small">@date.ToString("d")</span>
+                <div class="videoArchiveHeader"><a href="@videoUrl" rel="@tags"><span style="display: none;">@video.Id</span>@title</a></div>
+                <div class="toMedia">@tags</div>
+                <div class="videoArchiveCounter">@Dictionary["[videoArchive]viewsCaption"] @ViewCount.GetViewCount(video.Id)</div>
+            </li>
+        }
+        </ul>
+    }
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}
+
+<script type="text/javascript">
+    $(".catFilter .header, .catFilterBody a").on("selectstart, mousedown", function() { return false; });
+    $(".catFilter .header a").on("click", function() {
+        $(".catFilterBody").slideToggle(50);
+    });
+    $(".catFilterBody a").on("click", function() {
+        var $this = $(this);
+        $this.toggleClass("selected");
+        if ($this.index() == 0) {
+            $(".catFilterBody a").slice(1).addClass("selected");
+            $this.removeClass("selected");
+        }
+        var selectedTags = [];
+        var $tagElements = $(".catFilterBody a.selected");
+        $(".catFilterBody a.selected").each(function() {
+            selectedTags[selectedTags.length] = $(this).text();
+        });
+        function cross(tags1, tags2) {
+            for (var i in tags1) {
+                for (var j in tags2) {
+                    if (tags1[i] == tags2[j]) return true;
+                }
+            }
+            return false;
+        }
+        $(".videoArchiveList li").each(function() {
+            if (cross(selectedTags, $(this).find("a").attr("rel").split(","))) $(this).show();
+            else $(this).hide();
+        });
+    });
+    $(".videoArchiveList .toMedia").each(function() {
+        var $this = $(this);
+        $this.text($this.text().split(",").join(", "));
+    });
+</script>

@@ -1,0 +1,104 @@
+﻿@using umbraco.NodeFactory
+
+@using Unico
+
+@helper RenderForm(string queryText)
+{
+    string defaultValue = Dictionary["[search][common]Caption"];
+    string hint = Dictionary["[search][common]Hint"];
+    <div class="bigSearch clear">
+        <form id="bigSearchForm" action="@Node.Url" method="get">
+            <fieldset>
+                <input type="text" name="query" value="@(string.IsNullOrEmpty(queryText) ? defaultValue : queryText)" class="txt txtSmallSearch fleft" />
+                <input type="image" src="/dsgn/icoSearch.png" title="@hint" class="btnSmallSearch fleft" />
+            </fieldset>
+        </form>
+    </div>
+    <script type="text/javascript">
+    //<![CDATA[
+        $("#bigSearchForm").on({
+            focus: function() { if (this.value == '@defaultValue') this.value = ''; },
+            blur:  function() { if (this.value == '') this.value = '@defaultValue'; }
+        }, ":text");
+    //]]>
+    </script>
+}
+
+@try
+{
+    string queryTextRaw = Parameter.queryText; //используется в выводе пользователю
+    string queryText = System.Text.RegularExpressions.Regex.Replace(queryTextRaw, @"[-+*!?()\[\]{}:^~]", " ").Trim(); //используется собственно для поиска
+    @RenderForm(queryTextRaw)
+    if (!string.IsNullOrEmpty(queryText))
+    {
+        string[] terms = queryText.Split((char[])null, StringSplitOptions.RemoveEmptyEntries);
+        Examine.ISearchResults searchResults = null;
+        int resultsCount = 0;
+        try
+        {
+            string[] searchFields = { "nodeName", "title", "intro", "contents", "metaTitle", "metaKeywords", "metaDescription", "name", "position", "bioText", "tags" };
+            var luceneString = terms.Aggregate("", (a, x) => a + searchFields.Aggregate("", (b, y) => b + y + ":" + x + " ") + " ");
+            var searcher = ExamineManager.Instance.SearchProviderCollection["SiteContentSearcher"];
+            var examineQuery = searcher.CreateSearchCriteria().RawQuery(luceneString);
+            searchResults = searcher.Search(examineQuery);
+            resultsCount = searchResults.TotalItemCount;
+        }
+        catch {}
+        if (resultsCount > 0)
+        {
+            int pageSize;
+            int.TryParse(Parameter.pageSize, out pageSize);
+            if (pageSize <= 0) { pageSize = 20; }
+            int pageNum; //нумеруется с единицы
+            int.TryParse(Parameter.pageNum, out pageNum);
+            if (pageNum <= 0) { pageNum = 1; }
+            //startItem и stopItem также нумеруются с единицы
+            int startItem = (pageSize * (pageNum - 1)) + 1;
+            int stopItem = startItem + pageSize - 1;
+            if (stopItem > resultsCount) { stopItem = resultsCount; }
+
+            if (resultsCount == 1)
+            {
+                <p>@Html.Raw((Dictionary["[search]ResultFound"] as string).NamedFormat(new {
+                    query = queryTextRaw
+                }))</p>
+            }
+            else
+            {
+                <p>@Html.Raw((Dictionary["[search]ResultsFound"] as string).NamedFormat(new {
+                    query = queryTextRaw,
+                    resultsCount = resultsCount,
+                    startItem = startItem,
+                    stopItem = stopItem
+                }))</p>
+            }
+            string url;
+            <ol start="@startItem">
+            @foreach (var result in ((IEnumerable<Examine.SearchResult>)searchResults).Skip((pageNum - 1) * pageSize).Take(pageSize))
+            {
+                if (result["nodeTypeAlias"] == "pubVideo")
+                { url = uQuery.GetNode(result["parentID"]).Url + "#id" + result.Id.ToString(); }
+                else
+                { url = library.NiceUrl(result.Id); }
+                <li>
+                    <b><a href="@url">@(result.Fields.Keys.Contains("title") ? result.Fields["title"] : result.Fields["nodeName"])</a></b>
+                    @if (result.Fields.Keys.Contains("contents"))
+                    {
+                        <div>@Html.Raw(library.TruncateString(library.StripHtml(@result.Fields["contents"]), 250, "&hellip;"))</div>
+                    }
+                </li>
+            }
+            </ol>
+            @UnicoGlobalHelpers.RenderPager(resultsCount, pageSize, pageNum)
+        }
+        else
+        {
+            <p>@Html.Raw((Dictionary["[search]ResultsNotFound"] as string).NamedFormat(new {query = queryTextRaw}))</p>
+        }
+    }
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}

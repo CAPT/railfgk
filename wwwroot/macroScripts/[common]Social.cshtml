@@ -1,0 +1,23 @@
+﻿@{
+    var HARDCODED_Настройкисайта = 1070;
+    var settingsNode = uQuery.GetNode(HARDCODED_Настройкисайта);
+    if (settingsNode != null)
+    {
+        var vkLink = settingsNode.GetProperty<string>("socialVK");
+        bool vk = !string.IsNullOrEmpty(vkLink);
+        var facebookLink = settingsNode.GetProperty<string>("socialFB");
+        bool facebook = !string.IsNullOrEmpty(facebookLink);
+        var twitterLink = settingsNode.GetProperty<string>("socialTW");
+        bool twitter = !string.IsNullOrEmpty(twitterLink);
+        if (vk && facebook && twitter)
+        {
+            <div class="socIcons fright">
+            @if (vk) {<a rel="nofollow" href="@vkLink" title="VK.com"><span class="vkontakte">&nbsp;</span></a>}
+            @if (facebook) {<a rel="nofollow" href="@facebookLink" title="Facebook"><span class="facebook">&nbsp;</span></a>}
+            @if (twitter) {<a rel="nofollow" href="@twitterLink" title="Twitter"><span class="twitter">&nbsp;</span></a>}
+                   
+			<a class="feedbacklink" href="/about/feedback" >Обратная связь</a>
+				</div>  
+        }
+    }
+}

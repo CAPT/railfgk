@@ -1,0 +1,9 @@
+﻿@if (Model.photo != "") {
+				<div class="sliderBlock">
+					<div class="sliderMain genLay">
+						<ul class="frames">
+							<li class="current"><div style="background-image: url('@Model.Media("photo").Url')"></div></li>						
+						</ul>					
+					</div>
+				</div>	
+			}

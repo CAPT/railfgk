@@ -1,0 +1,347 @@
+﻿@using umbraco.NodeFactory
+@using System.Web.UI.HtmlControls
+
+
+
+@try
+{
+    var HARDCODED_Настройкисайта = 1070;
+    if (uQuery.GetNode(HARDCODED_Настройкисайта).GetProperty<bool>("enableFeedback"))
+    {
+	
+		<div id="disclaimer"><p>
+  С помощью формы обратной связи вы можете оставить следующие категории обращений:
+<li>обращения коммерческого характера;</li>
+<p style="margin-bottom: 1.5em;"><li>жалобы и предложения относительно качества предоставляемых услуг;</li></p>
+	
+<p style="margin-bottom: 0em; "><li>обращения по предупреждению неэффективных действий/бездействия сотрудников ОАО «ФГК».<br>
+<p style="margin-top: 0.4em; margin-left: 0.8em; margin-right: 4.8em; font-size: 90%;" align="justify"  ><i>Все обращения данной категории будут рассмотрены Управлением внутреннего контроля ОАО «ФГК»
+	в режиме строгой конфиденциальности в соответствии с внутренними документами АО «ФГК». Управление внутреннего контроля ОАО «ФГК» 
+	является независимым от менеджмента Общества и подчиняется Комитету по аудиту, кадрам и вознаграждениям при совете директоров ОАО «ФГК». 
+	Обращения по данному вопросу Вы также можете направить на адрес электронной почты <a href="mailto:doverie@railfgk.ru">doverie@railfgk.ru.</a>
+</i></p></li>
+</p><p style="margin-right: 3.8em;">
+Чтобы оставить обращение, выберите соответствующий пункт в графе «Категория обращения», укажите ваши контактные данные и суть обращения. 
+</p></p>
+</div>
+        <div class="forms fbForm">
+            <div class="header zoom">@Dictionary["[forms][feedback]Caption"]</div>
+            <div class="formsBlock">
+                <form id="fbForm" method="post" action="/SendMultidestFeedback1" enctype="multipart/form-data" runat="server">
+                    <fieldset>
+                        <div class="infoMsg">@Dictionary["[forms][feedback]SuccessMess"]</div>
+							
+                        <span class="errorMsg" style="display: none;">@Dictionary["[forms][feedback]CategoryValMess"]</span>
+                        <label for="category">@Dictionary["[forms][feedback]CategoryLabel"] <sup></sup></label>
+						<select  title="@Dictionary["[forms][feedback]CategoryHint"]" class="txt" id="category" name="category">
+							<option value="1">@Dictionary["[forms][feedback]Category1"]</option>
+							<option value="2">@Dictionary["[forms][feedback]Category2"]</option>
+							<option value="3" title="@Dictionary["[forms][feedback]Category3Hint"]">@Dictionary["[forms][feedback]Category3"]</option>
+ 							 						</select>
+							
+
+
+
+
+							
+						<span class="errorMsg" style="display: none;">@Dictionary["[forms][feedback]NameValMess"]</span>
+                        <label for="name">@Dictionary["[forms][feedback]NameLabel"] <sup class="isrequired"></sup></label>
+                        <input type="text" class="txt" title="@Dictionary["[forms][feedback]NameHint"]" id="name" name="name" />
+							
+                        <span class="errorMsg" style="display: none;">@Dictionary["[forms][feedback]EmailValMess"]</span>
+                        <label for="email">@Dictionary["[forms][feedback]EmailLabel"] <sup class="isrequired"></sup></label>
+                        <input type="text" class="txt" title="@Dictionary["[forms][feedback]EmailHint"]" id="email" name="email" />
+
+                        <span class="errorMsg" style="display: none;">@Dictionary["[forms][feedback]PhoneValMess"]</span>
+                        <label for="phone">@Dictionary["[forms][feedback]PhoneLabel"] <sup class="isrequired"></sup></label>
+                        <input type="text" class="txt" title="@Dictionary["[forms][feedback]PhoneHint"]" id="phone" name="phone" />
+
+                        <span class="errorMsg" style="display: none;">@Dictionary["[forms][feedback]MessageValMess"]</span>
+	
+						<label for="message">@Dictionary["[forms][feedback]MessageLabel"] <sup></sup></label>
+                        <textarea class="ta" rows="5" cols="1"  title="@Dictionary["[forms][feedback]MessageHint"]" id="message" name="message"></textarea>
+                        @*<input type="submit" class="btn fright" value="Отправить" />*@
+                        
+							<p></p>
+						<span class="errorMsg" style="display: none;" id='attch' name='attch'>123</span>
+						<span class="errorMsg" style="display: none;">@Dictionary["[forms][feedback]FileValMessage"]</span>	
+						<label for="f2s">@Dictionary["[forms][feedback]FileLabel"]</label>
+						<input type="file"  name="f2s" id="f2s" title="Файл для вложения:" runat="server">
+							
+							
+							<p></p>
+								<span class="errorMsg" style="display: none;">@Dictionary["[forms][feedback]CaptchaValMessage"]</span>	
+
+	
+									
+									
+<!--									<label for="txtCaptcha"></label>
+									<input type="text" class="txtt" id="txtCaptcha" title='oh' name="txtCaptcha" runat="server" />
+						
+								<img src="/uCaptcha.ashx" id="cap" name="cap"  alt=" Для обновления кликните по картинке" width="150" height="40" alt="Captcha" style="margin-bottom: -7px; " />  --> 
+							
+									<button id="go" class="fright" title="@Dictionary["[forms][feedback]SendHint"]" type="submit">@Dictionary["[forms][feedback]SendLabel"]</button>
+                        <div class="errorMsgImp" style="display: none;">@Dictionary["[forms][feedback]FailMess"]</div>
+							
+		
+
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+							
+						
+	
+
+     <script>
+        //<![CDATA[
+			
+@*			$('#cap').on('click',function(){
+				$("#cap").attr("src", $("#cap").attr("src")+"?timestamp=" + new Date().getTime());
+			});//генерим новую каптчу с дэйтстампом для уникальности при кешировании	*@
+			
+		
+			$(document).ready(function(){
+			$('#email').attr('placeholder', 'Обязательно для заполнения');
+			$('#name').attr('placeholder',  'Обязательно для заполнения');
+			});
+			
+		 $('#category').change(function () {					
+    if ($(this).val()=="3"){
+		$('#phone').attr('placeholder', 'Не обязательно для заполнения');
+		$('#name').attr('placeholder',  'Не обязательно для заполнения');
+		$('#email').attr('placeholder', 'Не обязательно для заполнения');
+		$('#phone,#name,#email').placeholder();
+    	@*$('#disclaimer').fadeIn('slow');*@
+		$('.isrequired').hide();
+		$("[name=email]", $form).prev().prev().hide();
+		$("[name=name]", $form).prev().prev().hide();
+	}
+			 //Чекаем категорию.Если ==3 =>добавляем плейсхолдеры, показываем дисклеймер, убираем обязательность полей
+	 
+    else {
+//      $('#phone').removeAttr('placeholder');
+//		$('#name').removeAttr('placeholder');
+//		$('#email').removeAttr('placeholder');
+		$('.isrequired').show()
+		
+		if ($('#phone').val() == $('#phone').attr("placeholder")) {
+                    $('#phone').val('');
+                }
+		$('#phone').attr('placeholder', '');
+		
+		if ($('#name').val() == $('#name').attr("placeholder")) {
+                    $('#name').val('');
+                }
+		$('#name').attr('placeholder',  'Обязательно для заполнения');
+		
+		if ($('#email').val() == $('#email').attr("placeholder")) {
+                    $('#email').val('');
+                }
+		$('#email').attr('placeholder', 'Обязательно для заполнения');
+	
+		
+		$('#phone,#name,#email').placeholder();
+		@*$('#disclaimer').fadeOut('slow');*@
+    }
+			 //если !==3, то все наоброт
+});
+			
+var $form = $('#fbForm');
+var validno = true;
+$("#f2s").on("change", function (e) { 						
+	var files = e.currentTarget.files;
+	var filename=$('#f2s').val();
+	var Filesize = ((files[0].size/1024)).toFixed(2);
+	var filesize = ((files[0].size/1024)/1024).toFixed(4);
+	if (files[0].name != "item" && typeof files[0].name != "undefined" && filesize <= 4) {
+		var $file = $("[name=f2s]", $form);
+		$('#attch').text('Приложенный файл:'+filename+' '+Filesize+' кб');
+		$('#attch').show();
+		$file.prev().prev().hide(); 
+		validno = true;
+		}				
+	else{
+		var $file = $("[name=f2s]", $form);
+		$file.prev().prev().show();
+		$('#attch').hide();
+		$file[0].focus();
+		validno = false;
+		}
+	});
+			//Чекаем приложенный файл. Если размер <=4Мб, пишем путь, имя, размер, разрешаем отправку, если >, показываем предуперждение, отправку не разрешаем.
+			
+			
+@*
+function getXmlHttp(){
+  var xmlhttp;
+  try {
+    xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+  } catch (e) {
+    try {
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    } catch (E) {
+      xmlhttp = false;
+    }
+  }
+  if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+    xmlhttp = new XMLHttpRequest();
+  }
+  return xmlhttp;
+}
+
+var capVal=0;
+
+function tryCaptcha() {
+    var req = getXmlHttp() 
+	req.onreadystatechange = function() { 
+        // onreadystatechange активируется при получении ответа сервера
+ 
+        if (req.readyState == 4) {
+            // если запрос закончил выполняться
+ 
+        //if(req.status == 200) {
+                 // если статус 200 (ОК) - выдать ответ пользователю
+                alert("Ответ сервера: "+req.responseText);
+			   if (req.responseText=1){
+			   	capVal=req.responseText;
+			  
+           }
+        }
+    }
+       //  задать адрес подключения
+    req.open('GET', '/CaptchaHandler1.ashx', true); 
+    // объект запроса подготовлен: указан адрес и создана функция onreadystatechange
+    // для обработки ответа сервера
+    req.send(null);  
+		// отослать запрос
+		
+		
+		var $txtCaptcha = $("[name=txtCaptcha]", $form);
+		if (capVal == 0) {
+			$txtCaptcha.prev().prev().show();
+			$txtCaptcha[0].focus();
+			
+		}
+		else { 
+			$txtCaptcha.prev().prev().hide(); 
+		}
+		
+ }
+
+*@
+			
+
+var sending = false;
+$("#fbForm").on("submit", function() {							
+	$(".infoMsg, .errorMsgImp").hide();
+	var $form = $(this);
+	var valid = true;
+
+@*поля проверяются в обратном порядке для более логичной фокусировки ошибочных полей*@
+	if ($('#category').val()!="3"){								
+		var $message = $("[name=message]", $form);
+		if ($.trim($message.val()) == "") {
+			$message.prev().prev().show();
+			$message[0].focus();
+			valid = false;
+		}
+		else { $message.prev().prev().hide(); }
+		@*var $phone = $("[name=phone]", $form);
+		if ($.trim($phone.val()) == "") {
+			$phone.prev().prev().show();
+			phone[0].focus();
+			valid = false;
+		}
+		else { $phone.prev().prev().hide(); }*@
+		
+		var $email = $("[name=email]", $form);
+		if (!/@Dictionary["[forms][common]EmailRegex"]/.test($.trim($email.val()))) {
+			$email.prev().prev().show();
+			$email[0].focus();
+			valid = false;
+		}
+		else { $email.prev().prev().hide(); }
+		var $name = $("[name=name]", $form);
+		if ($.trim($name.val()) == "") {
+			$name.prev().prev().show();
+			$name[0].focus();
+			valid = false;
+		}
+		else { $name.prev().prev().hide();};
+						}				
+	else{														
+		var $message = $("[name=message]", $form);
+		if ($.trim($message.val()) == "") {
+			$message.prev().prev().show();
+			$message[0].focus();
+			valid = false;
+			}
+		else { 
+			$message.prev().prev().hide();
+		}
+		var $phone = $("[name=phone]", $form);
+		var $email = $("[name=email]", $form);
+		var $name = $("[name=name]", $form);
+		@*if(	$phone.val()==0){
+			$phone.val('Конфиденциально');
+			}
+		if(	$name.val()==0){
+			$name.val('Конфиденциально');
+			}
+		if(	$email.val()==0){
+			$email.val('info@railfgk.ru');
+			}*@
+		$phone.prev().prev().hide();
+		$email.prev().prev().hide();
+		$name.prev().prev().hide();
+		};
+		//ТУт осуществляется валидаця всех полей, начиная с категории(если категория==3, то особые условия)
+		
+				if (!validno) return false;
+                if (!valid) return false;
+                if (sending) return false;
+				//if (capVal) return 1;
+				
+                sending = true;
+				
+                var $button = $("[type=submit]", $form);				
+                $button.width($button.outerWidth());				
+                var buttonText = $button.html();				
+                $button.html("<img src='/dsgn/sending.gif' alt='' />");
+ 
+				var options = { 							 
+							success:    function() { 
+								$(".infoMsg", $form).show(); 
+								$button.html(buttonText);
+								sending = false;
+								$('#attch').hide();
+								$("#fbForm").trigger( 'reset' );
+								$('#disclaimer').fadeOut('fast');
+								$('#name,#email').attr('placeholder','Обязательно для заполнения');
+								$('#phone').attr('placeholder','');
+								$('#phone,#name,#email').val('');
+					//			$("#cap").attr("src", $("#cap").attr("src")+"?timestamp=" + new Date().getTime());
+								$('.isrequired').show();
+							},
+								error: function() {
+                        			$(".errorMsgImp", $form).show();
+                    			}
+							};//Условия аяксовой отправки формы (откат к начальному состоянию, обновление капчи, снятие дефолтных значений при успехе и отображение ошибок при неудаче
+           $form.ajaxSubmit(options); 
+					
+                return false;
+            });
+        //]]>
+</script>		
+							
+	
+						
+    }
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}

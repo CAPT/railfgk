@@ -1,0 +1,1 @@
+2015-02-16 09:12:32,147 [8] INFO  Umbraco.Core.PluginManager - [Thread 19] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 6ms)

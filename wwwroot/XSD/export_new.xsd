@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="ЭКСПОРТ">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Вагон">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Договор">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="РеквизитыСобственника">
+											<xs:complexType>
+												<xs:attribute name="БИК" type="xs:string" use="required"/>
+												<xs:attribute name="ИНН" type="xs:string" use="required"/>
+												<xs:attribute name="КПП" type="xs:string" use="required"/>
+												<xs:attribute name="БАНК" type="xs:string" use="required"/>
+												<xs:attribute name="ОКПО" type="xs:string" use="required"/>
+												<xs:attribute name="АДРЕС" type="xs:string" use="required"/>
+												<xs:attribute name="ОКОНХ" type="xs:string" use="required"/>
+												<xs:attribute name="РСЧЕТ" type="xs:string" use="required"/>
+												<xs:attribute name="РСЧЕТБАНК" type="xs:string" use="required"/>
+												<xs:attribute name="ПолноеНаименование" type="xs:string" use="required"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="РеквизитыДепо">
+											<xs:complexType>
+												<xs:attribute name="ПолноеНаименование" type="xs:string"/>
+												<xs:attribute name="АДРЕС" type="xs:string" use="required"/>
+												<xs:attribute name="БАНК" type="xs:string" use="required"/>
+												<xs:attribute name="БИК" type="xs:string" use="required"/>
+												<xs:attribute name="ИНН" type="xs:string" use="required"/>
+												<xs:attribute name="КПП" type="xs:string" use="required"/>
+												<xs:attribute name="ОКОНХ" type="xs:string" use="required"/>
+												<xs:attribute name="ОКПО" type="xs:string" use="required"/>
+												<xs:attribute name="РСЧЕТ" type="xs:string" use="required"/>
+												<xs:attribute name="РСЧЕТБАНК" type="xs:string" use="required"/>
+												<xs:attribute name="БЕ" type="xs:string" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="ДоговорОт" type="xs:string" use="required"/>
+									<xs:attribute name="Код" type="xs:integer" use="required"/>
+									<xs:attribute name="НачалоДействия" type="xs:string" use="required"/>
+									<xs:attribute name="Номер" type="xs:string" use="required"/>
+									<xs:attribute name="ОкончаниеДействия" type="xs:string" use="required"/>
+									<xs:attribute name="СобственникКод" type="xs:integer" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ЭЦП">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Сертификаты">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Строка" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="Код" type="xs:integer"/>
+															<xs:attribute name="ФИО" type="xs:string"/>
+															<xs:attribute name="Должность" type="xs:string"/>
+															<xs:attribute name="Организация" type="xs:string"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Документы" minOccurs="1" maxOccurs="1">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Строка" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="Код" type="xs:string"/>
+															<xs:attribute name="ttk_guid" type="xs:string"/>
+															<xs:attribute name="ВидДокумента" type="xs:integer"/>
+															<xs:attribute name="ДатаПодписи1" type="xs:string"/>
+															<xs:attribute name="ДатаПодписи2" type="xs:string"/>
+															<xs:attribute name="Сертификат1" type="xs:integer"/>
+															<xs:attribute name="Сертификат2" type="xs:integer"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="СотрудникиДепо">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Строка" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="Код" type="xs:integer"/>
+												<xs:attribute name="КодДолжности" type="xs:integer"/>
+												<xs:attribute name="ФИО" type="xs:string"/>
+												<xs:attribute name="Должность" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ПредставителиДепо">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Строка">
+											<xs:complexType>
+												<xs:attribute name="Код" type="xs:integer"/>
+												<xs:attribute name="КодДокумента" type="xs:integer"/>
+												<xs:attribute name="ФИО" type="xs:string"/>
+												<xs:attribute name="Должность" type="xs:string"/>
+												<xs:attribute name="НаОсновании" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ПредставителиСобственника">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Строка" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="Код" type="xs:integer"/>
+												<xs:attribute name="КодДокумента" type="xs:integer"/>
+												<xs:attribute name="ФИО" type="xs:string"/>
+												<xs:attribute name="Должность" type="xs:string"/>
+												<xs:attribute name="НаОсновании" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="РДВ">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Работа">
+											<xs:complexType>
+												<xs:attribute name="Код" type="xs:integer" use="required"/>
+												<xs:attribute name="ЦенаБезНДС" type="xs:decimal" use="required"/>
+												<xs:attribute name="Кол-во" type="xs:integer" use="required"/>
+												<xs:attribute name="Исполнитель" type="xs:string" use="required"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Деталь">
+											<xs:complexType>
+												<xs:attribute name="РаботаКод" type="xs:integer" use="required"/>
+												<xs:attribute name="ГруппаДетали" type="xs:integer" use="required"/>
+												<xs:attribute name="КодПрототипа" type="xs:integer" use="required"/>
+												<xs:attribute name="ДетальЗавод" type="xs:integer" use="optional"/>
+												<xs:attribute name="ДетальНомер" type="xs:string" use="required"/>
+												<xs:attribute name="ДетальГод" type="xs:integer" use="optional"/>
+												<xs:attribute name="Кол-во" type="xs:integer" use="required"/>
+												<xs:attribute name="Наименование" type="xs:string" use="required"/>
+												<xs:attribute name="ЦенаБезНДС" type="xs:decimal" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="АктВыбраковки">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Строка" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="РаботаОснованиеКод" type="xs:integer"/>
+												<xs:attribute name="КодДетали" type="xs:integer"/>
+												<xs:attribute name="СнятаЗавод" type="xs:string" use="optional"/>
+												<xs:attribute name="СнятаНомер" type="xs:string" use="required"/>
+												<xs:attribute name="СнятаГод" type="xs:string" use="optional"/>
+												<xs:attribute name="УстанавленаЗавод" type="xs:string" use="optional"/>
+												<xs:attribute name="УстанавленаНомер" type="xs:string" use="required"/>
+												<xs:attribute name="УстанавленаГод" type="xs:string" use="optional"/>
+												<xs:attribute name="Причина" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="Дата" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ВУ36М">
+								<xs:complexType>
+									<xs:attribute name="Номер" type="xs:string" use="required"/>
+									<xs:attribute name="Код1" type="xs:integer" use="required"/>
+									<xs:attribute name="Код2" type="xs:integer" use="required"/>
+									<xs:attribute name="Код3" type="xs:integer" use="required"/>
+									<xs:attribute name="Код4" type="xs:integer" use="required"/>
+									<xs:attribute name="Код5" type="xs:integer" use="required"/>
+									<xs:attribute name="Код6" type="xs:integer" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="МХ1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Строка" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="Наименование" type="xs:string"/>
+												<xs:attribute name="Вес" type="xs:decimal"/>
+												<xs:attribute name="Вид" type="xs:integer"/>
+												<xs:attribute name="ДетальЗавод" type="xs:string" use="optional"/>
+												<xs:attribute name="ДетальНомер" type="xs:string" use="required"/>
+												<xs:attribute name="ДетальГод" type="xs:string" use="optional"/>
+												<xs:attribute name="РаботаОснованиеКод" type="xs:integer"/>
+												<xs:attribute name="ТипМеталла" type="xs:string"/>
+												<xs:attribute name="ГруппаДетали" type="xs:integer"/>
+												<xs:attribute name="КодПрототипа" type="xs:integer" use="required"/>
+												<xs:attribute name="Кол-во" type="xs:integer"/>
+												<xs:attribute name="Стоимость" type="xs:decimal"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="Номер" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="МХ3">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Строка" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="Наименование" type="xs:string"/>
+												<xs:attribute name="Вес" type="xs:decimal"/>
+												<xs:attribute name="Вид" type="xs:integer"/>
+												<xs:attribute name="ДетальЗавод" type="xs:string" use="optional"/>
+												<xs:attribute name="ДетальНомер" type="xs:string" use="required"/>
+												<xs:attribute name="ДетальГод" type="xs:string" use="optional"/>
+												<xs:attribute name="РаботаОснованиеКод" type="xs:integer"/>
+												<xs:attribute name="ГруппаДетали" type="xs:integer"/>
+												<xs:attribute name="КодПрототипа" type="xs:integer" use="required"/>
+												<xs:attribute name="Кол-во" type="xs:integer"/>
+												<xs:attribute name="Стоимость" type="xs:decimal"/>
+												<xs:attribute name="Свагона" type="xs:integer"/>
+												<xs:attribute name="СВагона" type="xs:integer"/>
+												<xs:attribute name="ДатаОкончанияРемонта" type="xs:string" use="required"/>
+												<xs:attribute name="НаВагон" type="xs:integer"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="Номер" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ЛистКомплектации">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Вход">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ТормозноеОборудование" minOccurs="1" maxOccurs="1">
+														<xs:complexType>
+															<xs:attribute name="ГЧ_ВР" type="xs:byte" use="required"/>
+															<xs:attribute name="МЧ_ВР" type="xs:byte" use="required"/>
+															<xs:attribute name="РК_ВР" type="xs:byte" use="required"/>
+															<xs:attribute name="ТЦ" type="xs:byte" use="required"/>
+															<xs:attribute name="Авторежим" type="xs:byte" use="required"/>
+															<xs:attribute name="ЗапаснойРезервуар" type="xs:byte" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="КП" minOccurs="2" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="ГребеньЛ" type="xs:decimal" use="required"/>
+															<xs:attribute name="ГребеньП" type="xs:decimal" use="required"/>
+															<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+															<xs:attribute name="Номер" type="xs:string" use="required"/>
+															<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+															<xs:attribute name="ОбодЛ" type="xs:decimal" use="required"/>
+															<xs:attribute name="ОбодП" type="xs:decimal" use="required"/>
+															<xs:attribute name="Положение" type="xs:byte" use="required"/>
+															<xs:attribute name="ПрокатЛ" type="xs:decimal" use="required"/>
+															<xs:attribute name="ПрокатП" type="xs:decimal" use="required"/>
+															<xs:attribute name="Сталь" type="xs:integer" use="required"/>
+															<xs:attribute name="Тележка" type="xs:byte" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="НадресорнаяБалка" minOccurs="1" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+															<xs:attribute name="Номер" type="xs:string" use="required"/>
+															<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+															<xs:attribute name="Положение" type="xs:byte" use="required"/>
+															<xs:attribute name="Тележка" type="xs:byte" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="СоединительнаяБалка" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+															<xs:attribute name="Номер" type="xs:string" use="required"/>
+															<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+															<xs:attribute name="Положение" type="xs:byte" use="required"/>
+															<xs:attribute name="Тележка" type="xs:byte" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="РамаБоковая" minOccurs="2" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+															<xs:attribute name="Номер" type="xs:string" use="required"/>
+															<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+															<xs:attribute name="Положение" type="xs:byte" use="required"/>
+															<xs:attribute name="Тележка" type="xs:byte" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="Автосцепка" minOccurs="2" maxOccurs="2">
+														<xs:complexType>
+															<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+															<xs:attribute name="Номер" type="xs:string" use="required"/>
+															<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+															<xs:attribute name="Положение" type="xs:byte" use="required"/>
+															<xs:attribute name="Тип" type="xs:byte" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="ПоглощающийАппарат" minOccurs="2" maxOccurs="2">
+														<xs:complexType>
+															<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+															<xs:attribute name="Номер" type="xs:string" use="required"/>
+															<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+															<xs:attribute name="Положение" type="xs:byte" use="required"/>
+															<xs:attribute name="Тип" type="xs:byte" use="required"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Выход">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ТормозноеОборудование" minOccurs="1" maxOccurs="1">
+														<xs:complexType>
+															<xs:attribute name="ГЧ_ВР" type="xs:byte" use="required"/>
+															<xs:attribute name="МЧ_ВР" type="xs:byte" use="required"/>
+															<xs:attribute name="РК_ВР" type="xs:byte" use="required"/>
+															<xs:attribute name="ТЦ" type="xs:byte" use="required"/>
+															<xs:attribute name="Авторежим" type="xs:byte" use="required"/>
+															<xs:attribute name="ЗапаснойРезервуар" type="xs:byte" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="КП" minOccurs="2" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="ГребеньЛ" type="xs:decimal" use="required"/>
+															<xs:attribute name="ГребеньП" type="xs:decimal" use="required"/>
+															<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+															<xs:attribute name="Номер" type="xs:string" use="required"/>
+															<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+															<xs:attribute name="ОбодЛ" type="xs:decimal" use="required"/>
+															<xs:attribute name="ОбодП" type="xs:decimal" use="required"/>
+															<xs:attribute name="Положение" type="xs:byte" use="required"/>
+															<xs:attribute name="ПрокатЛ" type="xs:decimal" use="required"/>
+															<xs:attribute name="ПрокатП" type="xs:decimal" use="required"/>
+															<xs:attribute name="Сталь" type="xs:integer" use="required"/>
+															<xs:attribute name="Тележка" type="xs:byte" use="required"/>
+															<xs:attribute name="Происхождение" type="xs:long" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="НадресорнаяБалка" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+															<xs:attribute name="Номер" type="xs:string" use="required"/>
+															<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+															<xs:attribute name="Положение" type="xs:byte" use="required"/>
+															<xs:attribute name="Тележка" type="xs:byte" use="required"/>
+															<xs:attribute name="Происхождение" type="xs:long" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="СоединительнаяБалка" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+															<xs:attribute name="Номер" type="xs:string" use="required"/>
+															<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+															<xs:attribute name="Положение" type="xs:byte" use="required"/>
+															<xs:attribute name="Тележка" type="xs:byte" use="required"/>
+															<xs:attribute name="Происхождение" type="xs:long" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="РамаБоковая" minOccurs="2" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+															<xs:attribute name="Номер" type="xs:string" use="required"/>
+															<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+															<xs:attribute name="Положение" type="xs:byte" use="required"/>
+															<xs:attribute name="Тележка" type="xs:byte" use="required"/>
+															<xs:attribute name="Происхождение" type="xs:long" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="Автосцепка" minOccurs="2" maxOccurs="2">
+														<xs:complexType>
+															<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+															<xs:attribute name="Номер" type="xs:string" use="required"/>
+															<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+															<xs:attribute name="Положение" type="xs:byte" use="required"/>
+															<xs:attribute name="Тип" type="xs:byte" use="required"/>
+															<xs:attribute name="Происхождение" type="xs:long" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="ПоглощающийАппарат" minOccurs="2" maxOccurs="2">
+														<xs:complexType>
+															<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+															<xs:attribute name="Номер" type="xs:string" use="required"/>
+															<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+															<xs:attribute name="Положение" type="xs:byte" use="required"/>
+															<xs:attribute name="Тип" type="xs:byte" use="required"/>
+															<xs:attribute name="Происхождение" type="xs:long" use="required"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="Номер" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ВУ4М">
+								<xs:complexType>
+									<xs:attribute name="ТУ">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value=""/>
+												<xs:enumeration value="0"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="Тара">
+										<xs:simpleType>
+											<xs:restriction base="xs:decimal">
+												<xs:enumeration value="21.1"/>
+												<xs:enumeration value="21.2"/>
+												<xs:enumeration value="21.3"/>
+												<xs:enumeration value="21.5"/>
+												<xs:enumeration value="21.6"/>
+												<xs:enumeration value="22"/>
+												<xs:enumeration value="22.2"/>
+												<xs:enumeration value="22.3"/>
+												<xs:enumeration value="22.8"/>
+												<xs:enumeration value="22.9"/>
+												<xs:enumeration value="23"/>
+												<xs:enumeration value="23.2"/>
+												<xs:enumeration value="23.7"/>
+												<xs:enumeration value="24"/>
+												<xs:enumeration value="24.1"/>
+												<xs:enumeration value="24.2"/>
+												<xs:enumeration value="24.3"/>
+												<xs:enumeration value="24.4"/>
+												<xs:enumeration value="25"/>
+												<xs:enumeration value="25.3"/>
+												<xs:enumeration value="25.7"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="Грузы">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value=""/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="Модель">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="11-217"/>
+												<xs:enumeration value="11-280"/>
+												<xs:enumeration value="12-119"/>
+												<xs:enumeration value="12-132"/>
+												<xs:enumeration value="12-132-03"/>
+												<xs:enumeration value="12-1505"/>
+												<xs:enumeration value="12-1592"/>
+												<xs:enumeration value="12-2123-02"/>
+												<xs:enumeration value="12-295"/>
+												<xs:enumeration value="12-532"/>
+												<xs:enumeration value="12-532-01"/>
+												<xs:enumeration value="12-757"/>
+												<xs:enumeration value="13-401-20"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="Габарит">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="2"/>
+												<xs:enumeration value="3"/>
+												<xs:enumeration value="5"/>
+												<xs:enumeration value="6"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="Приписка">
+										<xs:simpleType>
+											<xs:restriction base="xs:int">
+												<xs:enumeration value="-1"/>
+												<xs:enumeration value="17740"/>
+												<xs:enumeration value="18950"/>
+												<xs:enumeration value="19190"/>
+												<xs:enumeration value="19540"/>
+												<xs:enumeration value="19940"/>
+												<xs:enumeration value="20590"/>
+												<xs:enumeration value="20670"/>
+												<xs:enumeration value="20780"/>
+												<xs:enumeration value="20800"/>
+												<xs:enumeration value="21620"/>
+												<xs:enumeration value="21700"/>
+												<xs:enumeration value="21710"/>
+												<xs:enumeration value="22320"/>
+												<xs:enumeration value="22790"/>
+												<xs:enumeration value="23800"/>
+												<xs:enumeration value="59000"/>
+												<xs:enumeration value="59250"/>
+												<xs:enumeration value="59760"/>
+												<xs:enumeration value="60150"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="Авторежим">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="1"/>
+												<xs:enumeration value="2"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="РодВагона">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="2"/>
+												<xs:enumeration value="4"/>
+												<xs:enumeration value="6"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ДлинаПоОсям">
+										<xs:simpleType>
+											<xs:restriction base="xs:short">
+												<xs:enumeration value="12100"/>
+												<xs:enumeration value="13920"/>
+												<xs:enumeration value="14620"/>
+												<xs:enumeration value="14730"/>
+												<xs:enumeration value="16970"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="КалибрКотла">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value=""/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="НаличиеРамы">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="-1"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="СтарыйНомер">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="0"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ИнвентарнТип">
+										<xs:simpleType>
+											<xs:restriction base="xs:short">
+												<xs:enumeration value="206"/>
+												<xs:enumeration value="208"/>
+												<xs:enumeration value="404"/>
+												<xs:enumeration value="600"/>
+												<xs:enumeration value="602"/>
+												<xs:enumeration value="608"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="РучнойТормоз">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="2"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="СливнойПрибор">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="-1"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ГосСобственник">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="20"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ДатаТехРешения">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value=""/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ЗаводскойНомер">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value=""/>
+												<xs:enumeration value="0"/>
+												<xs:enumeration value="003"/>
+												<xs:enumeration value="562359"/>
+												<xs:enumeration value="7011"/>
+												<xs:enumeration value="7106"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="МатериалКузова">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="2"/>
+												<xs:enumeration value="22"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="АвторегуляторРП">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="1"/>
+												<xs:enumeration value="2"/>
+												<xs:enumeration value="4"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="НомерТехРешения">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value=""/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="СрокСлПродленДо">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="22.08.2010"/>
+												<xs:enumeration value="28.02.2017"/>
+												<xs:enumeration value="30.01.2017"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ВЧДРПоследнегоДР">
+										<xs:simpleType>
+											<xs:restriction base="xs:short">
+												<xs:enumeration value="0"/>
+												<xs:enumeration value="308"/>
+												<xs:enumeration value="334"/>
+												<xs:enumeration value="343"/>
+												<xs:enumeration value="369"/>
+												<xs:enumeration value="397"/>
+												<xs:enumeration value="400"/>
+												<xs:enumeration value="443"/>
+												<xs:enumeration value="488"/>
+												<xs:enumeration value="496"/>
+												<xs:enumeration value="540"/>
+												<xs:enumeration value="552"/>
+												<xs:enumeration value="599"/>
+												<xs:enumeration value="634"/>
+												<xs:enumeration value="640"/>
+												<xs:enumeration value="713"/>
+												<xs:enumeration value="728"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ВЧДРПоследнегоКР">
+										<xs:simpleType>
+											<xs:restriction base="xs:short">
+												<xs:enumeration value="0"/>
+												<xs:enumeration value="108"/>
+												<xs:enumeration value="1132"/>
+												<xs:enumeration value="117"/>
+												<xs:enumeration value="328"/>
+												<xs:enumeration value="414"/>
+												<xs:enumeration value="420"/>
+												<xs:enumeration value="552"/>
+												<xs:enumeration value="598"/>
+												<xs:enumeration value="600"/>
+												<xs:enumeration value="68"/>
+												<xs:enumeration value="84"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="Грузоподъемность">
+										<xs:simpleType>
+											<xs:restriction base="xs:decimal">
+												<xs:enumeration value="66"/>
+												<xs:enumeration value="68"/>
+												<xs:enumeration value="69"/>
+												<xs:enumeration value="69.5"/>
+												<xs:enumeration value="70"/>
+												<xs:enumeration value="71"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ДатаПоследнегоДР">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value=""/>
+												<xs:enumeration value="02.03.2010"/>
+												<xs:enumeration value="12.01.2010"/>
+												<xs:enumeration value="12.09.2012"/>
+												<xs:enumeration value="17.01.2014"/>
+												<xs:enumeration value="23.05.2010"/>
+												<xs:enumeration value="24.12.2008"/>
+												<xs:enumeration value="26.01.2013"/>
+												<xs:enumeration value="26.01.2014"/>
+												<xs:enumeration value="26.05.2012"/>
+												<xs:enumeration value="27.01.2012"/>
+												<xs:enumeration value="27.01.2014"/>
+												<xs:enumeration value="27.12.2009"/>
+												<xs:enumeration value="28.01.2014"/>
+												<xs:enumeration value="29.01.2012"/>
+												<xs:enumeration value="30.01.2012"/>
+												<xs:enumeration value="31.01.2013"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ДатаПоследнегоКР">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value=""/>
+												<xs:enumeration value="02.02.2012"/>
+												<xs:enumeration value="03.12.2011"/>
+												<xs:enumeration value="16.01.2009"/>
+												<xs:enumeration value="16.02.2012"/>
+												<xs:enumeration value="17.01.2012"/>
+												<xs:enumeration value="17.10.2009"/>
+												<xs:enumeration value="18.01.2012"/>
+												<xs:enumeration value="21.08.2007"/>
+												<xs:enumeration value="25.01.2012"/>
+												<xs:enumeration value="25.04.2007"/>
+												<xs:enumeration value="25.06.2012"/>
+												<xs:enumeration value="27.01.2012"/>
+												<xs:enumeration value="27.09.2006"/>
+												<xs:enumeration value="28.03.2003"/>
+												<xs:enumeration value="30.12.2011"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="КонструкцияКотла">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="-1"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ПодпольныеУсБалки">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="0"/>
+												<xs:enumeration value="1"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="РПКомпозитКолодки">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="0"/>
+												<xs:enumeration value="1"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ЗаводПроизводитель">
+										<xs:simpleType>
+											<xs:restriction base="xs:short">
+												<xs:enumeration value="133"/>
+												<xs:enumeration value="143"/>
+												<xs:enumeration value="22"/>
+												<xs:enumeration value="27"/>
+												<xs:enumeration value="5"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ВозможПостанБуферов">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="0"/>
+												<xs:enumeration value="1"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="ВоздухоРаспределитель">
+										<xs:simpleType>
+											<xs:restriction base="xs:byte">
+												<xs:enumeration value="0"/>
+												<xs:enumeration value="1"/>
+												<xs:enumeration value="4"/>
+												<xs:enumeration value="6"/>
+												<xs:enumeration value="7"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="Код" type="xs:long" use="required"/>
+						<xs:attribute name="Номер" type="xs:integer" use="required"/>
+						<xs:attribute name="ТипВагона" type="xs:integer" use="required"/>
+						<xs:attribute name="ГодВыпуска" type="xs:string" use="required"/>
+						<xs:attribute name="ДатаВводаВсистему" type="xs:string" use="required"/>
+						<xs:attribute name="ИзНихЗаРемонтКП" type="xs:decimal" use="required"/>
+						<xs:attribute name="КодДепо" type="xs:integer" use="required"/>
+						<xs:attribute name="НомерАктаВыпРабот" type="xs:string" use="required"/>
+						<xs:attribute name="НомерСФ" type="xs:string" use="required"/>
+						<xs:attribute name="ДатаСФ" type="xs:string" use="required"/>
+						<xs:attribute name="ПлановоеНачалоРемонта" type="xs:string" use="required"/>
+						<xs:attribute name="ПлановоеОкончаниеРемонта" type="xs:string" use="required"/>
+						<xs:attribute name="ФактическоеОкончаниеРемонта" type="xs:string" use="required"/>
+						<xs:attribute name="ПроверкаСобственником" type="xs:string" use="optional"/>
+						<xs:attribute name="ПробегМежремонтный" type="xs:integer" use="required"/>
+						<xs:attribute name="ПробегНакопленный" type="xs:integer" use="required"/>
+						<xs:attribute name="ПробегПослеКапитального" type="xs:integer" use="required"/>
+						<xs:attribute name="Проверка" type="xs:string" use="required"/>
+						<xs:attribute name="ЭЦП" type="xs:string"/>
+						<xs:attribute name="СтоимостьБезНДС" type="xs:decimal" use="required"/>
+						<xs:attribute name="СтоимостьУборки" type="xs:decimal" use="required"/>
+						<xs:attribute name="СтоимостьВзвешивания" type="xs:decimal" use="required"/>
+						<xs:attribute name="СтавкаНДС" type="xs:decimal" use="required"/>
+						<xs:attribute name="НДС" type="xs:decimal" use="required"/>
+						<xs:attribute name="Скидка" type="xs:decimal" use="required"/>
+						<xs:attribute name="ТипРемонта" type="xs:byte" use="required"/>
+						<xs:attribute name="Удален" type="xs:byte" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="ВЕРСИЯ" type="xs:byte"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

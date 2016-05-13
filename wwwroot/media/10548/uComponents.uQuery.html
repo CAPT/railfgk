@@ -1,0 +1,1495 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="Opera ">
+
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head id="ctl00_ctl00_HeadTag"><meta id="ctl00_ctl00_CompatabilityMode" http-equiv="X-UA-Compatible" content="IE=edge"><link id="ctl00_ctl00_MasterCss" type="text/css" rel="stylesheet" href="uComponents.uQuery_files/StyleShe.css"><link rel="SHORTCUT ICON" href="uComponents.uQuery_files/favicon0.ico">
+    <style type="text/css">.SideBar, .SideBarPadding{display:none;}.MainContent{width:auto;}.SiteContentTable{width:100%;}</style>
+    <style id="ctl00_ctl00_Header_ProjectStyles" type="text/css">.SiteHeader,.SiteHeaderLeft{height:45px !important;overflow:hidden;}.SiteContent{padding:0 0 1em 0;margin-top:0;min-height:225px;border-right:1px solid lightgrey;border-left:1px solid lightgrey;border-bottom:1px solid lightgrey;}.IE6 .ProjectTitleControl{position:relative;}.IE table.MinWidthContent{table-layout:auto !important;}</style>
+    
+    
+    
+    
+    
+    <style type="text/css">.ProjectContent{padding:0;}</style>
+    <style type="text/css">
+        .WikiHolder
+        {
+            margin: 0 1em 0 0;
+        }
+        #WikiContent
+        {
+            margin-top: 15px;
+        }
+        #WikiBreadCrumbs
+        {
+            margin: 0.25em 0 1em 0;
+        }
+        .SecondarySearchButton 
+        {
+            margin:0 0 0 -0.6em;
+        }
+        .FF .SecondarySearchButton 
+        {
+            margin:-0.1em 0 0 -0.5em;
+            height: 22px;
+        }
+        .IE .SecondarySearchButton
+        {
+            width: 22px;
+            height: 22px;
+        }
+    </style>
+    
+    
+    <meta id="ctl00_ctl00_Header_WTProjectName" name="WT.pi" content="umbdatatypes"></meta>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ucomponents.codeplex.com/rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" title="WLWManifest" href="/wlwmanifest.xml">
+<meta id="ctl00_ctl00_PageDescription" name="Description"><link rel="alternate" type="application/rss+xml" title="uComponents" href="http://ucomponents.codeplex.com/project/feeds/rss"><link rel="alternate" type="application/rss+xml" title="uComponents-Discussions" href="http://ucomponents.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fforum%2fucomponents"><link rel="alternate" type="application/rss+xml" title="uComponents-Issue Tracker" href="http://ucomponents.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fworkitem%2fucomponents"><link rel="alternate" type="application/rss+xml" title="uComponents-Releases" href="http://ucomponents.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2frelease%2fucomponents"><link rel="alternate" type="application/rss+xml" title="uComponents-Source Code" href="http://ucomponents.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fsourcecontrol%2fucomponents"><link rel="alternate" type="application/rss+xml" title="uComponents-Wiki" href="http://ucomponents.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fwiki%2fucomponents"><link rel="alternate" type="application/rss+xml" title="uComponents-Reviews" href="http://ucomponents.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2freview%2fucomponents"><title>
+	uComponents
+</title></head>
+
+<body onload="masterLoad();">
+    <form name="aspnetForm" method="POST" action="http://ucomponents.codeplex.com/wikipage?title=uQuery" id="aspnetForm" autocomplete="off" enctype="multipart/form-data">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExNDE1NDgzNTgPZBYCZg9kFgJmD2QWBGYPZBYIZg8WAh4HY29udGVudAUHSUU9ZWRnZWQCAg8WAh4EaHJlZgU6aHR0cDovL2kxLmNvZGVwbGV4LmNvbS9jc3MvdjE5MDMxL2kyMDM2NzQzL1N0eWxlU2hlZXQuYXNoeGQCBA9kFgRmDxYCHglpbm5lcmh0bWwFygIuU2l0ZUhlYWRlciwuU2l0ZUhlYWRlckxlZnR7aGVpZ2h0OjQ1cHggIWltcG9ydGFudDtvdmVyZmxvdzpoaWRkZW47fS5TaXRlQ29udGVudHtwYWRkaW5nOjAgMCAxZW0gMDttYXJnaW4tdG9wOjA7bWluLWhlaWdodDoyMjVweDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkIGxpZ2h0Z3JleTtib3JkZXItbGVmdDoxcHggc29saWQgbGlnaHRncmV5O2JvcmRlci1ib3R0b206MXB4IHNvbGlkIGxpZ2h0Z3JleTt9LklFNiAuUHJvamVjdFRpdGxlQ29udHJvbHtwb3NpdGlvbjpyZWxhdGl2ZTt9LklFIHRhYmxlLk1pbldpZHRoQ29udGVudHt0YWJsZS1sYXlvdXQ6YXV0byAhaW1wb3J0YW50O31kAgMPFgQfAAUMdW1iZGF0YXR5cGVzHgdWaXNpYmxlZ2QCBQ8WBB8AZB8DZ2QCAQ9kFgZmDxYCHgRUZXh0BWU8c2NyaXB0IHNyYz0iaHR0cHM6Ly9zaXRlcmVjcnVpdC5jb21zY29yZS5jb20vc3IvY29kZXBsZXgvYnJva2VyLmpzIiB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPjwvc2NyaXB0PmQCAQ8PFgIeCEltYWdlVXJsBS5odHRwOi8vaTMuY29kZXBsZXguY29tL0ltYWdlcy92MTkwMzEvYmxhbmsucG5nFgIeBm9ubG9hZAUZc2VsZi5sb2dvSW1hZ2VMb2FkZWQ9dHJ1ZWQCBQ9kFggCAQ9kFgYCAw9kFgxmDxYCHwNnFgICAQ8PFgIeC05hdmlnYXRlVXJsBSBodHRwOi8vdWNvbXBvbmVudHMuY29kZXBsZXguY29tL2QWAmYPDxYEHg1BbHRlcm5hdGVUZXh0BQt1Q29tcG9uZW50cx8FBVtodHRwOi8vZG93bmxvYWQuY29kZXBsZXguY29tL0Rvd25sb2FkP1Byb2plY3ROYW1lPXVjb21wb25lbnRzJkRvd25sb2FkSWQ9MjUzODM0JkJ1aWxkPTE5MDMxZGQCAg9kFgICAQ8PFgIfBwUgaHR0cDovL3Vjb21wb25lbnRzLmNvZGVwbGV4LmNvbS9kFgICAQ8PFgIfBAULdUNvbXBvbmVudHNkZAIED2QWBAIBDw8WAh8HBSBodHRwOi8vdWNvbXBvbmVudHMuY29kZXBsZXguY29tL2QWAmYPDxYEHwgFC3VDb21wb25lbnRzHwUFW2h0dHA6Ly9kb3dubG9hZC5jb2RlcGxleC5jb20vRG93bmxvYWQ/UHJvamVjdE5hbWU9dWNvbXBvbmVudHMmRG93bmxvYWRJZD0yNTM4MzQmQnVpbGQ9MTkwMzFkZAIDDw8WAh8HBSBodHRwOi8vdWNvbXBvbmVudHMuY29kZXBsZXguY29tL2QWAgIBDw8WAh8EBQt1Q29tcG9uZW50c2RkAgYPZBYEAgEPDxYCHwcFIGh0dHA6Ly91Y29tcG9uZW50cy5jb2RlcGxleC5jb20vZBYCZg8PFgQfCAULdUNvbXBvbmVudHMfBQVbaHR0cDovL2Rvd25sb2FkLmNvZGVwbGV4LmNvbS9Eb3dubG9hZD9Qcm9qZWN0TmFtZT11Y29tcG9uZW50cyZEb3dubG9hZElkPTI1MzgzNCZCdWlsZD0xOTAzMWRkAgMPDxYCHwcFIGh0dHA6Ly91Y29tcG9uZW50cy5jb2RlcGxleC5jb20vZBYCAgEPDxYCHwQFC3VDb21wb25lbnRzZGQCCA8PFgIfBwUgaHR0cDovL3Vjb21wb25lbnRzLmNvZGVwbGV4LmNvbS9kFgJmDw8WBB8IBQt1Q29tcG9uZW50cx8FBVtodHRwOi8vZG93bmxvYWQuY29kZXBsZXguY29tL0Rvd25sb2FkP1Byb2plY3ROYW1lPXVjb21wb25lbnRzJkRvd25sb2FkSWQ9MjUzODM0JkJ1aWxkPTE5MDMxZGQCDA9kFgICAQ8PFgIfBwUgaHR0cDovL3Vjb21wb25lbnRzLmNvZGVwbGV4LmNvbS9kFgICAQ8PFgIfBAULdUNvbXBvbmVudHNkZAIFD2QWAmYPFgIfA2gWAgIBDw8WAh8HBSxodHRwOi8vdWNvbXBvbmVudHMuY29kZXBsZXguY29tL3Byb2plY3QvZWRpdGRkAgcPZBYCAgEPZBYCAgMPZBYCAgEPZBYCAgEPZBYCAgEPZBYOAgEPZBYCAgEPDxYCHwcFMWh0dHA6Ly91Y29tcG9uZW50cy5jb2RlcGxleC5jb20vcHJvamVjdC9mZWVkcy9yc3NkZAIDD2QWAgIBDw8WAh8HBWVodHRwOi8vdWNvbXBvbmVudHMuY29kZXBsZXguY29tL3Byb2plY3QvZmVlZHMvcnNzP1Byb2plY3RSU1NGZWVkPWNvZGVwbGV4JTNhJTJmJTJmZm9ydW0lMmZ1Y29tcG9uZW50c2RkAgUPZBYCAgEPDxYCHwcFaGh0dHA6Ly91Y29tcG9uZW50cy5jb2RlcGxleC5jb20vcHJvamVjdC9mZWVkcy9yc3M/UHJvamVjdFJTU0ZlZWQ9Y29kZXBsZXglM2ElMmYlMmZ3b3JraXRlbSUyZnVjb21wb25lbnRzZGQCBw9kFgICAQ8PFgIfBwVnaHR0cDovL3Vjb21wb25lbnRzLmNvZGVwbGV4LmNvbS9wcm9qZWN0L2ZlZWRzL3Jzcz9Qcm9qZWN0UlNTRmVlZD1jb2RlcGxleCUzYSUyZiUyZnJlbGVhc2UlMmZ1Y29tcG9uZW50c2RkAgkPZBYCAgEPDxYCHwcFZmh0dHA6Ly91Y29tcG9uZW50cy5jb2RlcGxleC5jb20vcHJvamVjdC9mZWVkcy9yc3M/UHJvamVjdFJTU0ZlZWQ9Y29kZXBsZXglM2ElMmYlMmZyZXZpZXclMmZ1Y29tcG9uZW50c2RkAgsPZBYCAgEPDxYCHwcFbWh0dHA6Ly91Y29tcG9uZW50cy5jb2RlcGxleC5jb20vcHJvamVjdC9mZWVkcy9yc3M/UHJvamVjdFJTU0ZlZWQ9Y29kZXBsZXglM2ElMmYlMmZzb3VyY2Vjb250cm9sJTJmdWNvbXBvbmVudHNkZAIND2QWAgIBDw8WAh8HBWRodHRwOi8vdWNvbXBvbmVudHMuY29kZXBsZXguY29tL3Byb2plY3QvZmVlZHMvcnNzP1Byb2plY3RSU1NGZWVkPWNvZGVwbGV4JTNhJTJmJTJmd2lraSUyZnVjb21wb25lbnRzZGQCAw9kFgICAQ9kFgRmDw8WAh8DaGQWAgIDD2QWAmYPZBYCAgEPZBYEAgUPDxYCHwNoZGQCBw8PFgIfA2hkZAIBD2QWAgIDD2QWAgIBD2QWAgIBD2QWAgIBD2QWAgIBDxYCHwEFRWh0dHA6Ly91Y29tcG9uZW50cy5jb2RlcGxleC5jb20vcHJvamVjdC9lZGl0P0ZvY3VzRWxlbWVudD1EZXNjcmlwdGlvbmQCBQ9kFhACAQ9kFgJmDw8WAh8HBSBodHRwOi8vdWNvbXBvbmVudHMuY29kZXBsZXguY29tLxYCHgVjbGFzcwUIYm94X2hvbWVkAgMPZBYCZg8PFgIfBwUzaHR0cDovL3Vjb21wb25lbnRzLmNvZGVwbGV4LmNvbS9yZWxlYXNlcy92aWV3Lzg0ODE3FgIfCQUNYm94X2Rvd25sb2Fkc2QCBQ9kFgJmDw8WAh8HBS1odHRwOi8vdWNvbXBvbmVudHMuY29kZXBsZXguY29tL2RvY3VtZW50YXRpb24WAh8JBRRkb2N1bWVudGF0aW9uX2FjdGl2ZWQCBw9kFgJmDw8WAh8HBStodHRwOi8vdWNvbXBvbmVudHMuY29kZXBsZXguY29tL2Rpc2N1c3Npb25zFgIfCQUPYm94X2Rpc2N1c3Npb25zZAIJD2QWAmYPDxYCHwcFM2h0dHA6Ly91Y29tcG9uZW50cy5jb2RlcGxleC5jb20vd29ya2l0ZW0vbGlzdC9iYXNpYxYCHwkFCWJveF9pc3N1ZWQCCw9kFgJmDw8WAh8HBT1odHRwOi8vdWNvbXBvbmVudHMuY29kZXBsZXguY29tL1NvdXJjZUNvbnRyb2wvbGlzdC9jaGFuZ2VzZXRzFgIfCQUKYm94X3NvdXJjZWQCDQ9kFgJmDw8WAh8HBSlodHRwOi8vdWNvbXBvbmVudHMuY29kZXBsZXguY29tL3RlYW0vdmlldxYCHwkFCmJveF9wZW9wbGVkAg8PZBYCZg8PFgIfBwUnaHR0cDovL3Vjb21wb25lbnRzLmNvZGVwbGV4LmNvbS9saWNlbnNlFgIfCQULYm94X2xpY2Vuc2VkAgkPDxYCHwNoZGRkzOHvmu9Yksemnn97fy9VMMOw+x0=">
+</div>
+
+    <!--
+    Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code,
+    not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.
+    -->
+    <script src="uComponents.uQuery_files/jquery-1.js" type="text/javascript"></script>
+    <script src="uComponents.uQuery_files/jquery-u.js" type="text/javascript"></script>
+    <script src="uComponents.uQuery_files/ScriptLo.js" type="text/javascript"></script>
+        
+<div id="UpdateProgressPanel" class="loading_animation" style="display:none;">
+    <div class="row">
+        <h2 class="anim_h2">
+            <span id="UpdateProgressText">Updating...</span>
+            <span id="animatedLoadingIconContainer">
+                <img id="animatedLoadingIcon" src="uComponents.uQuery_files/loading_.gif" class="anim_img">
+            </span>
+        </h2>
+    </div>
+</div>
+<div style="display: none;">
+    <div id="Analytics" style="width: 70%">
+        <script src="uComponents.uQuery_files/broker00.js" type="text/javascript"></script>
+        <img id="ctl00_ctl00_BlankImage" onload="self.logoImageLoaded=true" src="uComponents.uQuery_files/blank000.png" style="height:0px;width:0px;border-width:0px;">
+        <script language="javascript" type="text/javascript">
+            var date = new Date();
+            var timezoneOffset = date.getTimezoneOffset() / 60 * -1;
+            var timezoneOffsetCookie = getCookie("TimezoneOffset");
+            var firstTimeSetTimezoneCookie = false;
+
+            if (timezoneOffsetCookie == null || timezoneOffsetCookie != timezoneOffset) {
+                firstTimeSetTimezoneCookie = true;
+                document.cookie = "TimezoneOffset=" + timezoneOffset + '; domain=.codeplex.com';
+            }
+        </script>
+        
+            <noscript><a href="http://www.omniture.com/" title="Web Analytics">
+                <img src="http://msstonojstemp.112.2O7.net/b/ss/msstonojstemp/1/H.20.2--NS/0" height="1" width="1" border="0" alt>
+            </a></noscript>
+               
+    </div>
+</div>
+
+<div id="header">
+    <div id="header_wrap" class="row">
+	    <p id="logo"><a href="http://www.codeplex.com/">Code<span class="semi">Plex</span></a><span id="tagline">Project Hosting for Open Source Software</span></p>
+        
+        
+        <ul id="nav">
+            
+    	    <li><a href="http://ucomponents.codeplex.com/site/register/new" id="registerLink" class="ZoomFix">Register</a></li>
+            <li><a href="https://www.codeplex.com/site/login?RedirectUrl=http%3a%2f%2fucomponents.codeplex.com%2fwikipage%3ftitle%3duQuery%26ProjectName%3ducomponents" id="signInLink" class="ZoomFix">Sign In</a></li>
+            <li class="last"><a class="rss_site_icon" href="http://www.codeplex.com/site/feeds/rss" type="application/rss+xml" rel="Alternate" title="CodePlex Site Activity"></a></li>
+        </ul>
+    
+        
+
+<input id="searchsite" name="searchsite" maxlength="500" type="text" value><span id="search_mag"><a id="submitSearch" name="submitSearch" class="magnify" title="Search" href="http://ucomponents.codeplex.com/wikipage?title=uQuery#"></a></span>
+<script>
+	$(document).ready(function() {
+    $loadScript('http://i4.services.social.microsoft.com/search/Widgets/SearchBox.jss?appid=1000&scopeid=1&boxId=searchsite&btnId=submitSearch&watermark=Search%20all%20projects&overrideWatermark=true&searchLocation=%2fsite%2fsearch&allowEmptySearch=true&focusOnInit=False&minimumTermLength=3');
+    if (typeof epx_loaded === 'undefined' || !epx_loaded) {
+        $('#submitSearch').bind('click', doProjectSearch);
+        $('#searchsite').bind('keypress', function(e) { if ($keyCode(e) === 13) { doProjectSearch(); return false; } });
+    }
+})
+function doProjectSearch() {
+    
+    var url = '/site/search';
+
+    //If search term is not same as watermark
+    if($('#searchsite').val() != 'Search all projects')    
+    {        
+        url = url + '?query=' + encodeURIComponent($('#searchsite').val());
+    }
+
+    
+    var callback = '';
+    if (callback.length > 0 && eval('typeof ' + callback) != 'undefined')
+        url += eval(callback + '()');
+    window.location.href = url;
+    return false;
+}
+</script>
+
+    </div>
+</div>
+
+<div id="wrap">
+
+    
+	<div id="sub_heading" class="row">
+        <div id="ctl00_ctl00_MasterContent_ProjectHeader">
+            <div id="project_title_row" class="row">
+                <div id="project_logo">
+                    
+                    
+    <h1><a id="ctl00_ctl00_MasterContent_ProjectTitleControl1_ProjectLogoLink1" href="http://ucomponents.codeplex.com/"><img id="ctl00_ctl00_MasterContent_ProjectTitleControl1_ProjectLogo1" class="logo_alternate" src="uComponents.uQuery_files/Download.png" alt="uComponents" style="border-width:0px;"></a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div id="project_title_links">
+                    
+
+                    <div id="RssContainer">
+                        
+   
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#rssHoverTitle a').click(function() {
+            allowUnsavedDataAlert();
+            $('#rssHoverDiv').hide();
+            return false;
+        });
+
+        $('#rssHoverLink a').click(function () {
+            var pos = $('#rssHoverLink .rss_link').position();
+            $("#rssHoverDiv").css({
+                top: (pos.top - 11) + "px",
+                left: (pos.left - 55) + "px"
+            }).show();
+            $('#rssHoverDiv').show();
+            return false;
+        });
+    })
+</script>
+    
+<div id="rssHoverDiv" class="HoverPanel LeftHoverWidth AlignLeft">
+        <div id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel" class="ContentPanelBox SideBarControl HoverContentPanel" style>
+	<div id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_headerPanel" class="HeaderPanel Header">
+		
+    
+                <div id="rssHoverTitle">
+                    <a class="rss_icon" href="http://ucomponents.codeplex.com/wikipage?title=uQuery#">RSS</a>
+                    <a class="rss_link" href="http://ucomponents.codeplex.com/wikipage?title=uQuery#">Subscribe to Project</a>
+                </div>
+                <div class="clear"></div>
+           
+
+	</div><div id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_contentPanel" class="StandardPadding">
+		
+    
+            <ul id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_FeedsPanel" class="RssFeedsPanel">
+                <div id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_ProjectPanel">
+			
+                    <li>
+                        <a id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_ProjectRssLink" title="All Project Updates" class="ArrowSmall NoUnderline" href="http://ucomponents.codeplex.com/project/feeds/rss">All Project Updates</a>
+                    </li>
+                
+		</div>
+                <div id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_DiscussionsPanel">
+			
+                    <li>
+                        <a id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_DiscussionsRssLink" title="New threads and posts" class="ArrowSmall NoUnderline" href="http://ucomponents.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fforum%2fucomponents">Discussions</a>
+                    </li>
+                
+		</div>
+                <div id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_IssueTrackerPanel">
+			
+                    <li>    
+                        <a id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_IssueTrackerRssLink" title="New and updated work items" class="ArrowSmall NoUnderline" href="http://ucomponents.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fworkitem%2fucomponents">Issue Tracker</a>
+                    </li>
+                
+		</div>
+                <div id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_ReleasesPanel">
+			
+                    <li>
+                        <a id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_ReleasesRssLink" title="New and updated releases" class="ArrowSmall NoUnderline" href="http://ucomponents.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2frelease%2fucomponents">Releases</a>
+                    </li>
+                
+		</div>  
+                <div id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_ReviewsPanel">
+			
+                    <li>
+                        <a id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_ReviewsRssLink" title="New and updated reviews" class="ArrowSmall NoUnderline" href="http://ucomponents.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2freview%2fucomponents">Reviews</a>
+                    </li>
+                
+		</div>          
+                <div id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_SourceControlPanel">
+			
+                    <li>
+                        <a id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_SourceControlRssLink" title="New check-ins" class="ArrowSmall NoUnderline" href="http://ucomponents.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fsourcecontrol%2fucomponents">Source Code</a>
+                    </li>
+                
+		</div>
+                <div id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_WikiPanel">
+			
+                    <li>
+                        <a id="ctl00_ctl00_MasterContent_rssFeeds_RssHoverContentPanel_WikiRssLink" title="New and updated wiki pages" class="ArrowSmall NoUnderline" href="http://ucomponents.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fwiki%2fucomponents">Wiki &amp; Documentation</a>
+                    </li>
+                
+		</div>
+            </ul>
+           
+
+	</div>
+</div>  
+</div>
+
+<div id="rssHoverLink">
+    <a class="rss_icon" href="http://ucomponents.codeplex.com/wikipage?title=uQuery#">RSS</a>
+    <a class="rss_link" href="http://ucomponents.codeplex.com/wikipage?title=uQuery#">Subscribe to Project</a>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="ctl00_ctl00_MasterContent_ProjectDetailsDiv">
+            
+
+<script type="text/javascript">
+    function VerifyProjectDeletion()
+    {
+        var result = confirm("Are you sure you want to delete this project?  You will not be able to recover it later");
+        if (result)
+            ShowUpdatingPanel();
+        else
+            allowUnsavedDataAlert();
+        return result;
+    }
+    function ShowPublishPanel()
+    {
+        ShowUpdatingPanel();
+    }
+    function ShowUpdatingPanel()
+    {
+        var publishButton=$('#ctl00_ctl00_MasterContent_ProjectCountdown_PublishProject_PublishButton')[0];
+        var deleteButton=$('#ctl00_ctl00_MasterContent_ProjectCountdown_PublishProject_DeleteButton')[0];
+
+        setTimeout(function() { CodePlex.UpdateProgress.displayPanelAndDisableControls('Working...', publishButton, deleteButton) }, 1);
+    }
+</script>
+<div class="clear"></div>
+
+
+<script type="text/javascript">
+    // replaces the smartdatecontrol's "Today" with "today" or "on {Date}" for this user control
+    function formatDate() {
+        var dateSpan = $('#ctl00_ctl00_MasterContent_ProjectCountdown_PublishProject_DeletionDateLiteral');
+        if (dateSpan.text().toLowerCase() == "today")
+            dateSpan.text("today");
+        else
+            dateSpan.text("on " + dateSpan.text());
+    }
+    formatDate();
+</script>
+
+        </div>
+		<div class="clear"></div>
+        
+        
+
+	<ul id="page_box_links">
+
+		<li id="ctl00_ctl00_MasterContent_Tabs_homeTabCell" style="width: 63px;"><a id="ctl00_ctl00_MasterContent_Tabs_homeTab" class="box_home" href="http://ucomponents.codeplex.com/">home</a></li>
+		<li id="ctl00_ctl00_MasterContent_Tabs_releasesTabCell" style="width:112px;"><a id="ctl00_ctl00_MasterContent_Tabs_releasesTab" class="box_downloads" href="http://ucomponents.codeplex.com/releases/view/84817">downloads</a></li>
+        <li id="ctl00_ctl00_MasterContent_Tabs_documentationTabCell" style="width:143px;"><a id="ctl00_ctl00_MasterContent_Tabs_documentationTab" class="documentation_active" href="http://ucomponents.codeplex.com/documentation">documentation</a></li>
+		<li id="ctl00_ctl00_MasterContent_Tabs_discussionTabCell" style="width:112px;"><a id="ctl00_ctl00_MasterContent_Tabs_discussionTab" class="box_discussions" href="http://ucomponents.codeplex.com/discussions">discussions</a></li>
+		<li id="ctl00_ctl00_MasterContent_Tabs_workItemsTabCell" style="width:124px;"><a id="ctl00_ctl00_MasterContent_Tabs_workItemsTab" class="box_issue" href="http://ucomponents.codeplex.com/workitem/list/basic">issue tracker</a></li>
+		<li id="ctl00_ctl00_MasterContent_Tabs_sourceTabCell" style="width:117px;"><a id="ctl00_ctl00_MasterContent_Tabs_sourceTab" class="box_source" href="http://ucomponents.codeplex.com/SourceControl/list/changesets">source code</a></li>
+		<li id="ctl00_ctl00_MasterContent_Tabs_peopleTabCell" style="width:71px;"><a id="ctl00_ctl00_MasterContent_Tabs_peopleTab" class="box_people" href="http://ucomponents.codeplex.com/team/view">people</a></li>
+		<li id="ctl00_ctl00_MasterContent_Tabs_licenseTabCell" style="width:96px; margin-right:15px;"><a id="ctl00_ctl00_MasterContent_Tabs_licenseTab" class="box_license" href="http://ucomponents.codeplex.com/license">license</a></li>
+        <span class="stretch"></span>
+	</ul>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            return resizeProjectTabs();
+        });
+    </script>
+
+
+
+		<div class="clear"></div>
+
+        
+    <div id="DeleteWikiPagePanel" class="modal" style="display: none;">
+        <div class="row">
+            <h2>Are you Sure? <a href="javascript:return false;" class="close">X</a></h2>
+        </div>
+        <div class="modal_info">
+            By clicking Delete, all history, comments and attachments for this page will be deleted and cannot be restored.
+            <div class="modal_buttons">
+                <input type="button" id="CancelButton" class="cancel" value="Cancel">
+                <input type="button" id="DeleteButton" class="ok" value="Delete">
+            </div>
+            <div class="ClearBoth"></div>
+        </div>
+    </div>
+    
+		<ul class="page_box_sublinks">
+            
+                <li><a id="pageInfoHyperLink" href="http://ucomponents.codeplex.com/wiki/PageInfo?title=uQuery">Page Info</a></li>
+            
+            <li class="last"><a id="changesHyperlink" href="http://ucomponents.codeplex.com/wikipage/history">Change History (all pages)</a></li>
+		</ul>
+
+        
+<script type="text/javascript">
+    function toggleFavoriteProject() {
+        
+            location.href = 'https://www.codeplex.com/site/login?RedirectUrl=http%3a%2f%2fucomponents.codeplex.com%2f'
+        
+    }
+</script>
+
+<div id="favoriteProjectContainer">
+
+<p class="subtab_right">
+
+<span class="RatingStar EmptyRatingStar" onclick="toggleFavoriteProject();return false;" style="cursor:pointer;padding-right: 25px;"></span>
+
+
+    <a href="http://ucomponents.codeplex.com/team/view">77 people</a> following this project
+
+
+<a id="followLink" href="http://ucomponents.codeplex.com/wikipage?title=uQuery#" onclick="toggleFavoriteProject();return false;">(follow)</a>
+</p></div>
+
+
+    </div>
+
+    
+
+    <div id="ctl00_ctl00_MasterContent_ProjectContentPanel">
+	
+        
+<div id="left_column">
+    
+        <p id="breadcrumbs" style="margin-left: 10px">
+            
+                <a href="http://ucomponents.codeplex.com/documentation">Documentation</a>
+                
+                    <img src="uComponents.uQuery_files/arrow_sm.gif" alt="Go" style="margin-top: 5px">
+                
+                <a href="http://ucomponents.codeplex.com/wikipage?title=uQuery">uQuery</a>
+                
+        </p>
+    
+
+    <div class="WikiHolder">
+
+        
+            <div id="WikiContent" class="WikiContent">
+                <div class="wikidoc">
+<h1>uQuery</h1>
+<p>uComponents.Core.uQuery is a static class of helper methods:</p>
+<p>To use the following methods add:</p>
+<p>&nbsp;</p>
+<div style="color:black; background-color:white">
+<pre><span style="color:blue">using</span> uComponents.Core;
+</pre>
+</div>
+<p>&nbsp;</p>
+<table border="0">
+<thead>
+<tr valign="middle">
+<th scope="col" style="width:150px">returns</th>
+<th scope="col" style="width:250px">method</th>
+<th scope="col" style="width:400px">notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List&lt;Node&gt;</td>
+<td>GetNodesByXPath(string)</td>
+<td>
+<p>get node collection from an XPath expression (uses Umbraco Xml) can use use $ancestorOrSelf to use the currentNode if published else it'll use the nearest published parent ($currentPage will be depreciated) - the XPath expression is compiled and cached</p>
+</td>
+</tr>
+<tr>
+<td>List&lt;Node&gt;</td>
+<td>GetNodesByCsv(string)</td>
+<td>get node collection from a CSV string of node Ids</td>
+</tr>
+<tr>
+<td>List&lt;Node&gt;</td>
+<td>GetNodesByXml(string)</td>
+<td>currently works with XML saved by Multi-Node Tree Picker (use GetMediaByXml for Media nodes)</td>
+</tr>
+<tr>
+<td>List&lt;Node&gt;</td>
+<td>GetNodesByName(string)</td>
+<td>returns a collection of nodes where names match</td>
+</tr>
+<tr>
+<td>List&lt;Node&gt;</td>
+<td>GetNodesByType(string)</td>
+<td>returns a collection of nodes of docType alias</td>
+</tr>
+<tr>
+<td>List&lt;Node&gt;</td>
+<td>GetNodesByType(int)</td>
+<td>[v2.2] returns a collection of nodes of docType id</td>
+</tr>
+<tr>
+<td>Node</td>
+<td>GetNodeByUrl(string)</td>
+<td>returns a node for the supplied Url</td>
+</tr>
+<tr>
+<td>Node</td>
+<td>GetRootNode()</td>
+<td>returns node -1</td>
+</tr>
+<tr>
+<td>Node</td>
+<td>GetCurrentNode()</td>
+<td>checks to see if Node.GetCurrent() returns a valid node, else attempts to get the current node via a QueryString id parameter<br>
+</td>
+</tr>
+<tr>
+<td>Node</td>
+<td>GetNode(string)</td>
+<td>wrapper for null checks, string supplied is the node Id</td>
+</tr>
+<tr>
+<td>Node</td>
+<td>GetNode(int)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td><br>
+</td>
+<td><br>
+</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>List&lt;Document&gt;</td>
+<td>GetDocumentsByCsv(string)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>List&lt;Document&gt;</td>
+<td>GetDocumentsByXml(string)</td>
+<td>[v2.2]</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>GetCurrentDocument()</td>
+<td>checks to see if the current Node can be obtained via the nodeFactory, else attempts to get via a QueryString id parameter</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>GetDocument(string)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>GetDocument(int)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>List&lt;Media&gt;</td>
+<td>GetMediaByXPath(string)</td>
+<td>(uses GetPublishedXml)</td>
+</tr>
+<tr>
+<td>List&lt;Media&gt;</td>
+<td>GetMediaByCsv(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>List&lt;Media&gt;</td>
+<td>GetMediaByXml(string)</td>
+<td>[v2.2]&nbsp;currently works with XML saved by Multi-Node Tree Picker&nbsp;(use GetNodesByXml for Content nodes)&nbsp;</td>
+</tr>
+<tr>
+<td>List&lt;Media&gt;</td>
+<td>GetMediaByName(string)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>List&lt;Media&gt;</td>
+<td>GetMediaByType(string)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>Media</td>
+<td>GetMedia(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Media</td>
+<td>GetMedia(int)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>List&lt;Member&gt;</td>
+<td>GetMembersByXPath(string)</td>
+<td>(uses GetPublishedXml)</td>
+</tr>
+<tr>
+<td>List&lt;Member&gt;</td>
+<td>GetMembersByCsv(string)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>List&lt;Member&gt;</td>
+<td>GetMembersByXml(string)</td>
+<td>[v2.2]</td>
+</tr>
+<tr>
+<td>List&lt;Member&gt;</td>
+<td>GetMembersByType(string)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>List&lt;Member&gt;</td>
+<td>GetMembersByGroup(string)</td>
+<td>TO BE CODED</td>
+</tr>
+<tr>
+<td>&nbsp;Member</td>
+<td>GetMember(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;Member</td>
+<td>GetMember(int) <br>
+</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>XmlDocument</td>
+<td>GetPublishedXml(UmbracoObjectType)</td>
+<td>get XML from the cmsContentXml table</td>
+</tr>
+<tr>
+<td>UmbracoObjectType</td>
+<td>GetUmbracoObjectType(string)</td>
+<td>get UmbracoObejctType by it's enum name</td>
+</tr>
+<tr>
+<td>UmbracoObjectType</td>
+<td>GetUmbracoObjectType(Guid)</td>
+<td>get UmbracoObjectType by it's GUID value<br>
+</td>
+</tr>
+<tr>
+<td>UmbracoObjectType</td>
+<td>GetUmbracoObjectType(int)</td>
+<td>get UmbracoObjectType for an item in the umbracoNode table</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>IsLegacyXmlSchema()</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Dictionary&lt;int, string&gt;</td>
+<td>ToNameIds(List&lt;Node&gt;)</td>
+<td>extension method on List&lt;Node&gt; to return a Name, ID collection</td>
+</tr>
+<tr>
+<td>Dictionary&lt;int, string&gt;</td>
+<td>ToNameIds(List&lt;Document&gt;)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Dictionary&lt;int, string&gt;</td>
+<td>ToNameIds(List&lt;Media&gt;)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Dictionary&lt;int, string&gt;</td>
+<td>ToNameIds(List&lt;Member&gt;)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;DataTypeDefinition&gt;</td>
+<td>GetAllDataTypesSorted(string propertyName)</td>
+<td>[v2.2] Gets all installed datatypes sorted by the specified property name.</td>
+</tr>
+<tr>
+<td>Guid</td>
+<td>GetDataTypeGuid(int dataTypeNodeId)</td>
+<td>[v2.2] Gets the Guid of a datatype based on it's id.</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>string</td>
+<td>GetDictionaryItem(string key, string fallback)</td>
+<td>[v2.2] Gets a dictionary item with the specified key, uses the fallback if it doesn''t exist.</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>PreValue</td>
+<td>MakeNewPreValue(int dataTypeDefinitionId, string value, string? alias, int? sortOrder)</td>
+<td>[v2.2] Creates a new PreValue with the specified datatype definition id, value, alias and sort order. Alias and sort order is optional. Returns the created PreValue on success, null on failure.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h2>uQueryExtensions</h2>
+<p>uComponents.Core.uQueryExtensions is a namespace containing static classes with extension methods for the Umbraco Node, Document, Media, Member and RelationType objects.</p>
+<p>To use the following methods add:</p>
+<p>&nbsp;</p>
+<div style="color:black; background-color:white">
+<pre><span style="color:blue">using</span> uComponents.Core.uQueryExtensions;
+<br></pre>
+</div>
+<p>&nbsp;</p>
+<h4>umbraco.presentation.nodeFactory.Node</h4>
+<table border="0">
+<thead>
+<tr>
+<th scope="col" style="width:150px">returns</th>
+<th scope="col" style="width:250px">method</th>
+<th scope="col" style="width:400px">notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IEnumerable&lt;Node&gt;</td>
+<td>GetAncestorNodes()</td>
+<td>these axis type methods are useful with LINQ<br>
+</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Node&gt;</td>
+<td>GetAncestorOrSelfNodes()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Node&gt;</td>
+<td>GetPrecedingSiblingNodes()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Node&gt;</td>
+<td>GetFollowingSiblingNodes()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Node&gt;</td>
+<td>GetSiblingNodes()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Node&gt;</td>
+<td>GetDescendantNodes()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Node&gt;</td>
+<td>GetDescendantNodes(Func&lt;Node, bool&gt;)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Node&gt;</td>
+<td>GetDescendantOrSelfNodes()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Node&gt;</td>
+<td>GetChildNodes()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Node</td>
+<td>GetChildNodeByName(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>HasProperty(string)</td>
+<td>[v3.0]</td>
+</tr>
+<tr>
+<td>T</td>
+<td>GetProperty&lt;T&gt;(string)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>string</td>
+<td>GetPropertyAsString(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>GetPropertyAsBoolean(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td>GetPropertyAsDateTime(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>int</td>
+<td>GetPropertyAsInt(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>XmlNode</td>
+<td>GetPropertyAsXmlNode(string)</td>
+<td>&nbsp;TO BE CODED<br>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Level<br>
+</td>
+<td>[v2.1.1] calculate depth of node based on path csv</td>
+</tr>
+<tr>
+<td>string</td>
+<td>GetImageCropperUrl(string, string)</td>
+<td>get the url of an image crop (propertyAlias, cropName)</td>
+</tr>
+<tr>
+<td>Node</td>
+<td>SetProperty(string, object)</td>
+<td>chainable property setter - calls Document.SetProperty<br>
+</td>
+</tr>
+<tr>
+<td>Node</td>
+<td>Publish(bool)</td>
+<td>calls Document.Publish [true = admin, false = current user]<br>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h4>umbraco.cms.businesslogic.web.Document</h4>
+<table border="0">
+<thead>
+<tr>
+<th scope="col" style="width:150px">returns</th>
+<th scope="col" style="width:250px">method</th>
+<th scope="col" style="width:400px">notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IEnumerable&lt;Document&gt;</td>
+<td>GetAncestorDocuments()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Document&gt;</td>
+<td>GetAncestorOrSelfDocuments()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Document&gt;</td>
+<td>GetPrecedingSiblingDocuments()</td>
+<td>&nbsp;[v3.0]</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Document&gt;</td>
+<td>GetFollowingSiblingDocuments()</td>
+<td>&nbsp;[v3.0]</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Document&gt;</td>
+<td>GetSiblingDocuments()</td>
+<td>&nbsp;[v3.0]</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Document&gt;</td>
+<td>GetDescendantOrSelfDocuments()</td>
+<td>&nbsp;[v3.0]</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Document&gt;</td>
+<td>GetDescendantDocuments()</td>
+<td>&nbsp;[v3.0]</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Document&gt;</td>
+<td>GetDescendantDocuments(Func&lt;Document, bool&gt;)</td>
+<td>&nbsp;[v3.0]</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Document&gt;</td>
+<td>GetDescendantDocumentsByType(string)</td>
+<td>&nbsp;[v3.0]</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Document&gt;</td>
+<td>
+<p>GetChildDocuments()</p>
+</td>
+<td>&nbsp;[v3.0]</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Document&gt;</td>
+<td>
+<p>GetChildDocuments(Func&lt;Document, bool&gt;)</p>
+</td>
+<td>&nbsp;[v3.0]</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Document&gt;</td>
+<td>GetChildDocumentsByType(string)</td>
+<td>&nbsp;[v3.0]</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>HasProperty(string)</td>
+<td>[v3.0]</td>
+</tr>
+<tr>
+<td>T</td>
+<td>GetProperty&lt;T&gt;(string)</td>
+<td>[v3.0]<br>
+</td>
+</tr>
+<tr>
+<td>string</td>
+<td>GetPropertyAsString(string)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>GetPropertyAsBoolean(string)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td>GetPropertyAsDateTime(string)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>int</td>
+<td>GetPropertyAsInt(string)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>XmlNode</td>
+<td>GetPropertyAsXmlNode(string)</td>
+<td>TO BE CODED</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>SetProperty(string, object)</td>
+<td>&nbsp;- aware of built in datatypes using PreValues, so can be set by prevalue name or prevalue id<br>
+</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>Publish(bool)</td>
+<td><br>
+</td>
+</tr>
+</tbody>
+</table>
+<h4>umbraco.cms.businesslogic.media.Media</h4>
+<table border="0">
+<thead>
+<tr>
+<th scope="col" style="width:150px">returns</th>
+<th scope="col" style="width:250px">method</th>
+<th scope="col" style="width:400px">notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IEnumerable&lt;Media&gt;</td>
+<td>GetAncestorMedia()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Media&gt;</td>
+<td>GetAncestorOrSelfMedia()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Media&gt;</td>
+<td>GetSiblingMedia()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Media&gt;</td>
+<td>GetDescendantMedia()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Media&gt;</td>
+<td>GetDescendantOrSelfMedia()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>IEnumerable&lt;Media&gt;</td>
+<td>GetChildMedia()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>HasProperty(string)</td>
+<td>[v3.0]</td>
+</tr>
+<tr>
+<td>T</td>
+<td>GetProperty&lt;T&gt;(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>string</td>
+<td>GetPropertyAsString(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>GetPropertyAsBoolean(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td>GetPropertyAsDateTime(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>int</td>
+<td>GetPropertyAsInt(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>XmlNode</td>
+<td>GetPropertyAsXmlNode(string)</td>
+<td>TO BE CODED</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Level</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>string</td>
+<td>GetImageCropperUrl(string, string)</td>
+<td>get the url of an image crop (propertyAlias, cropName) <br>
+</td>
+</tr>
+<tr>
+<td>Media</td>
+<td>SetProperty(string, object)</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h4>umbraco.cms.businesslogic.member.Member</h4>
+<table border="0">
+<thead>
+<tr>
+<th scope="col" style="width:150px">returns</th>
+<th scope="col" style="width:250px">method</th>
+<th scope="col" style="width:400px">notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bool</td>
+<td>HasProperty(string)</td>
+<td>[v3.0]</td>
+</tr>
+<tr>
+<td>T</td>
+<td>GetProperty&lt;T&gt;(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>string</td>
+<td>GetPropertyAsString(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>GetPropertyAsBoolean(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td>GetPropertyAsDateTime(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>int</td>
+<td>GetPropertyAsInt(string)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>XmlNode</td>
+<td>GetPropertyAsXmlNode(string)</td>
+<td>TO BE CODED</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Member</td>
+<td>SetProperty(string, object)</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h4>umbraco.cms.businesslogic.relation.RelationType</h4>
+<table border="0">
+<thead>
+<tr>
+<th scope="col" style="width:150px">returns</th>
+<th scope="col" style="width:250px">method</th>
+<th scope="col" style="width:400px">notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UmbracoObjectType</td>
+<td>GetParentUmbracoObjectType()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>UmbracoObjectType</td>
+<td>GetChildUmbracoObjectType()</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>void<br>
+</td>
+<td>CreateRelation(int, int)</td>
+<td>validates ids against the objectypes defined on the RelationType<br>
+</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>HasRelations(int)</td>
+<td>[v2.2]</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>IsRelated(int, int)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Relation</td>
+<td>GetRelation(int, int)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Relation[]</td>
+<td>GetRelations(int)</td>
+<td><br>
+</td>
+</tr>
+<tr>
+<td>void<br>
+</td>
+<td>DeleteRelation(int, int)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>void<br>
+</td>
+<td>ClearRelations(int)</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h4>umbraco.cms.businesslogic.datatype.PreValue</h4>
+<table border="0">
+<thead>
+<tr>
+<th scope="col" style="width:150px">returns</th>
+<th scope="col" style="width:250px">method</th>
+<th scope="col" style="width:400px">notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td>GetAlias()</td>
+<td>&nbsp;[v2.2] Gets the alias of the PreValue</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<div id="_mcePaste" style="left:-10000px; top:2435px; width:1px; height:1px; overflow:hidden">
+<p>GetPrecedingSiblingDocuments()</p>
+</div>
+</div><div class="ClearBoth"></div>
+            </div>
+        
+                <p>Last edited <span class="smartDate" title="16.11.2011 16:47:54" localtimeticks="1321490874">Nov 16 2011 at 4:47 PM</span> by <a id="wikiEditByLink" href="http://www.codeplex.com/site/users/view/tentonipete">tentonipete</a>, version 52</p>
+            
+                <div id="Comments">
+                    
+
+<script type="text/javascript">
+    var commentCount = 2;
+    function addComment() {
+        var input = $('#Comment');
+        input.val($.trim(input.val()));
+        if (MvcValidation_Validate('AddComment')) {
+            CodePlex.UpdateProgress.show();
+            $.post('http://ucomponents.codeplex.com/wikipage/comment', { Comment: input.val(), title: $('#WikiTitle').val() }, function(data, textStatus) {
+                if (textStatus == 'success') {
+                    if(commentCount++ == 0)
+                        $('#wikiCommentsEmpty').empty();
+                    $('#wikiComments').append(data);
+                    input.val('');
+                }
+                CodePlex.UpdateProgress.hide();
+            });
+        }
+    }
+    function deleteComment(id) {
+        if (confirm('Are you sure you want to delete this comment?')) {
+            CodePlex.UpdateProgress.show();
+            $.ajax({
+                type: 'DELETE',
+                url: 'http://ucomponents.codeplex.com/wikipage/comment' + '/' + id,
+                success: function() {
+                    $('#comment' + id).empty();
+                    CodePlex.UpdateProgress.hide();
+                },
+                error: function() { CodePlex.UpdateProgress.hide(); }
+            });
+        }
+    }
+</script>
+
+<div id="CommentsAnchor">
+    <h2>Comments</h2>
+    <div id="wikiComments">
+        
+
+<div id="comment20543">
+    <div class="SubText">
+        <a name="C20543">
+        <a href="http://www.codeplex.com/site/users/view/bfi">bfi</a>
+        <span class="smartDate" title="03.08.2011 4:15:26" localtimeticks="1312370126">Aug 3 2011 at 4:15 AM</span>&nbsp;
+        
+    </div>
+    I'm trying to use GetImageCropperUrl<br><br>var p = uQuery.GetMedia(Convert.ToInt3<wbr></wbr>2(SOME_ID));<br>var c = p.GetImageCropperUrl("umbracoF<wbr></wbr>ile", "Thumbnail");<br><br>p is a valid Media object, but I get the error  'umbraco.cms.businesslogic.med<wbr></wbr>ia.Media' does not contain a definition for 'GetImageCropperUrl'<br><br>How is this method used?<p></p>
+</div>
+
+<div id="comment18844">
+    <div class="SubText">
+        <a name="C18844">
+        <a href="http://www.codeplex.com/site/users/view/Myster">Myster</a>
+        <span class="smartDate" title="10.03.2011 3:56:31" localtimeticks="1299758191">Mar 10 2011 at 3:56 AM</span>&nbsp;
+        
+    </div>
+    This would be a breaking change, but in my version here<br>http://our.umbraco.org/wiki/ho<wbr></wbr>w-tos/useful-helper-extension-<wbr></wbr>methods-%28linq-null-safe-acce<wbr></wbr>ss%29<br> I've removed Depth and replaced it with Level and aligned it so root is 0 so it matches xslt<br><br>/// &lt;summary&gt;<br>/// Tell me the level of this node (0 = root)<br>/// updated from Depth and changed to start at 0<br>/// to align with other 'Level' methods (eg xslt)<br>/// &lt;/summary&gt;<br>/// &lt;param name="n"&gt;&lt;/param&gt;<br>/// &lt;returns&gt;&lt;/returns&gt;<br>public static int Level(this Node n)<br>{<br>return n.Path.Split(',').Length-1;<br>}<p></p>
+</div>
+    </div>
+    
+        <div id="addComment">
+            <a id="SignInToAddCommentLink" href="https://www.codeplex.com/site/login?RedirectUrl=http%3a%2f%2fucomponents.codeplex.com%2fwikipage%3ftitle%3duQuery%26FocusElement%3dComment">Sign in to add a comment</a>
+        </div>
+    
+</div>
+                </div>
+            
+    </div>
+    
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#deleteWikiHyperLink').click(function () {
+                OpenDialog('#DeleteWikiPagePanel', true, '30em');
+            });
+            $('#DeleteButton').click(function () {
+                OpenDialog('#DeleteWikiPagePanel', false);
+                CodePlex.UpdateProgress.show();
+                $.ajax({
+                    type: 'DELETE',
+                    url: 'http://ucomponents.codeplex.com/wikipage?title=uQuery',
+                    data: {title: $('#WikiTitle').val()},
+                    success: function (data) {
+                        CodePlex.UpdateProgress.hide();
+                        window.location = data;
+                    },
+                    error: function (data) {
+                        CodePlex.UpdateProgress.hide();
+                    }
+                });
+            });
+            $('#CancelButton').click(function () {
+                OpenDialog('#DeleteWikiPagePanel', false);
+            });
+            
+            
+        });
+    </script>
+</div>
+
+        
+	<div id="right_sidebar">
+        
+
+<input name type="text" maxlength="500" id="wiki_search"><a id="SearchButton" class="wiki_magnify" href="http://ucomponents.codeplex.com/wikipage?title=uQuery#"></a>
+
+<script type="text/javascript">
+
+    $(function () {
+
+        $('#wiki_search').keypress(function (e) {
+            if (e.keyCode == 13) {
+                wikiSearch();
+                return false;
+            }
+        });
+
+        $('#SearchButton').click(function () {
+            wikiSearch();
+            return false;
+        });
+
+        $('#wiki_search').promptBox('Search Wiki & Documentation');
+
+    });
+    function setWikiCommentTextBoxFocus() {
+        $('#Comment').focus();
+        return false;
+    }
+
+    function wikiSearch() {
+        var $textbox = $('#wiki_search');
+        if($textbox.attr('dirty') != 'true')
+            return;
+        var searchText = encodeURIComponent(jQuery.trim($textbox.val()));
+        if(searchText != null & searchText.length > 0)
+            window.location.href = 'http://ucomponents.codeplex.com/wiki/search?tab=Documentation&SearchText=' + searchText;
+    }
+
+</script>
+
+<script type="text/javascript">
+    var requirementsActionUri = 'http://ucomponents.codeplex.com/documentation/requirements';
+    var requirementsToDelete = [];
+    
+    
+
+    function LoadRequirements(json) {
+        var html = '';
+        if (json === undefined || !json.length) {
+            html = '<div id="NoRequirementsDefined">There are currently no defined requirements.</div>';
+        } else {
+            for (var i = 0; i < json.length; i++) {
+               var requirementType = json[i];
+                html += '<h3>' + requirementType.Caption + '</h3><ul>';
+                for (var j = 0; j < requirementType.Requirements.length; j++) {
+                    var requirement = requirementType.Requirements[j];
+                    html += '<li>' + requirement.DisplayTitle + '</li>';
+                }
+                html += '</ul>';
+            }
+        }
+        
+        $('#RequirementsBody').html(html);
+    }
+
+    $(document).ready(function() {
+        LoadRequirements([{"__type":"CodePlex.WebSite.Site.Views.ViewData.Wiki.RequirementTypeViewModel, CodePlex.WebSite","Caption":"For Use","Type":"Use","Requirements":[{"__type":"CodePlex.WebSite.Site.Views.ViewData.Wiki.RequirementViewModel, CodePlex.WebSite","Id":4597,"Title":"For Umbraco 4.5.2, use uComponents v3.x (.NET 3.5)","DisplayTitle":"For Umbraco 4.5.2, use uComponents v3.x &#40;.NET 3.5&#41;"},{"__type":"CodePlex.WebSite.Site.Views.ViewData.Wiki.RequirementViewModel, CodePlex.WebSite","Id":11335,"Title":"For Umbraco 4.6.1+, use uComponents v4.x (.NET 4.0)","DisplayTitle":"For Umbraco 4.6.1&#43;, use uComponents v4.x &#40;.NET 4.0&#41;"},{"__type":"CodePlex.WebSite.Site.Views.ViewData.Wiki.RequirementViewModel, CodePlex.WebSite","Id":12581,"Title":"For Umbraco 4.8+, use uComponents v4.8 (.NET 4.0)","DisplayTitle":"For Umbraco 4.8&#43;, use uComponents v4.8 &#40;.NET 4.0&#41;"}]}]);
+    });
+</script>
+
+<div id="RequirementsContainer">
+    <h2>
+        System Requirements
+        
+    </h2>
+    <div class="clear"></div>
+    <div id="RequirementsBody"></div>
+</div>
+
+
+
+<div id="LoungeAdsDiv">
+	<div id="Ad1" class="lqm_ad" style="width: 300px; height: 250px; margin: 0px auto;" lqm_channel="1" lqm_site="C-ucomponents" lqm_format="6" lqm_charity="1" lqm_zone="87" lqm_tags="umbraco%2cdatatypes%2cxslt">
+	</div>
+    <p id="adzerk_by" class="LoungeAdsBottomLinks">
+        <a href="http://lakequincy.com/" target="_blank">Ads by Lake Quincy Media</a>
+        
+            | Ad revenue is <a href="http://codeplex.codeplex.com/wikipage?title=Start%20a%20Project&amp;referringTitle=home&amp;ProjectName=codeplex#Donate" target="_blank">donated</a>.
+        
+    </p>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.getScript('http://s1.lqcdn.com/m.min.js', function () {
+            $.LqmAds(); 
+        });
+    });
+</script>
+
+    </div>
+
+    
+</div>
+
+
+
+	<div class="clear"></div><!--keep footer down-->
+
+    <div id="footer">
+        <div class="row">
+            <hr>
+            <ul>
+                <li>© 2006-2012 Microsoft</li>
+                <li><a href="http://www.codeplex.com/site/help">Get Help</a></li>
+                <li><a href="http://ucomponents.codeplex.com/site/legal/privacy">Privacy Statement</a></li>
+                <li><a href="http://www.codeplex.com/site/legal/terms">Terms of Use</a></li>
+                <li><a href="http://www.codeplex.com/site/legal/conduct">Code of Conduct</a></li>
+                <li><a href="http://www.lakequincy.com/" target="_blank">Advertise With Us</a></li>
+                <li>Version 6.13.2012.19031</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</form>
+</body></html>
+
+<!-- This document saved from http://ucomponents.codeplex.com/wikipage?title=uQuery -->

@@ -1,0 +1,5 @@
+2016-03-18 01:58:20,462 [7] INFO  Umbraco.Web.UmbracoApplication - [Thread 37] Application shutdown. Reason: HostingEnvironment
+2016-03-18 01:58:20,791 [7] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 6ms)
+2016-03-18 01:58:21,572 [7] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 4ms)
+2016-03-18 01:58:21,603 [7] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 3ms)
+2016-03-18 10:48:44,257 [7] INFO  Umbraco.Core.PluginManager - [Thread 19] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)

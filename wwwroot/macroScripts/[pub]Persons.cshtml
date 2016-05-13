@@ -1,0 +1,31 @@
+﻿@using umbraco.NodeFactory
+
+@{
+    var nodes = (Node as Node).GetChildNodes();
+    if (nodes.Any())
+    {
+        int i = 0;
+        string imageUrl = "", name, position;
+        <table class="membersList">
+        @foreach (var node in nodes)
+        {
+            try { imageUrl = "/thumb/100/" + uQuery.GetMedia(node.GetProperty<string>("picture")).GetImageUrl().Substring(7) + ".ashx"; }
+            catch { imageUrl = ""; }
+            name = node.GetProperty<string>("name");
+            position = node.GetProperty<string>("position");
+            <tr@Html.Raw(i++ == 0 ? " class=\"first\"" : "")>
+                <td class="photo">
+                    @if (!string.IsNullOrEmpty(imageUrl))
+                    { <a href="@node.Url"><img src="@imageUrl" width="100" alt="@name" /></a> }
+                </td>
+                <td>
+                    <p>
+                        <b><a href="@node.Url">@name</a></b>
+                        <br />@position
+                    </p>
+                </td>
+            </tr>
+        }
+        </table>
+    }
+}

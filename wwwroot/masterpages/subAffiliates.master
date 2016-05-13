@@ -1,0 +1,17 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/pubInnerPage.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="headDataAreaInner" runat="server">
+	<script type="text/javascript" src="/scripts/dsgn-init.js"></script>	
+</asp:content>
+
+<asp:content ContentPlaceHolderId="contentAreaInner" runat="server">	
+	<umbraco:Item field="intro" runat="server" />
+	<div class="mapBlock"> 
+		<img class="map" id="real-map" alt="" src="/dsgn/map.png" />		
+		<img src="/dsgn/spacer.gif" alt="" id="transp-map" class="map" usemap="#RussiaMap" />		
+		<umbraco:Macro Alias="[sub]InsertAreaMap" runat="server" />
+		<umbraco:Macro Alias="[sub]InsertHighlightedRegions" runat="server" />			
+	</div>
+    <umbraco:Macro Alias="[sub]List" runat="server" />
+	<umbraco:Item field="contents" runat="server" />
+</asp:content>

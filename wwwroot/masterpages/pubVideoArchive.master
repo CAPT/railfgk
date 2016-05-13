@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/pubInnerPage.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="headDataAreaInner" runat="server">   
+    <link rel="stylesheet" href="/css/colorbox.css">
+    <script type="text/javascript" src="/scripts/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.colorbox-ru.js"></script>
+    <script type="text/javascript" src="/scripts/jwplayer.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $(".videoArchiveList a").on("click", function() {
+                var videoUrl = this.href;
+                var imageUrl = $(this).parent().parent().find("img")[0].src;
+                var videoId = $(this).find("span").text();
+                $.colorbox({
+                    html: "<div id='mediaplayer'></div>",
+                    width: "710px",
+                    height: "430px",
+                    onComplete: function() {
+                        jwplayer("mediaplayer").setup({
+                            file: videoUrl,
+                            image: imageUrl,
+                            width: 700,
+                            height: 400,
+                            autostart: true
+                        });
+                        $.get("/viewsCounterVideo?id=" + videoId);
+                        $("#cboxLoadedContent").css("overflow", "hidden");
+                    }
+                });
+                return false;
+            });
+        });
+    </script>   
+</asp:content>
+
+<asp:content ContentPlaceHolderId="contentAreaInner" runat="server">	
+    <umbraco:Item field="contents" runat="server" />
+    <umbraco:Macro Alias="[pub]VideoArchive" runat="server" />	
+</asp:content>

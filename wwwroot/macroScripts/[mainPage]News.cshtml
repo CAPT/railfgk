@@ -1,0 +1,29 @@
+﻿@using umbraco.NodeFactory
+
+@{
+    var model = Node as Node;
+    //узел "Все новости", содержимое которого выводится данным макросом, первый по порядку
+    Node newsNode = null;
+    try { newsNode = (Node as Node).GetDescendantNodesByType("pubNews").Where(x => x.Level == 3).First(); }
+    catch { }
+    if (newsNode == null) { return; }
+    var nodes = newsNode.GetChildNodes().OrderByDescending(x => x.GetProperty<DateTime>("date")).Take(4);
+    if (nodes.Any())
+    {
+        <div class="moduleBlock moduleNews">
+            <div class="header">@(model.GetProperty<string>("newsCaption"))</div>
+            <div class="moduleBody">
+                <ul>
+                @foreach (var node in nodes)
+                {
+                    <li>
+                        <span class="smallDate small">@(node.GetProperty<DateTime>("date").ToString("d"))</span>
+                        <a href="@node.Url">@(node.GetProperty<string>("title"))</a>
+                    </li>
+                }
+                </ul>
+                <div class="toAll small"><a href="@newsNode.Url" title="@newsNode.Name">@newsNode.Name</a></div>
+            </div>
+        </div>
+    }
+}

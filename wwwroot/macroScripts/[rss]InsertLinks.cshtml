@@ -1,0 +1,13 @@
+﻿@using umbraco.NodeFactory
+
+@try
+{
+    var HARDCODED_RSS = 1533;
+    var rssFeeds = uQuery.GetNode(HARDCODED_RSS).GetChildNodes();
+    foreach (var rssFeed in rssFeeds)
+    {
+        <link rel="alternate" type="application/rss+xml" title="@rssFeed.Name" href="@rssFeed.Url" />
+    }
+}
+catch
+{ }

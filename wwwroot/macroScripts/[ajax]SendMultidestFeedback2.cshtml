@@ -1,0 +1,87 @@
+﻿@using Unico
+@try
+{
+var HARDCODED_Настройкисайта = 1070;
+    //System.Threading.Thread.Sleep(5000);
+	string category = Request.Form["category"];
+	string email = Request.Form["email"].Trim();
+	string phone = Request.Form["phone"];
+    string name = Request.Form["name"];
+	string message= Request.Form["message"];
+	string addrTo="";
+	string category_name;
+  	var settingsNode = uQuery.GetNode(HARDCODED_Настройкисайта);
+    if (settingsNode == null) { throw new Exception("Не найден узел настроек сервера."); } 
+	
+	switch (category)
+	{
+	    case "1":
+    addrTo = settingsNode.GetProperty("msgToEmail").Value;
+    category_name = @Dictionary["[forms][feedback]Category1"];		
+    break;
+	    case "2":
+    addrTo = settingsNode.GetProperty("qualityToEmail").Value;
+    category_name = @Dictionary["[forms][feedback]Category2"];
+    break;
+	    case "3":
+    addrTo = settingsNode.GetProperty("diverieToEmail").Value;
+    category_name = @Dictionary["[forms][feedback]Category3"];
+    break;
+	    default:
+    addrTo = settingsNode.GetProperty("msgToEmail").Value;
+    category_name = @Dictionary["[forms][feedback]Category1"];
+    break;
+	}
+	
+	var mailSubject = category_name;
+	  
+
+	 var messageBody = (Dictionary["[forms][feedback]MailBody"] as string).NamedFormat(new {
+        name = name,
+        email = email,
+		category_name = category_name,	
+        phone = phone,
+        message = message
+    });
+
+	var eml = settingsNode.GetProperty("sysToEmail").Value;
+	var nme = @Dictionary["[forms][feedback]SenderName"];
+	
+	var mailMsg = new System.Net.Mail.MailMessage
+            {
+                From = new System.Net.Mail.MailAddress(eml, nme),
+                Subject = mailSubject,
+                Body = messageBody,
+				IsBodyHtml = true
+            };
+		mailMsg.To.Add(new System.Net.Mail.MailAddress(addrTo, "info"));
+		mailMsg.ReplyToList.Add(new System.Net.Mail.MailAddress(addrTo));		
+
+	
+	int loop1;
+	string[] arr1;
+		HttpFileCollectionBase FF;
+		
+		FF = Request.Files; 
+		arr1 = FF.AllKeys;  
+		for (loop1 = 0; loop1 < arr1.Length; loop1++) 
+			
+		{
+   	var file = Request.Files["f2s"];
+	var fileName = file.FileName;
+						HttpPostedFileBase SF = Request.Files["f2s"];
+           				mailMsg.Attachments.Add(new System.Net.Mail.Attachment(SF.InputStream, SF.FileName)); 
+		}
+
+		
+    	var smtpClient = new System.Net.Mail.SmtpClient { 
+		EnableSsl = false,
+			Host="smtp1.railfgk.ru",
+			Port=25
+		};
+		smtpClient.Credentials = new NetworkCredential("info@railfgk.ru", "");
+	smtpClient.Send(mailMsg);
+
+
+	}
+catch(Exception e){<p>@e.Message</p>}	

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>prg.RazorExtensions.RenderRazor.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>prg.RazorExtensions.RenderRazor.dll</orgName>
+    </file>
+    <file>
+      <guid>razorVisualize.aspx</guid>
+      <orgPath>/umbraco/developer/Python</orgPath>
+      <orgName>razorVisualize.aspx</orgName>
+    </file>
+    <file>
+      <guid>razorVisualize.aspx.cs</guid>
+      <orgPath>/umbraco/developer/Python</orgPath>
+      <orgName>razorVisualize.aspx.cs</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>RazorVisualizer</name>
+      <version>0.91</version>
+      <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+      <url>joeriks.wordpress.com</url>
+      <requirements>
+        <major>3</major>
+        <minor>0</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Jonas Eriksson</name>
+      <website>joeriks.wordpress.com</website>
+    </author>
+    <readme><![CDATA[Razor visualizer renders a saved Razor script directly from within the code editor. On visualize you get the option to choose a content node id for the context (model) for the execution (like xsltVisualizer).
+
+Razor visualizer is suitable both for testing of macro scripts and running maintenance scripts. 
+
+0.91 Added a textbox you can use to add an option to your script. For example in a maintenance script where you first view and then execute something:
+
+@forech(var c in Model.Children)
+{
+  <p>Node: @c.Name</p>
+  @if (Parameter.VisualizeOption=="RUN") { 
+    // execute something on c       
+  }
+}
+
+I'd be very happy for feedback. Current status "works on my machine". I have tested it on a 4.7.1 (nightly) and 4.7 installation.
+
+The package consists of 3 files:
+/bin/prg.RazorExtensions.RenderRazor.dll
+/umbraco/developer/python/razorVisualize.aspx - a copy of xsltVisualizer with some changes.
+/umbraco/developer/python/razorVisualize.aspx.cs - rendering the file]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+</umbPackage>

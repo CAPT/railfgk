@@ -1,0 +1,148 @@
+﻿@using Unico
+@try
+{
+var HARDCODED_Настройкисайта = 1070;
+    //System.Threading.Thread.Sleep(5000);
+	string category = Request.Form["category"];
+	string email = Request.Form["email"].Trim();
+	string phone = Request.Form["phone"];
+    string name = Request.Form["name"];
+	string message= Request.Form["message"];	
+	string org = Request.Form["org"];
+	string fio = Request.Form["fio"];
+	string vagnum = Request.Form["vagnum"];
+	string date = Request.Form["date"];
+	string cat = Request.Form["cat"];
+	string cause = Request.Form["cause"];
+	string station= Request.Form["station"];	
+	string freight= Request.Form["freight"];
+	string addrTo="";
+	string category_name;
+	string cat_name;
+	string ccTo="vinnikovap@railfgk.ru";
+	string ccToTwo="vinnikovap@railfgk.ru";
+	string ccToThree="";
+	string ccToNeft="vinnikovap@railfgk.ru";
+	
+			
+  	var settingsNode = uQuery.GetNode(HARDCODED_Настройкисайта);
+    if (settingsNode == null) { throw new Exception("Не найден узел настроек сервера."); } 
+	
+	switch (category)
+	{
+	    case "1":
+   addrTo = "stanislavskiypv@railfgk.ru";
+    category_name = "Полувагон";		
+    break;
+	    case "2":
+   addrTo = "GarkinOA@railfgk.ru";
+    category_name = "Цистерна";
+	ccToNeft= "FilimonovYV@railfgk.ru";
+	break;
+	    case "3":
+    addrTo = "GrachevSA@railfgk.ru";
+    category_name = "Платформа";
+    break;
+		case "4":
+    addrTo = "MalahovAV@railfgk.ru";
+    category_name = "Крытый";
+    break;
+	    default:
+    addrTo = "vinnikovap@railfgk.ru";
+    category_name ="Полувагон";
+    break;
+	}
+	
+	
+	switch (cat)
+	{
+	    case "1":   
+    cat_name = "Техническая непригодность";	
+		ccToThree="dispdeps@railfgk.ru";
+		ccToTwo="KalashnikovSA@railfgk.ru";
+    break;
+	    case "2":
+    cat_name = "Коммерческая непригодность";
+		ccToThree="dispdop@railfgk.ru";
+    break;
+	    case "3":
+    cat_name = "Отказ грузоотправителя от использования годных вагонов";
+		ccToThree="dispdop@railfgk.ru";
+    break;
+		default:
+    cat_name ="Техническая непригодность";
+		ccToThree="dispdeps@railfgk.ru";
+    break;
+	}
+	
+	
+	var mailSubject = "Отказ от вагона № "+vagnum+" - "+category_name+" - Непригодность";
+	  
+
+	 var messageBody = (Dictionary["[forms][uncomp]MailMessageBody"] as string).NamedFormat(new {
+        org=org,
+		fio = fio,
+        email = email,
+		category_name = category_name,	
+        phone = phone,
+		vagnum=vagnum,
+		date=date,
+		station=station,
+		cat=cat,
+		cause=cause,
+        message = message,
+		freight=freight,
+		cat_name=cat_name	
+    });
+
+	var eml = settingsNode.GetProperty("sysToEmail").Value;
+	var nme = @Dictionary["[forms][feedback]SenderName"];
+	
+	var mailMsg = new System.Net.Mail.MailMessage
+            {
+                From = new System.Net.Mail.MailAddress(eml, nme),
+                Subject = mailSubject,
+                Body = messageBody,
+				IsBodyHtml = true
+            };
+		mailMsg.To.Add(new System.Net.Mail.MailAddress(addrTo, "info"));
+		mailMsg.ReplyToList.Add(new System.Net.Mail.MailAddress(addrTo));	
+	
+		mailMsg.To.Add(new System.Net.Mail.MailAddress(ccToNeft, "info"));
+		mailMsg.ReplyToList.Add(new System.Net.Mail.MailAddress(ccToNeft));
+	
+		mailMsg.To.Add(new System.Net.Mail.MailAddress(ccToTwo, "info"));
+		mailMsg.ReplyToList.Add(new System.Net.Mail.MailAddress(ccToTwo));
+	
+		mailMsg.To.Add(new System.Net.Mail.MailAddress(ccToThree, "info"));
+		mailMsg.ReplyToList.Add(new System.Net.Mail.MailAddress(ccToThree));
+	
+		mailMsg.To.Add("IvanovaUA@railfgk.ru");
+		mailMsg.To.Add("KhokhryakovaOA@railfgk.ru");
+		mailMsg.To.Add("vinnikovap@railfgk.ru");
+		
+	int loop1;
+	string[] arr1;
+		HttpFileCollectionBase FF;
+		
+		FF = Request.Files; 
+		arr1 = FF.AllKeys; 
+	
+for (int i = 0; i < Request.Files.Count; i++ )
+			
+		{
+   						HttpPostedFileBase SF = Request.Files[i];
+           				mailMsg.Attachments.Add(new System.Net.Mail.Attachment(SF.InputStream, SF.FileName)); 
+		}
+
+	var smtpClient = new System.Net.Mail.SmtpClient { 
+		EnableSsl = false,
+			Host="smtp1.railfgk.ru",
+			Port=25
+		};
+		smtpClient.Credentials = new NetworkCredential("info@railfgk.ru", "");
+	smtpClient.Send(mailMsg);
+
+
+	}
+catch(Exception e){<p>@e.Message</p>}	

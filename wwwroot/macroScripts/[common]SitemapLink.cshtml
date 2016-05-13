@@ -1,0 +1,11 @@
+﻿@using umbraco.NodeFactory
+
+@{
+    Node sitemapNode = null;
+    try { sitemapNode = (Node as Node).GetAncestorByPathLevel(1).GetChildNodes().Where(x => x.NodeTypeAlias == "pubSiteMap").First(); }
+    catch { }
+    if (sitemapNode != null)
+    {
+        <div class="sitemap"><a href="@sitemapNode.Url">@sitemapNode.Name</a></div>
+    }
+}

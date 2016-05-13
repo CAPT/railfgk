@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/pubInnerPage.master" AutoEventWireup="true" %>
+
+
+<asp:Content ContentPlaceHolderId="headDataAreaInner" runat="server">
+	<asp:ContentPlaceHolder Id="headDataAreaSub" runat="server" />
+</asp:Content>
+
+
+<asp:Content ContentPlaceHolderId="titleArea" runat="server"></asp:Content>
+
+
+<asp:content ContentPlaceHolderId="contentAreaInner" runat="server">
+    <div id="container">
+        <umbraco:Macro Alias="[sub]Navigation" runat="server"></umbraco:Macro>   
+        <div class="containerPanel">
+            <asp:ContentPlaceHolder Id="contentAreaSub" runat="server" />
+        </div>
+    </div>
+</asp:content>

@@ -1,0 +1,11 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/pubInnerPage.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="titleArea" runat="server">
+    <h1><umbraco:Item field="name" runat="server" /></h1>
+    <h2><umbraco:Item field="position" runat="server" /></h2>
+</asp:content>
+
+<asp:content ContentPlaceHolderId="contentAreaInner" runat="server">
+    <br />
+	<umbraco:Macro Alias="[pub]Person" runat="server" />
+</asp:content>

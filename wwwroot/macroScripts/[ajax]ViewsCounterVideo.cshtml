@@ -1,0 +1,10 @@
+﻿@using umbraco.NodeFactory
+@using Refactored.UmbracoViewCounter
+
+@{
+    var node = uQuery.GetNode(Request.QueryString["id"]);
+    if (node != null)
+    {
+        ViewCount.Increment(node.Id);
+    }
+}

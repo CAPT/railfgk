@@ -1,0 +1,18 @@
+﻿@using umbraco.NodeFactory
+
+<map name="RussiaMap" id="RussiaMap">
+@try
+{
+    foreach (var node in (Node as Node).GetChildNodes())
+    {
+        var title = node.GetProperty<string>("title");
+        if (string.IsNullOrEmpty(title)) { title = node.Name; }
+        <area id="area-@node.Id" shape="poly" href="@node.Url" coords="@(node.GetProperty<string>("areaLocation"))" alt="@title" title="@title" />
+    }
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}
+</map>

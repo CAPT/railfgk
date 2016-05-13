@@ -1,0 +1,15 @@
+2016-04-07 14:47:15,891 [8] INFO  Umbraco.Web.UmbracoApplication - [Thread 20] Application shutdown. Reason: HostingEnvironment
+2016-04-07 14:47:15,990 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 822ms)
+2016-04-07 14:47:16,561 [7] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 2ms)
+2016-04-07 14:47:21,156 [7] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 4ms)
+2016-04-07 14:47:21,187 [7] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2016-04-07 15:11:23,465 [7] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 9] Couldn't find any page with nodeId=3417. This is most likely caused by the page not being published.
+2016-04-07 22:09:50,893 [7] ERROR Umbraco.Web.UmbracoApplication - [Thread 8] An unhandled exception occurred
+System.UriFormatException: Invalid URI: The hostname could not be parsed.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Web.Util.UriUtil.BuildUriImpl(String scheme, String serverName, String port, String path, String queryString, Boolean useLegacyRequestUrlGeneration)
+   at System.Web.HttpRequest.BuildUrl(Func`1 pathAccessor)
+   at System.Web.HttpRequest.get_Url()
+   at Umbraco.Web.UmbracoModule.BeginRequest(HttpContextBase httpContext)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

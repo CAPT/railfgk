@@ -1,0 +1,228 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+text-decoration: none;
+}
+del {
+text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+@page { margin: 1.5cm 1.5cm 1.5cm 2cm; }
+
+html, body { height: 100%; }
+
+body {  
+  background: #fff;
+  line-height: 1.2;  
+  color: #000;
+  font: 12px/1.2 Verdana, Geneva, Arial, Tahoma, sans-serif;
+}
+a { text-decoration: underline; }
+
+p {	margin: 0 0 18px 0;	line-height: 1.5; }
+
+.textBlock ul, .textBlock ol { margin: 15px 0; }
+.textBlock ul li { list-style: disc inside; padding: 0 0 3px 20px; }
+.textBlock ol li { list-style: decimal inside; padding: 0 0 3px 20px; }
+
+h1, .altHeader1 {	 	
+	margin: 0 0 10px 0;	
+	font: normal 16px/1 Verdana, Geneva, Arial, Tahoma, sans-serif;
+	color: #000;	
+}
+h2, .altHeader2 { 
+	margin: 5px 0;	
+	font: normal 14px/1 Verdana, Geneva, Arial, Tahoma, sans-serif;
+	color: #000;		
+}	
+h3, .altHeader3 { 
+	margin: 3px 0;	
+	font: bold 12px/1 Verdana, Geneva, Arial, Tahoma, sans-serif;
+	color: #000;		
+}
+
+.clear, .break { clear: both; position: relative; }
+.break { height: 0px; line-height: 0; font-size: 0; }
+
+#wrapper{
+  min-height: 100%;
+  position: relative;
+}
+#header {
+	position: relative;			
+	padding: 0;
+	overflow: hidden;
+}
+#contentMain, #contentInner {
+	clear: both;	
+	padding: 10px 0;
+	overflow: hidden;	
+}
+#contentMain .leftBlock, #contentMain .rightBlock, #contentMain .textBlock {
+	margin: 0 0 20px 0;
+}
+#contentInner .textBlock { width: 100%; }
+#footer {	
+	padding: 20px 0 0 0;
+	clear: both;
+	height: 119px;
+	border-top: 1px solid #8e8e8e;	
+}
+.topPartRight, .mainMenu, #contentInner .leftBlock, a.back, #footer .socIcons, .footerMenu, .copyright .sitemap, 
+.printVersion, .sliderBlock, .forms, .textBlock .containerNav, .moduleSubscribe { 
+	display: none; 
+}
+.logo {	padding: 0 69px 0 30px; float: left;}
+.logoFgk { padding: 10px 0 0 0; float: left;}
+.contactInfo .contact img { margin: 0 8px 0 0; }
+.imgLeft { border: 1px solid #8E8E8E; float: left; margin: 0 10px 10px 0; }
+.imgRight { float: right; margin: 0 0 10px 10px; border: 1px solid #8e8e8e;}
+
+/* Press List */
+ul.pressList {}
+ul.pressList li {
+	padding: 9px 0 11px 0;	
+	border-top: 1px solid #8e8e8e;
+	overflow: hidden;
+	list-style: none;
+}
+ul.pressList li.first {	border: none; } 
+.pressListHeader { padding: 3px 0; }
+ul.pressList img {
+	float: left;
+	border: 1px solid #8e8e8e;
+	margin: 15px 10px 0 0;
+}
+/* End Press List */
+
+/* Table tbl */
+table.tbl { width: 100%; /*border-collapse: separate; border-spacing: 2px 0;*/ }
+table.tbl thead td {
+	background: #8e8e8e;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;	
+	padding: 4px 10px;
+	border: 1px solid #8e8e8e;
+}
+table.tbl th {
+	border: 1px solid #8e8e8e;
+	padding: 4px 10px;
+	text-align: left;
+}
+table.tbl td {	
+	border: 1px solid #8e8e8e;	
+	padding: 4px 10px;	
+}
+table.tbl tr.splitter td {
+	border: none;
+	padding: 1px 0;
+	font-size: 0;
+	line-height: 0;
+}
+table.tblTxt { margin: 0 0 18px 0; }
+table.tblTxt td { padding: 5px; }
+/* End Table tbl */
+
+/* members List */
+table.membersList {
+	width: 100%;
+}
+table.membersList td {	
+	border-top: 1px solid #8E8E8E;
+    padding: 9px 0 11px;
+	vertical-align: top;
+	text-align: left;
+}
+table.membersList tr.first td {
+	border-top: none;
+}
+table.membersList td.photo {
+	padding-right: 15px;
+	text-align: center;
+}
+/* End members List */
+
+.mapBlock {	height: 408px; position: relative; }
+.moduleBlock { margin: 0 0 10px 0; }
+
+/* Photo Archive List */
+.photoAlbumRow {
+	overflow: auto;
+	margin: 0 0 23px 0;
+}
+.photoAlbumItem {
+	width: 232px;
+	height: 206px;	
+	margin: 5px;
+	position: relative;
+	float: left;
+}
+.photoAlbumItem .intro, .catFilter { display: none; }
+/* End Photo Archive List */
+
+/* Video Archive List */
+ul.videoArchiveList {}
+ul.videoArchiveList li {	
+	border-top: 1px solid #8E8E8E;
+    padding: 16px 0 14px;
+	overflow: hidden;
+	list-style: none;
+}
+ul.videoArchiveList li:first-child { border: none; }
+.videoArchiveList .movieBlock {	margin: 0 15px 0 0; float: left; }
+.videoArchiveList .videoArchiveDate { }
+
+.videoArchiveList .videoArchiveHeader {		
+	padding: 4px 0 9px 0;	
+}
+.videoArchiveList .videoArchiveCounter {	 
+	font-size: 10px; 
+	padding: 7px 0; 	
+}
+/* End Video Archive List */
+
+
+
+
+
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

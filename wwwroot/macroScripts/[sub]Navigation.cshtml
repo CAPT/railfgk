@@ -1,0 +1,82 @@
+﻿@using umbraco.NodeFactory
+
+@{
+    var model = Node as Node;
+    var nodes = model.GetAncestorByPathLevel(4).GetChildNodes().Where(x => x.GetProperty<int>("umbracoNaviHide") == 0);
+    int i = 0;
+	string newurl ="no";
+	
+	
+    <ul class="containerNav table">
+    @foreach (var node in nodes)
+    {
+		@*поменяем ссылки на дубли*@
+		switch (node.Url)
+		{
+			case "/about/affiliates/voronezhskii-filial/kontakty/":
+				newurl="/about/affiliates/voronezhskii-filial/";
+				break;
+			case "/about/affiliates/chitinskoe-agentstvo/kontakty/":
+				newurl="/about/affiliates/chitinskoe-agentstvo/";
+				break;
+			case "/about/affiliates/ekb/contacts/":
+				newurl = "/about/affiliates/ekb/";
+				break;
+			case "/about/affiliates/habarovskii-filial/kontakty/":
+				newurl = "/about/affiliates/habarovskii-filial/";
+				break;
+			case "/about/affiliates/kemerovskoe-agentstvo/kontakty/":
+				newurl = "/about/affiliates/kemerovskoe-agentstvo/";
+				break;
+			case "/about/affiliates/krasnoyarskoe-agentstvo/kontakty/":
+				newurl = "/about/affiliates/krasnoyarskoe-agentstvo/";
+				break;
+			case "/about/affiliates/moskovskii-filial/contacts/":
+				newurl = "/about/affiliates/moskovskii-filial/";
+				break;
+			case "/about/affiliates/nizhegorodskoe-agentstvo/kontakty/":
+				newurl = "/about/affiliates/nizhegorodskoe-agentstvo/";
+				break;
+			case "/about/affiliates/novosibirskii-filial/kontakty/":
+				newurl = "/about/affiliates/novosibirskii-filial/";
+				break;
+			case "/about/affiliates/rostovskii-filial/kontakty/":
+				newurl = "/about/affiliates/rostovskii-filial/";
+				break;
+			case "/about/affiliates/samarskoe-agentstvo/kontakty/":
+				newurl = "/about/affiliates/samarskoe-agentstvo/";
+				break;
+			case "/about/affiliates/sankt-peterburgskii-filial/kontakty/":
+				newurl = "/about/affiliates/sankt-peterburgskii-filial/";
+				break;
+			case "/about/affiliates/saratovskoe-agentstvo/kontakty/":
+				newurl = "/about/affiliates/saratovskoe-agentstvo/";
+				break;
+			case "/about/affiliates/yaroslavskoe-agentstvo/kontakty/":
+				newurl = "/about/affiliates/yaroslavskoe-agentstvo/";
+				break;
+			default:
+				newurl = node.Url;
+			break;
+		}
+		
+		
+        if (model.Id == node.Id)
+        {
+			
+            <li class="containerNavActive table-cell@(i++ == 0 ? " first" : "")"><a href="javascript:void(0)"><span>@node.Name</span></a></li>
+        }
+        else if (model.Path.Contains(node.Id.ToString()))
+        {
+			
+            <li class="containerNavActive table-cell@(i++ == 0 ? " first" : "")"><a href="@node.Url"><span>@node.Name</span></a></li>
+        }
+        else
+        {
+            <li class="table-cell@(i++ == 0 ? " first" : "")"><a href="@newurl"><span>@node.Name</span></a></li>
+        }
+    }
+	
+    </ul>
+		
+}

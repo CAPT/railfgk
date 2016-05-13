@@ -1,0 +1,56 @@
+﻿@using umbraco.NodeFactory
+@functions
+{
+    struct Item
+    {
+        public string Link;
+        public string Title;
+        public IHtmlString Description;
+        public DateTime PubDate;
+    }
+}
+
+@{
+    var model = Node as Node;
+    var channelLink = library.NiceUrlWithDomain(model.GetProperty<int>("channelUrl"));
+    var channelDescription = model.GetProperty<string>("description");
+    var rootNodes = uQuery.GetNodesByCsv(model.GetProperty<string>("nodes"));
+    IEnumerable<Item> items = new List<Item>();
+    string description, pubDateString;
+    Item tempItem;
+    foreach (var rootNode in rootNodes)
+    {
+        foreach (var node in rootNode.GetChildNodes())
+        {
+            if (node.template == 0) { continue; }
+            tempItem.Link = library.NiceUrlWithDomain(node.Id);
+            tempItem.Title = node.GetProperty<string>("title");
+            if (string.IsNullOrEmpty(tempItem.Title)) { tempItem.Title = node.Name; }
+            description = node.GetProperty<string>("intro");
+            if (string.IsNullOrEmpty(description)) { description = node.GetProperty<string>("contents"); }
+            tempItem.Description = Library.Truncate(description, 2000, true);
+            pubDateString = node.GetProperty<string>("date");
+            if (string.IsNullOrEmpty(pubDateString)) { tempItem.PubDate = node.UpdateDate; }
+            else { tempItem.PubDate = node.GetProperty<DateTime>("date"); }
+            (items as List<Item>).Add(tempItem);
+        }
+    }
+    items = items.OrderByDescending(x => x.PubDate).Take(50);
+    Response.ContentType = "application/rss+xml";
+}
+
+        <title>@model.Name</title>
+        <link>@channelLink</link>
+        <description>@channelDescription</description>
+        @foreach (var item in items)
+        {
+        <item>
+            <guid>@item.Link</guid>
+            <link>@item.Link</link>
+            <title>@item.Title</title>
+            <description><![CDATA[
+                @item.Description
+            ]]></description>
+            <pubDate>@item.PubDate.ToString("r")</pubDate>
+        </item>
+        }

@@ -1,0 +1,7 @@
+2016-04-21 15:26:52,374 [7] ERROR Umbraco.Web.UmbracoApplication - [Thread 22] An unhandled exception occurred
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CaptchaHandler1.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-04-21 16:24:15,374 [7] INFO  Umbraco.Core.PluginManager - [Thread 41] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 3ms)
+2016-04-21 16:24:51,109 [7] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 1 (took 22ms)

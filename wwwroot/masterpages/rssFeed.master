@@ -1,0 +1,9 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server"><?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+<umbraco:Macro Alias="[rss]RenderFeed" runat="server" />
+    </channel>
+</rss>
+</asp:Content>

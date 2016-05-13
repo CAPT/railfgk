@@ -1,0 +1,97 @@
+﻿@functions
+{
+    string ModName(string name)
+    {
+        switch (name)
+        {
+            case "русский": return "rus";
+            case "English": return "eng";
+        }
+        return "---";
+    }
+}
+
+@{
+    List<Goyaweb.MultiLanguage.Data> urlsAndLangs = MultiLanguage.Functions.GetUrlsAndLanguages(Model.Id);
+    <div class="langChoise fleft">
+    @foreach (var data in urlsAndLangs.Reverse<Goyaweb.MultiLanguage.Data>())
+    {
+        if (string.IsNullOrEmpty(data.Url))
+        {<span>@ModName(data.NativeName)</span>}
+        else
+        {<a href="@data.Url" rel="@data.LanguageCode">@ModName(data.NativeName)</a>}
+    }
+    </div>
+    <script type="text/javascript">
+    //<![CDATA[
+        $(".langChoise").on("click", "a", function() {
+            document.cookie = "lang=" + this.rel + "; domain = " + window.location.host.slice(2) + "; path=/; expires=" + (new Date(2100, 0)).toUTCString();
+        });
+    //]]>
+    </script>
+}
+
+@try
+{
+    string host = Request.Url.Host;
+    if (!host.StartsWith("ru.") && !host.StartsWith("english."))
+    {
+        string prefLang = null;
+        var langCookie = Request.Cookies["lang"];
+        //если есть кука с языком
+        if (langCookie != null)
+        {
+            string cookieLang = langCookie.Value;
+            //<p>cookieLang: @cookieLang</p>
+            if (cookieLang == "ru" || cookieLang == "en") { prefLang = cookieLang; }
+        }
+        //<p>prefLang: @prefLang</p>
+        //если нет куки с языком или в куке не было одного из поддерживаемых языков
+        if (prefLang == null)
+        {
+            foreach (var browserLangRaw in Request.UserLanguages)
+            {
+                var browserLang = browserLangRaw.Substring(0, 2);
+                //поиск среди предпочитаемых первого поддерживаемого языка
+                if (browserLang == "ru" || browserLang == "en")
+                {
+                    prefLang = browserLang;
+                    break;
+                }
+            }
+        }
+        //<p>prefLang: @prefLang</p>
+        //языком по умолчанию считаем русский
+        if (prefLang == null) { prefLang = "ru"; }
+        if (prefLang == "ru")
+        {
+            //в этом случае можно назначить домен www.example.com с русским языком и не перенаправлять, но тогда возникнет дублирование контента на русском языке (SEO?..)
+            //поскольку при запросе без языка (типа www.example.com вместо ru.example.com) домен все равно равен ru.example.com, urlsAndLangs для русского языка содержит пустой Url и нужно использовать урл текущего узла, который возвращается с учетом русского домена:
+            var altUrl = Model.Url;
+            //при ошибке 404 домен, почему-то английский, костыль:
+            if (Response.StatusCode == 404) { altUrl = library.NiceUrl(1661); }
+            //<p>redirect to @altUrl</p>
+            Response.Redirect(altUrl, false);
+            Context.ApplicationInstance.CompleteRequest();
+        }
+        else
+        {
+            var altUrls = urlsAndLangs.Where(x => x.LanguageCode == prefLang);
+            if (altUrls.Any())
+            {
+                var altUrl = altUrls.First().Url;
+                if (!string.IsNullOrEmpty(altUrl))
+                {
+                    //<p>redirect to @altUrl</p>
+                    Response.Redirect(altUrl, false);
+                    Context.ApplicationInstance.CompleteRequest();
+                }
+            }
+        }
+    }
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}

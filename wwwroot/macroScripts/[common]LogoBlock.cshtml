@@ -1,0 +1,11 @@
+﻿@using System.Globalization
+@using umbraco.NodeFactory
+
+@{
+    var mainPage = (Node as Node).GetAncestorByPathLevel(1);
+    var url = mainPage.Url;
+    var title = mainPage.GetProperty<string>("title");
+	var language = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(CultureInfo.CurrentUICulture.TwoLetterISOLanguageName);
+}
+<div class="logo fleft"><a href="@url" title="@mainPage.Name"><img src="/dsgn/rzd.png" alt="@title" /></a></div>
+<div class="logoFgk fleft"><a href="@url" title="@mainPage.Name"><img src="/dsgn/fgk@(language).png" alt="@title" /></a></div>

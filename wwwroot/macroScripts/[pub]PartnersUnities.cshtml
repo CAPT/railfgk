@@ -1,0 +1,46 @@
+﻿@using umbraco.NodeFactory
+@using uComponents.DataTypes.UrlPicker.Dto
+
+@{
+    var nodes = (Node as Node).GetChildNodes();
+    if (nodes.Any())
+    {
+        int i = 0;
+        string imageUrl, name, description, url;
+        <table class="membersList">
+        @foreach (var node in nodes)
+        {
+            try { imageUrl = uQuery.GetMedia(node.GetProperty<string>("picture")).GetImageUrl(); }
+            catch { imageUrl = ""; }
+            name = node.Name;
+            description = node.GetProperty<string>("contents");
+            url = UrlPickerState.Deserialize(node.GetProperty<string>("url")).Url;
+            <tr@Html.Raw(i++ == 0 ? " class=\"first\"" : "")>
+                <td class="photo">
+                    @if (!string.IsNullOrEmpty(imageUrl))
+                    {
+                        if (!string.IsNullOrEmpty(url))
+                        {
+                            <a rel="nofollow" href="@url" title="@name"><img src="@imageUrl" alt="@name" /></a>
+                        }
+                        else
+                        {
+                            <img src="@imageUrl" alt="@name" />
+                        }
+                    }
+                </td>
+                <td>
+                    <p>
+                        @if (!string.IsNullOrEmpty(url))
+                        { <b><a rel="nofollow" href="@url">@name</a></b> }
+                        else
+                        { <b>@name</b> }
+                        <br />@description
+                    </p>
+                    @if (!string.IsNullOrEmpty(url)) { <p><a rel="nofollow" href="@url" title="@name">@url</a></p> }
+                </td>
+            </tr>
+        }
+        </table>
+    }
+}

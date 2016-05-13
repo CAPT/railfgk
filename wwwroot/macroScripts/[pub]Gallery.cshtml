@@ -1,0 +1,41 @@
+﻿@using umbraco.NodeFactory
+@using umbraco.cms.businesslogic.media
+@using Refactored.UmbracoViewCounter
+
+@try
+{
+    var model = Node as Node;
+    IEnumerable<Media> pictures = null;
+    try
+    {
+       pictures = uQuery.GetMedia((Node as Node).GetProperty<string>("imageFolder")).GetChildMedia();
+    }
+    catch { }
+    if (pictures != null && pictures.Any())
+    {
+        string imageUrl, thumbUrl, title;
+        <div class="photoBlock">
+        @foreach (var picture in pictures)
+        {
+            try {
+                imageUrl = picture.GetImageUrl();
+                thumbUrl = "/thumb/74/45/" + imageUrl.Substring(7) + ".ashx";
+            }
+            catch { imageUrl = ""; thumbUrl = ""; }
+            title = picture.GetProperty<string>("title");
+            if (!string.IsNullOrEmpty(imageUrl))
+            {
+                <a href="@imageUrl"><img src="@thumbUrl" data-title="@title" alt="" /></a>
+            }
+        }
+        </div>
+        <div class="photoBlockInfo">
+            <div>@(model.GetProperty<DateTime>("date").ToString("d")) / <span>@ViewCount.GetViewCount(model.Id, "", true)</span></div>
+        </div>
+    }
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}

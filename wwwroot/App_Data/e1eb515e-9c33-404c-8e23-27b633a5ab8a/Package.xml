@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>Contour.Contrib.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>Contour.Contrib.dll</orgName>
+    </file>
+	<file>
+      <guid>AreYouAHuman.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>AreYouAHuman.dll</orgName>
+    </file>
+    <file>
+      <guid>Recaptcha.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>Recaptcha.dll</orgName>
+    </file>
+    <file>
+      <guid>recaptcha-example.gif</guid>
+      <orgPath>/umbraco/plugins/umbracoContour/images</orgPath>
+      <orgName>recaptcha-example.gif</orgName>
+    </file>
+    <file>
+      <guid>ayah-example.gif</guid>
+      <orgPath>/umbraco/plugins/umbracoContour/images</orgPath>
+      <orgName>ayah-example.gif</orgName>
+    </file>	
+  <file><guid>c9a3ed03-e874-46fe-bd5b-90392bb55eab.dll</guid><orgPath>/bin</orgPath><orgName>AreYouAHuman.dll</orgName></file><file><guid>3e6ae3e5-160c-4ff1-975b-a8f5add43cc4.dll</guid><orgPath>/bin</orgPath><orgName>Contour.Contrib.dll</orgName></file><file><guid>0f469f6f-ff2d-4ed7-8550-70675ce440c5.dll</guid><orgPath>/bin</orgPath><orgName>Recaptcha.dll</orgName></file><file><guid>eae29084-ae48-4438-a824-1876f9c30049.gif</guid><orgPath>/umbraco/plugins/umbracoContour/images</orgPath><orgName>ayah-example.gif</orgName></file><file><guid>d8188560-5e3b-4f54-b2cc-d87e2d1e2e34.gif</guid><orgPath>/umbraco/plugins/umbracoContour/images</orgPath><orgName>recaptcha-example.gif</orgName></file></files>
+  <info>
+    <package>
+      <name>Contour Contrib</name>
+      <version>0.0.6</version>
+      <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+      <url>http://contourcontrib.codeplex.com</url>
+      <requirements>
+        <major>6</major>
+        <minor>0</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Sebastiaan Janssen</name>
+      <website>http://contourcontrib.codeplex.com</website>
+    </author>
+    <readme><![CDATA[Contour contrib shares several DataSourceTypes, FieldTypes, PrevalueTypes and WorkflowTypes for Umbraco Contour.
+
+Updates
+v0.0.1 - WorkflowType: Send form through e-mail and specify the reply-to address (that way you can immediately reply to the sender for example).
+v0.0.2 - Added ReCaptcha fieldtype. Don't make it mandatory, it won't work. But if it's on the form it still is always mandatory. If you want to provide custom translations, just look at the API (http://code.google.com/apis/recaptcha/docs/customization.html) and turn the contents of "custom_translations" into one long comma-seperated string. Don't forget the private and public key!
+v0.0.3 - Updated workflows send e-mail and send XSLT transformed e-mail to support a reply-to address, send attachments and use dictionary items better.
+v0.0.4 - Ability to send e-mail through SSL protected SMTP servers (like Gmail)
+v0.0.5 - Ability to do custom theming of the Recaptcha fieldtype
+v0.0.6 - New "Are you a human" captcha field type added.
+
+For documentation, please refer to: http://contourcontrib.codeplex.com/documentation]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+</umbPackage>

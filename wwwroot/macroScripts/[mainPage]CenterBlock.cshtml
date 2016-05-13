@@ -1,0 +1,286 @@
+﻿@using umbraco.NodeFactory
+
+@{
+    var model = Node as Node;
+}
+
+@try
+{
+    var title = model.GetProperty<string>("title");
+    var affiliatesNode = model.GetDescendantNodesByType("subAffiliates").First();
+
+    <div class="genMap">
+        @if (!string.IsNullOrEmpty(title))
+        { <h1 class="header">@title</h1> }
+        @*в ТЗ нет подзаголовка*@
+        @*<h2 class="subHeader"><umbraco:Item field="subTitle" runat="server" /></h2>*@
+        <a href="@affiliatesNode.Url"><img src="/dsgn/mapRussia.jpg" alt="" /></a>
+        <div class="sign small"><a href="@affiliatesNode.Url">@(model.GetProperty<string>("russiaCaption"))</a></div>
+    </div>
+}
+catch { }
+
+@{
+    var ukraineNode = uQuery.GetNode(model.GetProperty<string>("ukraineNode"));
+    var kazakhstanNode = uQuery.GetNode(model.GetProperty<string>("kazakhstanNode"));
+    @*XPath DropDownList при невыборе хранит -1, а uQuery.GetNode возвращает самый рутовый узел*@
+    if (ukraineNode != null && ukraineNode.Id != -1 && kazakhstanNode != null && kazakhstanNode.Id != -1)
+    {
+        <div class="genMap">
+        @if (ukraineNode != null && ukraineNode.Id != -1)
+        {
+            <div class="fleft">
+                <a href="@ukraineNode.Url"><img src="/dsgn/mapUkrain.jpg" alt="" /></a>
+                <div class="sign small"><a href="@ukraineNode.Url">@(model.GetProperty<string>("ukraineCaption"))</a></div>
+            </div>
+        }
+        @if (kazakhstanNode != null && kazakhstanNode.Id != -1)
+        {
+            <div class="fright">
+                <a href="@kazakhstanNode.Url"><img src="/dsgn/mapKaz.jpg" alt="" /></a>
+                <div class="sign small"><a href="@kazakhstanNode.Url">@(model.GetProperty<string>("kazakhstanCaption"))</a></div>
+            </div>
+        }
+        </div>
+    }
+}
+@{
+	<hr></hr>
+	<div id="4all" style="font-family: Verdana, Geneva, Arial, Tahoma, sans-serif; font-size: 12px">
+	<p style="background: #e53124;color: white; text-align: center; font-weight: bold; padding:2px 0px 2px 0px;">
+		<span style="font-size: 18px;">ФГК-ЭКСПРЕСС – ЗАКАЖИТЕ ВАГОН СЕЙЧАС</span>
+    </p>
+	<div style="margin-top:-25px;">
+            <div style=" width:70%;  float: left; font-size: 12px" >
+					<ul >
+						<li>Самостоятельный расчет стоимости перевозки</li>
+						<li>Возможность заключения договора за 5 минут</li>
+						<li>Гарантия получения вагона</li>
+						<li>Полный пакет документов</li>
+						<li>Клиентская поддержка</li>
+		            </ul>
+            </div>
+             <div style="float:right; width:25%; margin-top:4%">
+               
+					
+@*FRAME!!!*@					
+
+<a id="T" href="#ofrta" class="ffancybox" onClick="$('#contentMain > div.rightBlock.fright > p').toggle();" style="margin-left:25%; text-decoration: none; border-bottom: 1px dashed black; color:black; font-size:11px;">Узнать больше</a>
+<p style="  margin-bottom: 13px;"></p>
+<div id="ofrta" style="display:none;">
+
+<table style="font-family: Verdana, Geneva, Arial, Tahoma, sans-serif; font-size: 12px; width:834px;   border-spacing:7px 5px; background:#f0f0f0">
+	   <col width="49%">
+          <col width="2%">
+   <col width="49%" >
+    <tr style="vertical-align: top;">   
+        <td style="border: 1px solid #cccccc; vertical-align: top;">               
+            <div style="background: #e53124;color: white; text-align: center; font-weight: bold; font-size: 18px; padding-top: 11px;padding-bottom: 11px;   text-shadow: 1px 0 1px rgba(0,0,0,0.39);">
+		Что такое "ФГК-Экспресс"?   
+    </div>
+	<p></p>
+            <p style="margin-left: 8px;     text-align: justify;  margin-right: 8px;"> 
+      Это предложение АО «ФГК» юридическим лицам и индивидуальным предпринимателям предоставить железнодорожный подвижной состав для перевозок грузов в пределах Российской Федерации, а также вывозимых за пределы Российской Федерации и помещенных под таможенную процедуру экспорта, за исключением перевозок со (на) станций, принадлежащих ГУП РК «Крымская железная дорога».
+     <div style="margin-left: 8px; text-align:center;   margin-right: 8px;"> 
+       <span class="strong">
+Заявка на перевозку оформляется в электронном виде - это значительно  упрощает процедуру, в чем Вы можете убедиться на собственном опыте!
+        </span>
+    </div>
+	</p>
+</td>  
+	
+<td>&nbsp;&nbsp;</td>
+<td style="border: 1px solid #cccccc; vertical-align: top;">  
+            <div style="background: #e53124;color: white; text-align: center; font-weight: bold; font-size: 18px;   text-shadow: 1px 0 1px rgba(0,0,0,0.39);">
+          Почему стоит воспользоваться услугой «ФГК-Экспресс»?
+
+    </div>
+	
+	<p></p>
+                 <p style="margin-left: 8px;     text-align: justify;  margin-right: 8px;">   <span class="strong">
+Ключевое преимущество данной услуги – скорость заключения договора и предоставления вагонов.
+                </span></p>
+            <p style="margin-left: 8px;     text-align: justify;  margin-right: 8px;"> 
+Зайдя на сайт, Вы можете самостоятельно рассчитать тариф, зарегистрироваться, подать заявку, получить и оплатить счет (что и будет подтверждением заключения Договора оферты),  
+	и после поступления денежных средств на счет АО «ФГК» в течение 10 дней получить подвижной состав в необходимом количестве.
+        </p>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>               
+    </tr>
+       
+     <tr style="vertical-align: top;">   
+        <td style="border: 1px solid #cccccc; vertical-align: top;">  
+            <div style="background: #e53124;color: white; text-align: center; font-weight: bold; font-size: 18px;   text-shadow: 1px 0 1px rgba(0,0,0,0.39);">Какие вагоны и в каком количестве предоставляются?
+    </div>
+			<p></p>
+            <p style="margin-left: 8px;    text-align: justify;  margin-right: 8px;"> 
+            Общее количество вагонов в месяц, предоставляемых одному клиенту:</p>
+       
+			 <table style="font-weight: bold;   text-align: center;   width: 100%;   font-size: 14px;  border-collapse: collapse; border-spacing: 0; " cellspacing="10">
+		          <tr style="color:#e53124; height:10px">
+          <td></td>
+                         <td style="white-space:nowrap;font-size:14px;">ПО РОССИИ</td>
+                         <td></td>
+                          <td></td>
+               			 <td></td>
+                          <td style="white-space:nowrap;font-size:14px;">НА ЭКСПОРТ</td>
+                          <td></td>
+                        
+                    </tr>
+			
+                 <!--   <tr style="font-size:12px;">
+                                
+                        <td></td>
+                        <td style="font-size:16px"><br>200   &#8594;</td>
+                        <td></td>
+                        <td><p style="margin-bottom: -20px;">ПОЛУВАГОНЫ</p><img src="\dsgn\pv.png" height="70px"></td>
+                        <td></td>
+                        <td style="font-size:16px"><br>&#8592;   100</td>
+                        <td></td>
+                                
+                       
+                    </tr> -->
+			
+            <tr style="font-size:12px;">
+                     
+                        <td></td>
+                        <td style="font-size:16px"><br>50   &#8594;</td>
+                          <td></td>
+                          <td><p style="margin-bottom: -20px;">КРЫТЫЕ</p><img src="\dsgn\kr.png" height="70px" ></td>
+                         <td></td>
+                         <td style="font-size:16px"><br>&#8592;   50</td>
+                         <td></td>
+                            
+                       
+                    </tr>
+                 
+                          <tr style="font-size:12px;">
+                         <td></td>
+                       <td style="font-size:16px"><br>10   &#8594;</td>
+                         <td></td>
+                          <td><p style="margin-bottom: -20px;">ПЛАТФОРМЫ</p><img src="\dsgn\pl.png" height="70px"></td>
+                         <td></td>
+                         <td style="font-size:16px"><br>&#8592;   10</td>
+                         <td></td>                         
+                       </tr>              
+	            </table>				
+<!--		<p></p>-->
+        </td>
+                    <td>&nbsp;&nbsp;</td> 
+         <td style="border: 1px solid #cccccc; vertical-align: top;">  
+            <div style="background: #e53124;color: white; text-align: center; font-weight: bold; font-size: 18px;padding-top: 11px;padding-bottom: 11px;   text-shadow: 1px 0 1px rgba(0,0,0,0.39);">Что Вы получаете в итоге?
+    </div>
+             <p style="margin-left: 8px;"> 
+       <ul style="list-style-image: url(/dsgn/bgList.png);margin-left: 7%; line-height: 1.5;   text-align: justify;  margin-right: 8px;">
+            <li>Значительную экономию времени</li>
+            <li>Вагоны для перевозки груза в необходимом количестве</li>
+            <li> Возможность сократить период ожидания вагона (ранняя подача вагона)</li>
+            <li>Информационную и техническую поддержку со стороны Компании на всех этапах осуществления перевозки от момента подачи заявки до выгрузки</li>
+        </ul>
+        </p>
+        </td>
+    </tr>
+</table>
+</div>
+         
+@*FRAME*@						
+                <a href="https://clients.railfgk.ru/price.jsp"   target="_blank" style="text-decoration: initial;">
+                    <div class="foroferta">
+						Рассчитать <br>ставку
+                    </div>	
+		
+                </a>
+                 
+            </div>
+       </div>
+	
+   
+<script>
+        //<![CDATA[			
+ 
+
+$(".ffancybox").fancybox({
+    openEffect  : 'none',
+    closeEffect :'none',
+
+  
+    width		: '70%',
+	height		: '70%',
+
+    autoSize	: true,
+	autoCenter:true,
+    fitToView	: true,  
+    afterLoad   : function() {
+     
+        this.content = this.content.html();
+    },
+	afterClose : function() {
+	$('#contentMain > div.rightBlock.fright > p').toggle();
+	}
+});
+			@*function hide_out_youtube(){
+				$('#contentMain > div.rightBlock.fright > p').toggle();
+			});*@
+           
+        //]]>
+</script>			
+						
+       
+  <table style="background:#D9D9D9; text-align: center; font-family: Verdana, Geneva, Arial, Tahoma, sans-serif; height: 50px; width:100%">
+			<tr style="font-size: 14px;  ">
+				<td style="padding-top: 5px;">Бесплатная горячая линия</td>
+				 <td></td>
+				<td>Электронная почта</td>
+			</tr>
+			<tr style="font-size: 16px; color:#e53124; font-weight: bold;">
+				<td><span class="underline">8 800 250 4 777</span>
+					
+					</td>
+				<td></td>
+				<td>
+					<a  href="mailto:help@railfgk.ru" style="color:#e53124;">help@railfgk.ru</a>
+				</td>
+			</tr>
+</table>
+
+       <div style=" height:33px;  margin-top:0.5%;  width:100%;">
+			<a href="https://clients.railfgk.ru/index.jsp" target="_blank" style="text-decoration: initial;">
+				<div class="foroferta_bot" style="width: 27%; ">
+					Войти в <br>
+                        Личный Кабинет
+						
+				</div>
+			</a>
+			<a href="/media/73565/oferta_contract_.pdf" target="_blank" style="text-decoration: initial;">
+				<div class="foroferta_bot" style="margin-left: 1%; width: 27%; ">
+					Ознакомиться <br>с договором
+				</div>
+			</a>
+					
+					<a id="T" href="#ofrta" class="ffancybox" onClick="$('#contentMain > div.rightBlock.fright > p').toggle();">
+				<div class="foroferta_bot" style="margin-left: 1%; width: 26.5%; ">
+					Узнать <br>больше
+				</div>
+			</a>
+					
+			<!--<a href="https://clients.railfgk.ru/ofertamanual.jsp" target="_blank" style="text-decoration: initial;">
+				<div class="foroferta_bot" style="margin-left: 1%; width: 18%; ">
+					Краткая <br>инструкция
+				</div>
+			</a>
+			<a href="https://clients.railfgk.ru/ofertafaq.jsp" target="_blank" style="text-decoration: initial;">
+				<div class="foroferta_bot" style="margin-left: 0.9%; width: 19%; ">
+					Типовые <br>вопросы
+				</div>
+			</a>-->
+		</div>
+				<!--	<div class="adv">
+						<p>
+					* Уведомляем Вас, что в период государственных праздников (с 15:00 мск 31-го декабря по 9:00 11 января мск) Служба клиентской поддержки не работает.<br>
+						Вы можете отправить сообщения по электронной почте <a href="mailto:help@railfgk.ru">help@railfgk.ru</a>– наши сотрудники обязательно вам ответят в рабочее время.</p>
+					</div>-->
+                <hr></hr>
+                </div>
+}

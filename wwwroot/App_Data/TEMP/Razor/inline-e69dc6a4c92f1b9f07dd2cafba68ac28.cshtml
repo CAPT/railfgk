@@ -1,0 +1,5 @@
+﻿@if (Model.HasValue("picture"))
+{
+    var media = Model.Media("picture");
+    <img src="@media.umbracoFile" alt="media.title" style="float: left; border: 1px solid #8e8e8e; margin: 15px 10px 0 0;" />
+}

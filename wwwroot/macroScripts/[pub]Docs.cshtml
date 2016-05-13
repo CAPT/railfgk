@@ -1,0 +1,55 @@
+﻿@using umbraco.NodeFactory
+@using umbraco.cms.businesslogic.media
+
+@helper RenderFolder(Media folder, bool title = true)
+{
+    var docs = folder.GetChildMedia().Where(x => x.ContentType.Alias != "Folder");
+    if (docs.Any())
+    {
+        int i = 0;
+        <table class="tbl">
+            @if (title) { <thead><tr><td colspan="2">@folder.Text</td></tr></thead> }
+            <tbody>
+                @if (title) { <tr class="splitter"><td colspan="2">&nbsp;</td></tr> }
+                <tr><th>Имя документа</th><th style="width:120px">Файл</th></tr>
+                <tr class="splitter"><td colspan="2">&nbsp;</td></tr>
+                @foreach (var doc in docs)
+                {
+                    var url = doc.GetProperty<string>("umbracoFile");
+                    if (url == "") { continue; }
+                    var bytes = doc.GetProperty<int>("umbracoBytes");
+                    var size = bytes > 1048576 ? ((float)bytes / 1048576.0f).ToString("#.##", System.Globalization.CultureInfo.InvariantCulture) + " Мб" : (bytes / 1024) + " кб";
+                    <tr@Html.Raw(i++ == 0 ? " class='first'" : "")>
+                        <td>@doc.Text</td>
+                        <td class="file">
+                            <a href="@url">@(doc.GetProperty<string>("umbracoExtension")), @size</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+
+@try
+{
+    var mediaFolder = uQuery.GetMedia((Node as Node).GetProperty<string>("docFolder"));
+    if (mediaFolder != null)
+    {
+        @RenderFolder(mediaFolder, false);
+        var subFolders = mediaFolder.GetChildMedia().Where(x => x.ContentType.Alias == "Folder");
+        if (subFolders.Any())
+        {
+            foreach (var subFolder in subFolders)
+            {
+                <br />
+                @RenderFolder(subFolder);
+            }
+        }
+    }
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}

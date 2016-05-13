@@ -1,0 +1,104 @@
+﻿@using umbraco.NodeFactory
+
+@functions
+{
+    private bool nodeFilter(Node x)
+    {
+        string[] nodeTypeAliases = { "pubNewsItem", "pubGallery", "pubVideo" };
+        //subAffiliate шаблона не имеет, но выводиться должен, т.к. с него настроен редирект
+        return x.GetProperty<int>("umbracoNaviHide") == 0 && (x.template != 0 || x.NodeTypeAlias == "subAffiliate") && !nodeTypeAliases.Contains(x.NodeTypeAlias);
+    }
+}
+
+@try
+{
+    var model = Node as Node;
+    var nodes = model.GetAncestorByPathLevel(2).GetChildNodes().Where(x => x.GetProperty<int>("umbracoNaviHide") == 0);
+	string newurl = "";
+    if (nodes.Any())
+    {
+        <div class="sideMenu"><ul>
+        @foreach (var node in nodes)
+        {
+            /*string title = node.GetProperty<string>("title");
+            if (title == "") { title = node.Name; }*/
+				
+				switch (node.Url)
+				{
+					case "/about/feedback/":
+						newurl = "/about/feedback";
+						break;
+					case "/akcyoneram-investoram/capital/":
+						newurl = "/akcyoneram-investoram/";
+						break;
+					case "/zheleznodorozhnye-perevozki-gruzov/market/":
+						newurl = "/zheleznodorozhnye-perevozki-gruzov/";
+						break;
+					default:
+						newurl = node.Url;
+						break;
+				}
+            string title = node.Name;
+            if (!model.Path.Contains(node.Id.ToString()))
+            {
+                <li><a  href="@newurl">@title</a></li>
+            }
+            else
+            {
+                var subNodes = node.GetChildNodes().Where(nodeFilter);
+                if (subNodes.Any())
+                {
+                    <li class="haveSub"><span>@title</span>
+                        <ul>
+                        @foreach (var subNode in subNodes)
+                        {
+                            /*title = subNode.GetProperty<string>("title");
+                            if (title == "") { title = subNode.Name; }*/
+                            title = subNode.Name;
+                            if (!model.Path.Contains(node.Id.ToString()))
+                            {
+                                <li><a href="@node.Url">@title</a></li>
+                            }
+                            if (!model.Path.Contains(subNode.Id.ToString()))
+                            {
+                                <li><a href="@subNode.Url">@title</a></li>
+                            }
+                            else
+                            {
+                                <li><span>@title</span></li>
+                            }
+                        }
+                        </ul>
+                    </li>
+                }
+                else
+                {
+                    <li><span>@title</span></li>
+                }
+            }
+        }
+        </ul></div>
+    }
+}
+catch (Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}
+
+@*
+                    <ul>
+                        <li><a href="#">Что такое ОАО «ФГК»?</a></li>
+                        <li class="haveSub"><span>Руководство</span>
+                            <ul>
+                                <li><a href="#">Екатеринбургский</a></li>
+                                <li><span>Московский</span></li>
+                                <li><a href="#">Ростовский</a></li>
+                                <li><a href="#">Челябинский</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Контактная информация</a></li>
+                        <li><a href="#">История</a></li>
+                        <li><a href="#">Представительство в Украине</a></li>
+                    </ul>
+*@

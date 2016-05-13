@@ -1,0 +1,51 @@
+﻿@using System.Globalization
+@using umbraco.NodeFactory
+@using uComponents.DataTypes.UrlPicker.Dto
+
+@try
+{
+    var HARDCODED_MainPage = 1048;
+    var frtempl = "<li{0}><a href=\"{1}\"{3}><div style=\"background-image: url('{2}')\"></div></a></li>";
+    var nvtempl = "<li{0}><a href=\"{1}\"{3}>&nbsp;</a>{2}</li>";
+    var frstr = string.Empty;
+    var nvstr = string.Empty;
+    var slList = uQuery.GetNodesByCsv((Node as Node).GetProperty<string>("slider"));
+    var language = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(CultureInfo.CurrentUICulture.TwoLetterISOLanguageName);
+
+    if (slList.Any())
+    {
+        int i = 0;
+        @:<div class="sliderBlock"><div class="sliderMain genLay">
+        foreach(var it in slList)
+        {
+            try
+            {
+                var imageUrl = uQuery.GetMedia(it.GetProperty<string>("picture")).GetImageUrl();
+                if (string.IsNullOrEmpty(imageUrl)) { continue; }
+                var urlPickerState = UrlPickerState.Deserialize(it.GetProperty<string>("link" + language));
+                var link = urlPickerState.Url;
+                var description = it.GetProperty<string>("description" + language);
+                frstr += string.Format(frtempl,
+                    i == 0 ? " class=\"current\"" : "",
+                    string.IsNullOrEmpty(link) ? "javascript:void(0)" : link,
+                    imageUrl,
+                    urlPickerState.NewWindow ? " target='_blank'" : "");
+                nvstr += string.Format(nvtempl,
+                    i++ == 0 ? " class=\"selected\"" : "",
+                    string.IsNullOrEmpty(link) ? "javascript:void(0)" : link,
+                    string.IsNullOrEmpty(description) ? "" : "<div>" + description + "</div>",
+                    urlPickerState.NewWindow ? " target='_blank'" : "");
+            }
+            catch { }
+        }
+
+        <ul class="frames">@Html.Raw(frstr)</ul>
+        <ul class="navi">@Html.Raw(nvstr)</ul>
+        @:</div></div>
+    }
+}
+catch(Exception e)
+{
+    umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Error, Model.Id, e.ToString());
+    //<p>@e</p>
+}

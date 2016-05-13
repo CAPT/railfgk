@@ -1,0 +1,15 @@
+﻿@using umbraco.NodeFactory
+@*использование макроса позволяет проверять три поля для title'а, <umbraco:Item...> — нет*@
+@{
+    var model = Node as Node;
+    string title = model.GetProperty<string>("metaTitle");
+    if (title == "")
+    {
+        title = model.GetProperty<string>("title");
+        if (title == "")
+        {
+            title = model.Name;
+        }
+    }
+}
+@title

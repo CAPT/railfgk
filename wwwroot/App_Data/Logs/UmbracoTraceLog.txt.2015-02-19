@@ -1,0 +1,25 @@
+2015-02-19 06:38:54,413 [8] ERROR Umbraco.Web.UmbracoApplication - [Thread 10] An unhandled exception occurred
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CaptchaHandler1.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-02-19 09:52:33,460 [8] INFO  Umbraco.Core.PluginManager - [Thread 23] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 1 (took 36ms)
+2015-02-19 09:52:46,319 [8] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.cms.businesslogic.media.IMediaFactory, found 2 (took 6ms)
+2015-02-19 09:53:13,866 [8] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 3] Successful upload to parent ID: 1076
+2015-02-19 11:03:43,835 [8] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 41] Successful upload to parent ID: 1223
+2015-02-19 11:04:46,304 [8] INFO  umbraco.presentation.umbraco.webservices.MediaUploader - [Thread 40] Successful upload to parent ID: 1223
+2015-02-19 14:12:18,069 [8] INFO  Umbraco.Web.UmbracoApplication - [Thread 21] Application shutdown. Reason: HostingEnvironment
+2015-02-19 14:12:18,710 [8] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2015-02-19 14:12:18,788 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2015-02-19 14:12:18,804 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 14ms)
+2015-02-19 14:12:19,163 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 361ms)
+2015-02-19 14:12:19,163 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 2ms)
+2015-02-19 14:12:19,366 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2015-02-19 14:12:19,366 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 1ms)
+2015-02-19 14:12:19,382 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 2ms)
+2015-02-19 14:12:19,413 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 11ms)
+2015-02-19 14:12:19,444 [8] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 3ms)
+2015-02-19 14:12:19,663 [8] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 954ms)
+2015-02-19 14:12:20,460 [8] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 2ms)
+2015-02-19 14:12:36,554 [8] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 9ms)
+2015-02-19 14:12:36,585 [8] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 3ms)

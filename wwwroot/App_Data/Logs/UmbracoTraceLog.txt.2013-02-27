@@ -1,0 +1,733 @@
+2013-02-27 00:08:19,629 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 27] Application shutdown. Reason: HostingEnvironment
+2013-02-27 04:45:07,484 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 04:45:07,621 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 04:45:07,641 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-02-27 04:45:08,169 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 505ms)
+2013-02-27 04:45:08,193 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 04:45:08,458 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 04:45:08,463 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 04:45:08,483 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 04:45:08,774 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 16ms)
+2013-02-27 04:45:08,824 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 04:45:08,968 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1413ms)
+2013-02-27 04:45:11,118 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 04:45:12,390 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-27 04:45:12,423 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-27 04:56:07,951 [6] WARN  umbraco.macro - [Thread 7] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 06:33:07,345 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 17] Application shutdown. Reason: HostingEnvironment
+2013-02-27 06:41:43,827 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 06:41:43,965 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 06:41:43,985 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-02-27 06:41:44,842 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 832ms)
+2013-02-27 06:41:44,865 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-27 06:41:45,156 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 06:41:45,167 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 10ms)
+2013-02-27 06:41:45,185 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 06:41:45,544 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 16ms)
+2013-02-27 06:41:45,838 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 06:41:45,991 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 2143ms)
+2013-02-27 07:02:44,075 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 9] Application shutdown. Reason: HostingEnvironment
+2013-02-27 07:10:32,247 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 07:10:32,386 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 07:10:32,406 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-02-27 07:10:33,069 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 639ms)
+2013-02-27 07:10:33,091 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 07:10:33,356 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 07:10:33,361 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 07:10:33,379 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 07:10:33,695 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 32ms)
+2013-02-27 07:10:33,744 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 6ms)
+2013-02-27 07:10:33,889 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1622ms)
+2013-02-27 07:31:32,214 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 11] Application shutdown. Reason: HostingEnvironment
+2013-02-27 07:39:19,797 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 07:39:19,883 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 07:39:19,903 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 16ms)
+2013-02-27 07:39:20,812 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 885ms)
+2013-02-27 07:39:20,834 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-27 07:39:21,238 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-27 07:39:21,242 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 07:39:21,261 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 07:39:21,773 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 07:39:21,848 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 23ms)
+2013-02-27 07:39:22,003 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 2186ms)
+2013-02-27 08:00:19,985 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 13] Application shutdown. Reason: HostingEnvironment
+2013-02-27 08:08:08,317 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 08:08:08,458 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 08:08:08,479 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 18ms)
+2013-02-27 08:08:09,017 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 514ms)
+2013-02-27 08:08:09,040 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-27 08:08:09,388 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-27 08:08:09,438 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 49ms)
+2013-02-27 08:08:09,456 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 08:08:09,770 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 08:08:09,826 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 08:08:09,982 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1644ms)
+2013-02-27 08:29:07,922 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 12] Application shutdown. Reason: HostingEnvironment
+2013-02-27 08:39:18,418 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 08:39:18,554 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 08:39:18,574 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-02-27 08:39:19,103 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 505ms)
+2013-02-27 08:39:19,126 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-27 08:39:19,398 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 08:39:19,403 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 08:39:19,422 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 08:39:19,723 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 08:39:19,773 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 08:39:19,918 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1481ms)
+2013-02-27 09:00:18,676 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 7] Application shutdown. Reason: HostingEnvironment
+2013-02-27 09:10:36,765 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 09:10:36,905 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 09:10:36,924 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 16ms)
+2013-02-27 09:10:37,454 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 506ms)
+2013-02-27 09:10:37,476 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 09:10:37,736 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 09:10:37,741 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 09:10:37,759 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 09:10:38,051 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 09:10:38,100 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 09:10:38,257 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1472ms)
+2013-02-27 09:14:11,253 [6] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 09:24:20,923 [6] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-27 09:24:21,299 [6] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-27 09:48:31,943 [6] WARN  umbraco.macro - [Thread 18] Error loading MacroEngine script (file: [common]Language.cshtml, Type: ''. Exception: System.Web.HttpParseException (0x80004005): Unexpected "if" keyword after "@" character.  Once inside code, you do not need to prefix constructs like "if" with "@".
+
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 09:48:32,088 [6] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 6ms)
+2013-02-27 09:48:37,346 [6] WARN  umbraco.macro - [Thread 19] Error loading MacroEngine script (file: [common]Language.cshtml, Type: ''. Exception: System.Web.HttpParseException (0x80004005): Unexpected "if" keyword after "@" character.  Once inside code, you do not need to prefix constructs like "if" with "@".
+
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 09:48:57,590 [6] WARN  umbraco.macro - [Thread 15] Error loading MacroEngine script (file: [common]Language.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[common]Language.cshtml(34): error CS0029: Cannot implicitly convert type 'System.Web.HttpCookie' to 'string'
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 09:49:39,815 [6] WARN  umbraco.macro - [Thread 25] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 09:50:03,594 [6] WARN  umbraco.macro - [Thread 27] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 09:50:10,038 [6] WARN  umbraco.macro - [Thread 18] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 09:50:22,328 [6] WARN  umbraco.macro - [Thread 23] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 09:51:12,271 [6] WARN  umbraco.macro - [Thread 23] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 09:52:21,328 [6] WARN  umbraco.macro - [Thread 18] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 10:07:19,774 [6] WARN  umbraco.macro - [Thread 14] Error loading MacroEngine script (file: [common]Language.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[common]Language.cshtml(46): error CS1977: Cannot use a lambda expression as an argument to a dynamically dispatched operation without first casting it to a delegate or expression tree type
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 10:33:35,064 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 7] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-27 10:33:37,794 [21] INFO  Umbraco.Core.CoreBootManager - [Thread 20] Umbraco application starting
+2013-02-27 10:33:37,995 [21] INFO  Umbraco.Core.PluginManager - [Thread 20] Determining hash of code files on disk
+2013-02-27 10:33:38,021 [21] INFO  Umbraco.Core.PluginManager - [Thread 20] Hash determined (took 23ms)
+2013-02-27 10:33:38,844 [21] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 798ms)
+2013-02-27 10:33:38,863 [21] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 10:33:39,131 [21] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 10:33:39,136 [21] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 10:33:39,153 [21] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 10:33:39,495 [21] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 16ms)
+2013-02-27 10:33:39,551 [21] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 10:33:39,646 [21] INFO  Umbraco.Core.CoreBootManager - [Thread 20] Umbraco application startup complete (took 1832ms)
+2013-02-27 10:34:28,293 [21] INFO  Umbraco.Core.PluginManager - [Thread 24] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 10:45:57,812 [21] INFO  Umbraco.Core.PluginManager - [Thread 24] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-27 10:45:57,859 [21] INFO  Umbraco.Core.PluginManager - [Thread 24] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-27 10:49:47,021 [21] INFO  Umbraco.Core.PluginManager - [Thread 24] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-27 10:51:48,461 [21] WARN  umbraco.macro - [Thread 22] Error loading MacroEngine script (file: [common]Language.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[common]Language.cshtml(60): error CS0103: The name 'enUrls' does not exist in the current context
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 10:51:50,154 [21] WARN  umbraco.macro - [Thread 22] Error loading MacroEngine script (file: [common]Language.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[common]Language.cshtml(60): error CS0103: The name 'enUrls' does not exist in the current context
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 10:51:51,039 [21] WARN  umbraco.macro - [Thread 22] Error loading MacroEngine script (file: [common]Language.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[common]Language.cshtml(60): error CS0103: The name 'enUrls' does not exist in the current context
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 10:52:42,679 [21] WARN  umbraco.macro - [Thread 24] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 10:55:42,534 [21] ERROR Umbraco.Web.UmbracoApplication - [Thread 10] An unhandled exception occurred
+System.Exception: Client authorization failed. User is not logged in
+   at umbraco.presentation.webservices.TreeDataService.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-02-27 10:56:31,372 [21] WARN  umbraco.macro - [Thread 7] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 10:56:38,457 [21] WARN  umbraco.macro - [Thread 6] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:03:24,865 [21] INFO  Umbraco.Web.UmbracoApplication - [Thread 19] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-27 11:03:26,320 [27] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 11:03:26,451 [27] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 11:03:26,469 [27] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 16ms)
+2013-02-27 11:03:26,936 [27] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 442ms)
+2013-02-27 11:03:26,961 [27] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 11:03:27,150 [27] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-27 11:03:27,155 [27] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 11:03:27,172 [27] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 11:03:27,459 [27] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 11:03:27,507 [27] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 11:03:27,628 [27] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1288ms)
+2013-02-27 11:03:28,855 [27] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 11:05:11,229 [27] WARN  umbraco.macro - [Thread 6] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:06:58,470 [27] WARN  umbraco.macro - [Thread 22] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:22:20,556 [27] WARN  umbraco.macro - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>[Thread 10] Error loading MacroEngine script (file: [common]Language.cshtml, Type: ''. Exception: System.Web.HttpParseException (0x80004005): The code block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)</format><args>{}</args></log4net.Error>
+2013-02-27 11:22:20,608 [27] WARN  umbraco.macro - [Thread 10] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:22:25,820 [27] INFO  Umbraco.Core.PluginManager - [Thread 26] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-27 11:23:27,225 [27] WARN  umbraco.macro - [Thread 12] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:23:31,688 [27] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-27 11:23:56,390 [27] WARN  umbraco.macro - [Thread 10] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:24:02,258 [27] WARN  umbraco.macro - [Thread 24] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:24:08,444 [27] WARN  umbraco.macro - [Thread 21] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:24:14,659 [27] WARN  umbraco.macro - [Thread 24] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:26:03,647 [27] WARN  umbraco.macro - [Thread 12] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:30:53,362 [27] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2013-02-27 11:33:09,668 [27] WARN  umbraco.macro - [Thread 10] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:33:30,978 [27] WARN  umbraco.macro - [Thread 12] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:35:09,444 [27] WARN  umbraco.macro - [Thread 12] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:36:17,762 [27] WARN  umbraco.macro - [Thread 10] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:37:30,769 [27] INFO  Umbraco.Web.UmbracoApplication - [Thread 13] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-27 11:37:32,015 [25] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 11:37:32,158 [25] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 11:37:32,175 [25] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 15ms)
+2013-02-27 11:37:32,651 [25] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 452ms)
+2013-02-27 11:37:32,683 [25] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 11:37:33,012 [25] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 11:37:33,017 [25] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 11:37:33,035 [25] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 11:37:33,074 [25] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 11:37:33,132 [25] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 11:37:33,525 [25] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1490ms)
+2013-02-27 11:37:34,630 [25] INFO  Umbraco.Core.PluginManager - [Thread 26] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 11:37:51,646 [25] WARN  umbraco.macro - [Thread 26] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:38:37,337 [25] WARN  umbraco.macro - [Thread 7] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:38:38,794 [25] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-27 11:38:38,878 [25] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-27 11:45:01,428 [25] INFO  Umbraco.Core.PluginManager - [Thread 13] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2013-02-27 11:48:39,367 [25] INFO  Umbraco.Web.UmbracoApplication - [Thread 12] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-27 11:48:41,122 [17] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 11:48:41,253 [17] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 11:48:41,272 [17] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 16ms)
+2013-02-27 11:48:41,744 [17] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 449ms)
+2013-02-27 11:48:41,764 [17] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 11:48:41,938 [17] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 11:48:41,943 [17] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 11:48:41,961 [17] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 11:48:42,014 [17] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 11:48:42,070 [17] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 11:48:42,419 [17] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1277ms)
+2013-02-27 11:48:43,403 [17] INFO  Umbraco.Core.PluginManager - [Thread 23] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 11:53:51,854 [17] WARN  umbraco.macro - [Thread 16] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:53:56,562 [17] WARN  umbraco.macro - [Thread 16] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 11:54:03,184 [17] INFO  Umbraco.Core.PluginManager - [Thread 16] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-27 11:54:03,250 [17] INFO  Umbraco.Core.PluginManager - [Thread 16] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-27 12:04:49,182 [17] WARN  umbraco.macro - [Thread 16] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 12:04:53,289 [17] WARN  umbraco.macro - [Thread 16] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 12:05:44,574 [17] INFO  Umbraco.Web.UmbracoApplication - [Thread 12] Application shutdown. Reason: CodeDirChangeOrDirectoryRename
+2013-02-27 12:05:52,733 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 21] Umbraco application starting
+2013-02-27 12:05:52,864 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Determining hash of code files on disk
+2013-02-27 12:05:52,888 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Hash determined (took 21ms)
+2013-02-27 12:05:53,170 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 257ms)
+2013-02-27 12:05:53,189 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 12:05:53,368 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 12:05:53,372 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 12:05:53,390 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 12:05:53,704 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 12:05:53,757 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 12:05:53,849 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 21] Umbraco application startup complete (took 1045ms)
+2013-02-27 12:05:57,920 [6] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 12:55:36,626 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 10] Application shutdown. Reason: HostingEnvironment
+2013-02-27 12:57:14,736 [5] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 12:57:15,202 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 12:57:15,262 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 57ms)
+2013-02-27 12:57:18,067 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2781ms)
+2013-02-27 12:57:18,229 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 9ms)
+2013-02-27 12:57:18,940 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-27 12:57:18,945 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 12:57:18,964 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 12:57:19,343 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 12:57:19,413 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 12:57:19,607 [5] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 4786ms)
+2013-02-27 13:00:06,138 [5] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 13:20:13,331 [5] INFO  Umbraco.Web.UmbracoApplication - [Thread 18] Application shutdown. Reason: HostingEnvironment
+2013-02-27 13:24:54,483 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 13:24:54,621 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 13:24:54,640 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-02-27 13:24:55,168 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 504ms)
+2013-02-27 13:24:55,192 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-27 13:24:55,456 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 13:24:55,461 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 13:24:55,481 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 13:24:55,773 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 16ms)
+2013-02-27 13:24:55,827 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 13:24:56,024 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1520ms)
+2013-02-27 13:25:05,050 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 13:50:40,886 [6] INFO  Umbraco.Core.PluginManager - [Thread 16] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-27 13:50:40,921 [6] INFO  Umbraco.Core.PluginManager - [Thread 16] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 6ms)
+2013-02-27 13:50:50,864 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 15] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-27 13:50:52,066 [11] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 13:50:52,197 [11] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 13:50:52,216 [11] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 16ms)
+2013-02-27 13:50:52,653 [11] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 413ms)
+2013-02-27 13:50:52,672 [11] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 13:50:52,859 [11] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 13:50:52,871 [11] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 12ms)
+2013-02-27 13:50:52,889 [11] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 13:50:53,183 [11] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 13:50:53,229 [11] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 13:50:53,355 [11] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1218ms)
+2013-02-27 13:50:53,995 [11] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 13:56:33,780 [11] WARN  umbraco.macro - [Thread 14] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 13:56:38,293 [11] WARN  umbraco.macro - [Thread 14] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 13:59:45,588 [11] WARN  umbraco.macro - [Thread 14] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 14:00:25,022 [11] INFO  Umbraco.Core.PluginManager - [Thread 14] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 7ms)
+2013-02-27 14:00:25,391 [11] INFO  Umbraco.Core.PluginManager - [Thread 14] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2013-02-27 14:01:41,259 [11] WARN  umbraco.macro - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>[Thread 14] Error loading MacroEngine script (file: [mainPage]Slider.cshtml, Type: ''. Exception: System.Web.HttpParseException (0x80004005): The try block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)</format><args>{}</args></log4net.Error>
+2013-02-27 14:01:41,272 [11] WARN  umbraco.macro - [Thread 14] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 14:02:28,413 [11] WARN  umbraco.macro - [Thread 12] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.InvalidOperationException: Sequence contains no elements
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 14:03:12,196 [11] WARN  umbraco.macro - [Thread 14] Error loading MacroEngine script (file: [mainPage]CenterBlock.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[mainPage]CenterBlock.cshtml(21): error CS0103: The name 'model' does not exist in the current context
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 14:04:13,506 [11] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 14] Couldn't find any page with nodeId=-1. This is most likely caused by the page not being published.
+2013-02-27 14:04:13,506 [11] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 14] Couldn't find any page with nodeId=-1. This is most likely caused by the page not being published.
+2013-02-27 14:04:13,506 [11] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 14] Couldn't find any page with nodeId=-1. This is most likely caused by the page not being published.
+2013-02-27 14:04:13,506 [11] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 14] Couldn't find any page with nodeId=-1. This is most likely caused by the page not being published.
+2013-02-27 14:04:53,369 [11] INFO  Umbraco.Core.PluginManager - [Thread 6] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 6ms)
+2013-02-27 14:05:15,508 [11] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 8] Couldn't find any page with nodeId=-1. This is most likely caused by the page not being published.
+2013-02-27 14:05:15,508 [11] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 8] Couldn't find any page with nodeId=-1. This is most likely caused by the page not being published.
+2013-02-27 14:05:15,508 [11] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 8] Couldn't find any page with nodeId=-1. This is most likely caused by the page not being published.
+2013-02-27 14:05:15,508 [11] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 8] Couldn't find any page with nodeId=-1. This is most likely caused by the page not being published.
+2013-02-27 14:06:52,294 [11] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 7] Couldn't find any page with nodeId=-1. This is most likely caused by the page not being published.
+2013-02-27 14:06:52,294 [11] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 7] Couldn't find any page with nodeId=-1. This is most likely caused by the page not being published.
+2013-02-27 14:06:52,294 [11] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 7] Couldn't find any page with nodeId=-1. This is most likely caused by the page not being published.
+2013-02-27 14:06:52,294 [11] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 7] Couldn't find any page with nodeId=-1. This is most likely caused by the page not being published.
+2013-02-27 14:07:27,602 [11] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 0ms)
+2013-02-27 14:12:51,037 [11] INFO  Umbraco.Web.UmbracoApplication - [Thread 13] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-27 14:12:53,197 [19] INFO  Umbraco.Core.CoreBootManager - [Thread 15] Umbraco application starting
+2013-02-27 14:12:53,329 [19] INFO  Umbraco.Core.PluginManager - [Thread 15] Determining hash of code files on disk
+2013-02-27 14:12:53,347 [19] INFO  Umbraco.Core.PluginManager - [Thread 15] Hash determined (took 16ms)
+2013-02-27 14:12:53,811 [19] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 440ms)
+2013-02-27 14:12:53,831 [19] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 14:12:54,006 [19] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 14:12:54,010 [19] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 14:12:54,028 [19] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 14:12:54,074 [19] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 14:12:54,131 [19] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 14:12:54,490 [19] INFO  Umbraco.Core.CoreBootManager - [Thread 15] Umbraco application startup complete (took 1273ms)
+2013-02-27 14:12:55,640 [19] INFO  Umbraco.Core.PluginManager - [Thread 14] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 14:12:57,014 [19] INFO  Umbraco.Core.PluginManager - [Thread 14] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 13ms)
+2013-02-27 14:12:57,097 [19] INFO  Umbraco.Core.PluginManager - [Thread 14] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-27 14:14:20,740 [19] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-27 14:31:09,549 [19] WARN  umbraco.macro - [Thread 14] Error loading MacroEngine script (file: [pub]RenderSitemap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]RenderSitemap.cshtml(35): error CS1061: 'umbraco.NodeFactory.Node' does not contain a definition for 'x' and no extension method 'x' accepting a first argument of type 'umbraco.NodeFactory.Node' could be found (are you missing a using directive or an assembly reference?)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 15:35:34,980 [19] INFO  Umbraco.Web.UmbracoApplication - [Thread 21] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-27 15:35:36,246 [20] INFO  Umbraco.Core.CoreBootManager - [Thread 18] Umbraco application starting
+2013-02-27 15:35:36,376 [20] INFO  Umbraco.Core.PluginManager - [Thread 18] Determining hash of code files on disk
+2013-02-27 15:35:36,395 [20] INFO  Umbraco.Core.PluginManager - [Thread 18] Hash determined (took 16ms)
+2013-02-27 15:35:36,867 [20] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 447ms)
+2013-02-27 15:35:36,886 [20] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 15:35:37,059 [20] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 15:35:37,064 [20] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 15:35:37,081 [20] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 15:35:37,121 [20] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 15:35:37,176 [20] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 15:35:37,541 [20] INFO  Umbraco.Core.CoreBootManager - [Thread 18] Umbraco application startup complete (took 1276ms)
+2013-02-27 15:35:39,049 [20] INFO  Umbraco.Core.PluginManager - [Thread 16] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 16:17:37,319 [20] INFO  Umbraco.Core.PluginManager - [Thread 16] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-27 16:17:37,347 [20] INFO  Umbraco.Core.PluginManager - [Thread 16] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-27 16:17:39,433 [20] INFO  Umbraco.Core.PluginManager - [Thread 16] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-27 18:27:41,110 [20] INFO  Umbraco.Web.UmbracoApplication - [Thread 42] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-27 18:27:41,904 [48] INFO  Umbraco.Core.CoreBootManager - [Thread 56] Umbraco application starting
+2013-02-27 18:27:42,080 [48] INFO  Umbraco.Core.PluginManager - [Thread 56] Determining hash of code files on disk
+2013-02-27 18:27:42,098 [48] INFO  Umbraco.Core.PluginManager - [Thread 56] Hash determined (took 16ms)
+2013-02-27 18:27:42,674 [48] INFO  Umbraco.Core.PluginManager - [Thread 56] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 551ms)
+2013-02-27 18:27:42,692 [48] INFO  Umbraco.Core.PluginManager - [Thread 56] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 18:27:42,885 [48] INFO  Umbraco.Core.PluginManager - [Thread 56] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 18:27:42,890 [48] INFO  Umbraco.Core.PluginManager - [Thread 56] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 18:27:42,907 [48] INFO  Umbraco.Core.PluginManager - [Thread 56] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 18:27:43,273 [48] INFO  Umbraco.Core.PluginManager - [Thread 56] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 16ms)
+2013-02-27 18:27:43,373 [48] INFO  Umbraco.Core.PluginManager - [Thread 56] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 18:27:43,483 [48] INFO  Umbraco.Core.CoreBootManager - [Thread 56] Umbraco application startup complete (took 1508ms)
+2013-02-27 18:27:54,642 [48] INFO  Umbraco.Core.PluginManager - [Thread 23] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 18:27:55,374 [48] INFO  Umbraco.Core.PluginManager - [Thread 23] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-27 18:27:55,457 [48] INFO  Umbraco.Core.PluginManager - [Thread 23] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-27 18:29:04,522 [48] INFO  Umbraco.Core.PluginManager - [Thread 54] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-27 19:06:27,558 [48] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 10] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-02-27 19:42:16,299 [48] WARN  umbraco.macro - [Thread 13] Error loading MacroEngine script (file: [pub]VideoArchive.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]VideoArchive.cshtml(55): error CS0103: The name 'svideo' does not exist in the current context
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-27 19:56:26,881 [48] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 37] Error executing query UPDATE umbracoUserLogins SET timeout = @timeout WHERE contextId = @contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.ReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.ReadByte()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteNonQuery(String commandText, IParameter[] parameters)
+2013-02-27 19:57:10,395 [48] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 29] Error executing query UPDATE umbracoUserLogins SET timeout = @timeout WHERE contextId = @contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.ReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.ReadByte()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteNonQuery(String commandText, IParameter[] parameters)
+2013-02-27 20:01:27,686 [48] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 12] Error executing query select distinct nodeId, level, sortOrder from cmsDocument inner join umbracoNode on umbracoNode.id = cmsDocument.nodeId where newest = 1 and not releaseDate is null and releaseDate <= @today order by [level], sortOrder
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.ReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.ReadByte()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:02:56,701 [48] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 12] Error executing query UPDATE umbracoUserLogins SET timeout = @timeout WHERE contextId = @contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:02:56,707 [48] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 29] Error executing query Select templateNodeId, IsDefault from cmsDocumentType where contentTypeNodeId = @id
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:02:56,709 [48] ERROR Umbraco.Web.UmbracoApplication - [Thread 29] An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> System.Data.SqlClient.SqlException: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+   --- End of inner exception stack trace ---
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+   at umbraco.cms.businesslogic.web.DocumentType.setupNode()
+   at umbraco.cms.presentation.editContent.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-02-27 20:03:13,380 [48] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 12] Error executing query select distinct nodeId, level, sortOrder from cmsDocument inner join umbracoNode on umbracoNode.id = cmsDocument.nodeId where newest = 1 and not releaseDate is null and releaseDate <= @today order by [level], sortOrder
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:03:47,047 [48] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 12] Error executing query UPDATE umbracoUserLogins SET timeout = @timeout WHERE contextId = @contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.ReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.ReadByte()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteNonQuery(String commandText, IParameter[] parameters)
+2013-02-27 20:04:14,675 [48] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 21] Error executing query insert into umbracoLog (userId, nodeId, logHeader, logComment) values (@userId, @nodeId, @logHeader, @comment)
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteNonQuery(String commandText, IParameter[] parameters)
+2013-02-27 20:05:20,264 [48] INFO  Umbraco.Web.UmbracoApplication - [Thread 21] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-27 20:05:24,219 [34] INFO  Umbraco.Core.CoreBootManager - [Thread 15] Umbraco application starting
+2013-02-27 20:05:24,733 [34] INFO  Umbraco.Core.PluginManager - [Thread 15] Determining hash of code files on disk
+2013-02-27 20:05:24,751 [34] INFO  Umbraco.Core.PluginManager - [Thread 15] Hash determined (took 16ms)
+2013-02-27 20:05:32,221 [34] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 7446ms)
+2013-02-27 20:05:32,241 [34] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 20:05:49,289 [34] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 20:05:49,294 [34] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 20:05:49,311 [34] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 20:05:53,642 [34] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 20:05:54,824 [34] INFO  Umbraco.Core.PluginManager - [Thread 15] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 9ms)
+2013-02-27 20:05:55,871 [34] INFO  Umbraco.Core.CoreBootManager - [Thread 15] Umbraco application startup complete (took 31584ms)
+2013-02-27 20:06:20,804 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 21] Error executing query UPDATE umbracoUserLogins SET timeout = @timeout WHERE contextId = @contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteScalar(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteScalar[T](String commandText, IParameter[] parameters)
+2013-02-27 20:06:20,868 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 21] Error executing query UPDATE umbracoUserLogins SET timeout = @timeout WHERE contextId = @contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:20,872 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 21] Error executing query UPDATE umbracoUserLogins SET timeout = @timeout WHERE contextId = @contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:20,877 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 21] Error executing query UPDATE umbracoUserLogins SET timeout = @timeout WHERE contextId = @contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:20,881 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 21] Error executing query UPDATE umbracoUserLogins SET timeout = @timeout WHERE contextId = @contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:20,886 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 21] Error executing query UPDATE umbracoUserLogins SET timeout = @timeout WHERE contextId = @contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:20,889 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 41] Error executing query UPDATE umbracoUserLogins SET timeout = @timeout WHERE contextId = @contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:20,892 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 29] Error executing query select  cmsDataType.controlId, masterContentType.alias as masterAlias  from  cmsContentType  left join cmsPropertyType on (cmsContentType.nodeId = cmsPropertyType.contentTypeId and cmsPropertyType.Alias = @propertyAlias)  left join cmsDataType on (cmsPropertyType.dataTypeId = cmsDataType.nodeId) left join cmsContentType masterContentType on masterContentType.nodeid = cmsContentType.masterContentType  where  cmsContentType.alias = @contentTypeAlias
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:20,893 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 7] Error executing query UPDATE umbracoUserLogins SET timeout = @timeout WHERE contextId = @contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:20,896 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 47] Error executing query select timeout from umbracoUserLogins where contextId=@contextId
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:20,985 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 29] Error executing query select  cmsDataType.controlId, masterContentType.alias as masterAlias  from  cmsContentType  left join cmsPropertyType on (cmsContentType.nodeId = cmsPropertyType.contentTypeId and cmsPropertyType.Alias = @propertyAlias)  left join cmsDataType on (cmsPropertyType.dataTypeId = cmsDataType.nodeId) left join cmsContentType masterContentType on masterContentType.nodeid = cmsContentType.masterContentType  where  cmsContentType.alias = @contentTypeAlias
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:21,027 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 29] Error executing query SELECT id, createDate, trashed, parentId, nodeObjectType, nodeUser, level, path, sortOrder, uniqueID, text FROM umbracoNode WHERE id = @id
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:21,030 [34] ERROR Umbraco.Web.UmbracoApplication - [Thread 29] An unhandled exception occurred
+System.InvalidOperationException: The template with Id 1444 does not exist, the page cannot render
+   at Umbraco.Web.Routing.PublishedContentRequestBuilder.LookupTemplate()
+   at Umbraco.Web.Routing.PublishedContentRequestBuilder.LookupDocument2()
+   at Umbraco.Web.Routing.PublishedContentRequestBuilder.LookupDocument()
+   at Umbraco.Web.Routing.PublishedContentRequest.ProcessRequest(HttpContextBase httpContext, UmbracoContext umbracoContext, Action`1 onSuccess)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-02-27 20:06:40,073 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 29] Error executing query select distinct nodeId, level, sortOrder from cmsDocument inner join umbracoNode on umbracoNode.id = cmsDocument.nodeId where newest = 1 and not releaseDate is null and releaseDate <= @today order by [level], sortOrder
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:40,074 [34] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlClient.SqlParameter, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] - [Thread 41] Error executing query select  cmsDataType.controlId, masterContentType.alias as masterAlias  from  cmsContentType  left join cmsPropertyType on (cmsContentType.nodeId = cmsPropertyType.contentTypeId and cmsPropertyType.Alias = @propertyAlias)  left join cmsDataType on (cmsPropertyType.dataTypeId = cmsDataType.nodeId) left join cmsContentType masterContentType on masterContentType.nodeid = cmsContentType.masterContentType  where  cmsContentType.alias = @contentTypeAlias
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.ApplicationBlocks.Data.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   at umbraco.DataLayer.SqlHelpers.SqlServer.SqlServerHelper.ExecuteReader(String commandText, SqlParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2013-02-27 20:06:43,512 [34] INFO  Umbraco.Core.PluginManager - [Thread 41] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 6ms)
+2013-02-27 20:27:53,800 [34] INFO  Umbraco.Web.UmbracoApplication - [Thread 44] Application shutdown. Reason: HostingEnvironment
+2013-02-27 21:50:03,577 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 21:50:03,734 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 21:50:03,769 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 30ms)
+2013-02-27 21:50:04,358 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 566ms)
+2013-02-27 21:50:04,381 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 21:50:04,641 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 21:50:04,645 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 21:50:04,664 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 21:50:04,956 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 21:50:05,022 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 24ms)
+2013-02-27 21:50:05,172 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1575ms)
+2013-02-27 22:11:03,731 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 15] Application shutdown. Reason: HostingEnvironment
+2013-02-27 22:19:43,247 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 22:19:43,385 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 22:19:43,405 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-02-27 22:19:43,933 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 503ms)
+2013-02-27 22:19:43,955 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 22:19:44,216 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 22:19:44,221 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 22:19:44,240 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 22:19:44,531 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 22:19:44,580 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 22:19:44,726 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1458ms)
+2013-02-27 22:40:43,463 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 10] Application shutdown. Reason: HostingEnvironment
+2013-02-27 22:45:15,074 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 22:45:15,237 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 22:45:15,257 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-02-27 22:45:15,813 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 533ms)
+2013-02-27 22:45:15,837 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 22:45:16,105 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-27 22:45:16,109 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 22:45:16,128 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 22:45:16,440 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 22:45:16,489 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 22:45:16,635 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1540ms)
+2013-02-27 23:06:15,181 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 10] Application shutdown. Reason: HostingEnvironment
+2013-02-27 23:14:02,831 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 23:14:02,967 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 23:14:02,988 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-02-27 23:14:03,540 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 528ms)
+2013-02-27 23:14:03,563 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 23:14:03,823 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-27 23:14:03,828 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 23:14:03,846 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 23:14:04,138 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 16ms)
+2013-02-27 23:14:04,189 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 23:14:04,335 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1484ms)
+2013-02-27 23:35:02,987 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 8] Application shutdown. Reason: HostingEnvironment
+2013-02-27 23:42:50,709 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-27 23:42:50,847 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-27 23:42:50,868 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-02-27 23:42:51,418 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 527ms)
+2013-02-27 23:42:51,442 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-27 23:42:51,704 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-27 23:42:51,708 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-27 23:42:51,726 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-27 23:42:52,020 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-27 23:42:52,070 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-27 23:42:52,214 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 1485ms)
+2013-02-27 23:45:12,178 [6] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-27 23:55:45,585 [6] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-27 23:55:45,617 [6] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)

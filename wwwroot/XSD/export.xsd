@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:attributeGroup name="vu22_strings">
+		<xs:attribute name="РаботаКод" type="xs:string"/>
+		<xs:attribute name="Кол-во" type="xs:byte"/>
+		<xs:attribute name="Исполнитель" type="xs:string"/>
+		<xs:attribute name="ЦенаБезНДС" type="xs:decimal"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="vu22_parts">
+		<xs:attribute name="РаботаКод" type="xs:string"/>
+		<xs:attribute name="ДетальКод" type="xs:string" use="required"/>
+		<xs:attribute name="Кол-во" type="xs:byte"/>
+		<xs:attribute name="Наименование" type="xs:string" use="required"/>
+		<xs:attribute name="ЦенаБезНДС" type="xs:decimal"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="mh1">
+		<xs:attribute name="Наименование" type="xs:string"/>
+		<xs:attribute name="КодДетали" type="xs:string"/>
+		<xs:attribute name="Кол-во" type="xs:byte"/>
+		<xs:attribute name="ТипМеталла" type="xs:string"/>
+		<xs:attribute name="Вес" type="xs:decimal"/>
+		<xs:attribute name="Стоимость" type="xs:decimal"/>
+		<xs:attribute name="НомерДетали" type="xs:string"/>
+		<xs:attribute name="Вид" type="xs:byte"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="mh3">
+		<xs:attribute name="Вес" type="xs:decimal"/>
+		<xs:attribute name="Вид" type="xs:byte"/>
+		<xs:attribute name="ДатаОкончанияРемонта" type="xs:string"/>
+		<xs:attribute name="Деталь" type="xs:string"/>
+		<xs:attribute name="Исполнитель" type="xs:string"/>
+		<xs:attribute name="КодДетали" type="xs:string"/>
+		<xs:attribute name="Кол-во" type="xs:byte"/>
+		<xs:attribute name="НаВагон" type="xs:int"/>
+		<xs:attribute name="Наименование" type="xs:string"/>
+		<xs:attribute name="НомерДетали" type="xs:string"/>
+		<xs:attribute name="НомерСнятой" type="xs:string"/>
+		<xs:attribute name="НомерУстанавленной" type="xs:string"/>
+		<xs:attribute name="Причина" type="xs:string"/>
+		<xs:attribute name="РаботаКод" type="xs:string"/>
+		<xs:attribute name="РаботаОснованиеКод" type="xs:string"/>
+		<xs:attribute name="Свагона" type="xs:int"/>
+		<xs:attribute name="Стоимость" type="xs:decimal"/>
+		<xs:attribute name="ТипМеталла" type="xs:string"/>
+		<xs:attribute name="ЦенаБезНДС" type="xs:decimal"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="vu36m">
+		<xs:attribute name="РаботаКод" type="xs:string"/>
+		<xs:attribute name="Наименование" type="xs:string"/>
+		<xs:attribute name="КодДетали" type="xs:string"/>
+		<xs:attribute name="Кол-во" type="xs:byte"/>
+		<xs:attribute name="Исполнитель" type="xs:string"/>
+		<xs:attribute name="ЦенаБезНДС" type="xs:decimal"/>
+		<xs:attribute name="ТипМеталла" type="xs:string"/>
+		<xs:attribute name="Вес" type="xs:string"/>
+		<xs:attribute name="Стоимость" type="xs:string"/>
+		<xs:attribute name="НомерДетали" type="xs:string"/>
+		<xs:attribute name="Вид" type="xs:byte"/>
+		<xs:attribute name="ДатаОкончанияРемонта" type="xs:string"/>
+		<xs:attribute name="Деталь" type="xs:string"/>
+		<xs:attribute name="НаВагон" type="xs:int"/>
+		<xs:attribute name="НомерСнятой" type="xs:string"/>
+		<xs:attribute name="НомерУстанавленной" type="xs:string"/>
+		<xs:attribute name="Причина" type="xs:string"/>
+		<xs:attribute name="РаботаОснованиеКод" type="xs:string"/>
+		<xs:attribute name="Свагона" type="xs:int"/>
+	</xs:attributeGroup>
+	<xs:element name="ЭКСПОРТ">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ВидыРемонта">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Строка" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="Код" type="xs:string" use="required"/>
+									<xs:attribute name="Наименование" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ВидыДеталей">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Строка" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="Код" type="xs:string" use="required"/>
+									<xs:attribute name="Наименование" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Контрагенты">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Строка" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="Код" type="xs:string" use="required"/>
+									<xs:attribute name="Наименование" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ТипыВагонов">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Строка" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="Код" type="xs:string" use="required"/>
+									<xs:attribute name="Наименование" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ГруппыРабот">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Строка" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="Код" type="xs:string" use="required"/>
+									<xs:attribute name="Наименование" type="xs:string" use="required"/>
+									<xs:attribute name="Удален" type="xs:byte" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Работы">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Строка" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="Код" type="xs:string" use="required"/>
+									<xs:attribute name="Номер" type="xs:string" use="required"/>
+									<xs:attribute name="Наименование" type="xs:string" use="required"/>
+									<xs:attribute name="ЗаменаИлиРемонт" type="xs:byte" use="required"/>
+									<xs:attribute name="КодГруппы" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Договора">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Строка" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="Код" type="xs:string" use="required"/>
+									<xs:attribute name="Номер" type="xs:string" use="required"/>
+									<xs:attribute name="СобственникКод" type="xs:string" use="required"/>
+									<xs:attribute name="Собственник" type="xs:string" use="required"/>
+									<xs:attribute name="ИНН" type="xs:long" use="required"/>
+									<xs:attribute name="КПП" type="xs:int" use="required"/>
+									<xs:attribute name="БИК" type="xs:int" use="required"/>
+									<xs:attribute name="ОКПО" type="xs:int" use="required"/>
+									<xs:attribute name="ОКОНХ" type="xs:string" use="required"/>
+									<xs:attribute name="БАНК" type="xs:string" use="required"/>
+									<xs:attribute name="АДРЕС" type="xs:string" use="required"/>
+									<xs:attribute name="РСЧЕТ" type="xs:decimal" use="required"/>
+									<xs:attribute name="РСЧЕТБАНК" type="xs:decimal" use="required"/>
+									<xs:attribute name="ПолноеНаименование" type="xs:string" use="required"/>
+									<xs:attribute name="НачалоДействия" type="xs:string" use="required"/>
+									<xs:attribute name="ОкончаниеДействия" type="xs:string" use="required"/>
+									<xs:attribute name="ДоговорОт" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ОтремонтированныеВагоны">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Вагон" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:choice>
+											<xs:element name="Документ" maxOccurs="unbounded">
+												<xs:complexType>
+													<xs:sequence minOccurs="0">
+														<xs:choice>
+															<xs:element name="Строка" minOccurs="0" maxOccurs="unbounded">
+																<xs:complexType id="vu22">
+																	<xs:attributeGroup ref="vu36m"/>
+																</xs:complexType>
+															</xs:element>
+														</xs:choice>
+														<xs:element name="Деталь" minOccurs="0" maxOccurs="unbounded">
+															<xs:complexType id="vu22_parts">
+																<xs:attributeGroup ref="vu22_parts"/>
+															</xs:complexType>
+														</xs:element>
+														<xs:element name="Вход" minOccurs="0">
+															<xs:complexType>
+																<xs:sequence>
+																	<xs:element name="ТормозноеОборудование" minOccurs="0">
+																		<xs:complexType>
+																			<xs:attribute name="ГЧ_ВР" type="xs:byte"/>
+																			<xs:attribute name="МЧ_ВР" type="xs:byte"/>
+																			<xs:attribute name="РК_ВР" type="xs:byte"/>
+																			<xs:attribute name="ТЦ" type="xs:byte"/>
+																			<xs:attribute name="Авторежим" type="xs:byte"/>
+																			<xs:attribute name="ЗапаснойРезервуар" type="xs:byte"/>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="КП" minOccurs="0" maxOccurs="unbounded">
+																		<xs:complexType>
+																			<xs:attribute name="ГребеньЛ" type="xs:decimal"/>
+																			<xs:attribute name="ГребеньП" type="xs:decimal"/>
+																			<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+																			<xs:attribute name="Номер" type="xs:string"/>
+																			<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+																			<xs:attribute name="ОбодЛ" type="xs:decimal"/>
+																			<xs:attribute name="ОбодП" type="xs:decimal"/>
+																			<xs:attribute name="Положение" type="xs:byte"/>
+																			<xs:attribute name="ПрокатЛ" type="xs:decimal"/>
+																			<xs:attribute name="ПрокатП" type="xs:decimal"/>
+																			<xs:attribute name="Сталь" type="xs:integer"/>
+																			<xs:attribute name="Тележка" type="xs:byte"/>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="НадресорнаяБалка" minOccurs="0" maxOccurs="unbounded">
+																		<xs:complexType>
+																			<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+																			<xs:attribute name="Номер" type="xs:string"/>
+																			<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+																			<xs:attribute name="Положение" type="xs:byte"/>
+																			<xs:attribute name="Тележка" type="xs:byte"/>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="СоединительнаяБалка" minOccurs="0" maxOccurs="unbounded">
+																		<xs:complexType>
+																			<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+																			<xs:attribute name="Номер" type="xs:string"/>
+																			<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+																			<xs:attribute name="Положение" type="xs:byte"/>
+																			<xs:attribute name="Тележка" type="xs:byte"/>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="РамаБоковая" minOccurs="0" maxOccurs="unbounded">
+																		<xs:complexType>
+																			<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+																			<xs:attribute name="Номер" type="xs:string"/>
+																			<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+																			<xs:attribute name="Положение" type="xs:byte"/>
+																			<xs:attribute name="Тележка" type="xs:byte"/>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="Автосцепка" minOccurs="0" maxOccurs="2">
+																		<xs:complexType>
+																			<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+																			<xs:attribute name="Номер" type="xs:string"/>
+																			<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+																			<xs:attribute name="Положение" type="xs:byte"/>
+																			<xs:attribute name="Тип" type="xs:byte"/>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="ПоглощающийАппарат" minOccurs="0" maxOccurs="2">
+																		<xs:complexType>
+																			<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+																			<xs:attribute name="Номер" type="xs:string"/>
+																			<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+																			<xs:attribute name="Положение" type="xs:byte"/>
+																			<xs:attribute name="Тип" type="xs:byte"/>
+																		</xs:complexType>
+																	</xs:element>
+																</xs:sequence>
+															</xs:complexType>
+														</xs:element>
+														<xs:element name="Выход" minOccurs="0">
+															<xs:complexType>
+																<xs:sequence>
+																	<xs:element name="ТормозноеОборудование" minOccurs="0">
+																		<xs:complexType>
+																			<xs:attribute name="ГЧ_ВР" type="xs:byte"/>
+																			<xs:attribute name="МЧ_ВР" type="xs:byte"/>
+																			<xs:attribute name="РК_ВР" type="xs:byte"/>
+																			<xs:attribute name="ТЦ" type="xs:byte"/>
+																			<xs:attribute name="Авторежим" type="xs:byte"/>
+																			<xs:attribute name="ЗапаснойРезервуар" type="xs:byte"/>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="КП" minOccurs="0" maxOccurs="unbounded">
+																		<xs:complexType>
+																			<xs:attribute name="ГребеньЛ" type="xs:decimal"/>
+																			<xs:attribute name="ГребеньП" type="xs:decimal"/>
+																			<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+																			<xs:attribute name="Номер" type="xs:string"/>
+																			<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+																			<xs:attribute name="ОбодЛ" type="xs:decimal"/>
+																			<xs:attribute name="ОбодП" type="xs:decimal"/>
+																			<xs:attribute name="Положение" type="xs:byte"/>
+																			<xs:attribute name="ПрокатЛ" type="xs:decimal"/>
+																			<xs:attribute name="ПрокатП" type="xs:decimal"/>
+																			<xs:attribute name="Сталь" type="xs:integer"/>
+																			<xs:attribute name="Тележка" type="xs:byte"/>
+																			<xs:attribute name="Происхождение" type="xs:long"/>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="НадресорнаяБалка" minOccurs="0" maxOccurs="unbounded">
+																		<xs:complexType>
+																			<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+																			<xs:attribute name="Номер" type="xs:string"/>
+																			<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+																			<xs:attribute name="Положение" type="xs:byte"/>
+																			<xs:attribute name="Тележка" type="xs:byte"/>
+																			<xs:attribute name="Происхождение" type="xs:long"/>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="СоединительнаяБалка" minOccurs="0" maxOccurs="unbounded">
+																		<xs:complexType>
+																			<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+																			<xs:attribute name="Номер" type="xs:string"/>
+																			<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+																			<xs:attribute name="Положение" type="xs:byte"/>
+																			<xs:attribute name="Тележка" type="xs:byte"/>
+																			<xs:attribute name="Происхождение" type="xs:long"/>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="РамаБоковая" minOccurs="0" maxOccurs="unbounded">
+																		<xs:complexType>
+																			<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+																			<xs:attribute name="Номер" type="xs:string"/>
+																			<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+																			<xs:attribute name="Положение" type="xs:byte"/>
+																			<xs:attribute name="Тележка" type="xs:byte"/>
+																			<xs:attribute name="Происхождение" type="xs:long"/>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="Автосцепка" minOccurs="0" maxOccurs="2">
+																		<xs:complexType>
+																			<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+																			<xs:attribute name="Номер" type="xs:string"/>
+																			<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+																			<xs:attribute name="Положение" type="xs:byte"/>
+																			<xs:attribute name="Тип" type="xs:byte"/>
+																			<xs:attribute name="Происхождение" type="xs:long"/>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="ПоглощающийАппарат" minOccurs="0" maxOccurs="2">
+																		<xs:complexType>
+																			<xs:attribute name="Завод" type="xs:integer" use="optional"/>
+																			<xs:attribute name="Номер" type="xs:string"/>
+																			<xs:attribute name="Год" type="xs:gYear" use="optional"/>
+																			<xs:attribute name="Положение" type="xs:byte"/>
+																			<xs:attribute name="Тип" type="xs:byte"/>
+																			<xs:attribute name="Происхождение" type="xs:long"/>
+																		</xs:complexType>
+																	</xs:element>
+																</xs:sequence>
+															</xs:complexType>
+														</xs:element>
+													</xs:sequence>
+													<xs:attribute name="Номер" type="xs:string"/>
+													<xs:attribute name="Дата" type="xs:string"/>
+													<xs:attribute name="Форма" type="xs:string" use="required"/>
+													<xs:attribute name="Код1" type="xs:string"/>
+													<xs:attribute name="Код2" type="xs:string"/>
+													<xs:attribute name="Код3" type="xs:string"/>
+													<xs:attribute name="Код4" type="xs:string"/>
+													<xs:attribute name="Код5" type="xs:string"/>
+													<xs:attribute name="Код6" type="xs:string"/>
+												</xs:complexType>
+											</xs:element>
+										</xs:choice>
+									</xs:sequence>
+									<xs:attribute name="Код" type="xs:string" use="required"/>
+									<xs:attribute name="Номер" type="xs:string"/>
+									<xs:attribute name="КодДепо" type="xs:string" use="required"/>
+									<xs:attribute name="КодДоговора" type="xs:string" use="required"/>
+									<xs:attribute name="Удален" type="xs:byte" use="required"/>
+									<xs:attribute name="ДатаВводаВсистему" type="xs:string" use="required"/>
+									<xs:attribute name="ПлановоеНачалоРемонта" type="xs:string" use="required"/>
+									<xs:attribute name="ПлановоеОкончаниеРемонта" type="xs:string" use="required"/>
+									<xs:attribute name="ФактическоеОкончаниеРемонта" type="xs:string" use="required"/>
+									<xs:attribute name="ТипРемонта" type="xs:byte" use="required"/>
+									<xs:attribute name="ТипВагона" type="xs:byte" use="required"/>
+									<xs:attribute name="ГодВыпуска" type="xs:string" use="required"/>
+									<xs:attribute name="МатериалКузова" type="xs:string" use="required"/>
+									<xs:attribute name="Грузоподъемность" type="xs:string" use="required"/>
+									<xs:attribute name="ВРемонтПо" type="xs:byte" use="required"/>
+									<xs:attribute name="ПробегНакопленный" type="xs:int" use="required"/>
+									<xs:attribute name="ПробегПослеКапитального" type="xs:byte" use="required"/>
+									<xs:attribute name="ПробегМежремонтный" type="xs:byte" use="required"/>
+									<xs:attribute name="Проверка" type="xs:string" use="required"/>
+									<xs:attribute name="СтоимостьБезНДС" type="xs:string" use="required"/>
+									<xs:attribute name="ИзНихЗаРемонтКП" type="xs:string" use="required"/>
+									<xs:attribute name="СтоимостьУборки" type="xs:string" use="required"/>
+									<xs:attribute name="СтоимостьВзвешивания" type="xs:string" use="required"/>
+									<xs:attribute name="НомерАктаВыпРабот" type="xs:string" use="required"/>
+									<xs:attribute name="НомерСФ" type="xs:string" use="required"/>
+									<xs:attribute name="ДатаСФ" type="xs:string" use="required"/>
+									<xs:attribute name="ЭЦП" type="xs:byte" use="required"/>
+									<xs:attribute name="ДатаЭЦП" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="ВЕРСИЯ" type="xs:byte" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

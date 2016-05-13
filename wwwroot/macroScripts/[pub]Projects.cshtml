@@ -1,0 +1,26 @@
+﻿@using umbraco.NodeFactory
+
+@{
+    var projects = (Node as Node).GetChildNodes();
+    if (projects.Any())
+    {
+        int pageSize;
+        int.TryParse(Parameter.pageSize, out pageSize);
+        if (pageSize == 0) { pageSize = 20; }
+        int pageNum;
+        int.TryParse(Parameter.pageNum, out pageNum);
+        if (pageNum == 0) { pageNum = 1; }
+        string title, url;
+        <ul>
+        @foreach (var project in projects.OrderBy(x =>
+            x.GetProperty<string>("date") == "" ? x.CreateDate : x.GetProperty<DateTime>("date")
+        ).Skip((pageNum - 1) * pageSize).Take(pageSize))
+        {
+            title = project.GetProperty<string>("title");
+            url = project.Url;
+            <li><a href="@url">@title</a></li>
+        }
+        </ul>
+        @UnicoGlobalHelpers.RenderPager(projects.Count(), pageSize, pageNum)
+    }
+}

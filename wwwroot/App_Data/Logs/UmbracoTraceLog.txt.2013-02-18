@@ -1,0 +1,156 @@
+2013-02-18 11:22:38,144 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-18 11:22:38,509 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-18 11:22:38,569 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 54ms)
+2013-02-18 11:22:41,000 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2393ms)
+2013-02-18 11:22:41,026 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 8ms)
+2013-02-18 11:22:41,515 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-18 11:22:41,520 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-18 11:22:41,567 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 7ms)
+2013-02-18 11:22:42,352 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-18 11:22:42,431 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 6ms)
+2013-02-18 11:22:42,671 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 4507ms)
+2013-02-18 11:22:57,111 [6] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-18 11:22:57,325 [6] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-18 11:33:13,159 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-18 11:33:16,115 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-18 12:46:25,184 [6] WARN  umbraco.macro - [Thread 20] Error loading MacroEngine script (file: [pub]RenderSitemap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\216b43a4\aba91763\App_Web_[pub]rendersitemap.cshtml.70df5e80.cbgfsb8h.0.cs(34): error CS0246: The type or namespace name 'Node' could not be found (are you missing a using directive or an assembly reference?)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 12:47:35,816 [6] WARN  umbraco.macro - [Thread 7] Error loading MacroEngine script (file: [pub]RenderSitemap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]RenderSitemap.cshtml(13): error CS0117: 'umbraco.uQuery' does not contain a definition for 'GetAncestorByPathLevel'
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 12:50:23,835 [6] WARN  umbraco.macro - [Thread 20] Error loading MacroEngine script (file: [pub]RenderSitemap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]RenderSitemap.cshtml(11): error CS1502: The best overloaded method match for 'ASP._Page_macroScripts__pub_RenderSitemap_cshtml.RenderLevel(umbraco.NodeFactory.Node)' has some invalid arguments
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 12:53:56,204 [6] WARN  umbraco.macro - [Thread 7] Error loading MacroEngine script (file: [pub]RenderSitemap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]RenderSitemap.cshtml(22): error CS0103: The name 'subNode' does not exist in the current context
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 13:10:39,604 [6] WARN  umbraco.macro - [Thread 7] Error loading MacroEngine script (file: [pub]RenderSitemap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]RenderSitemap.cshtml(11): error CS0103: The name 'nodes' does not exist in the current context
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 13:11:51,833 [6] WARN  umbraco.macro - [Thread 7] Error loading MacroEngine script (file: [pub]RenderSitemap.cshtml, Type: ''. Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 13:12:03,644 [6] WARN  umbraco.macro - [Thread 7] Error loading MacroEngine script (file: [pub]RenderSitemap.cshtml, Type: ''. Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 13:12:29,608 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 17] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-18 13:12:30,433 [12] INFO  Umbraco.Core.CoreBootManager - [Thread 24] Umbraco application starting
+2013-02-18 13:12:30,651 [12] INFO  Umbraco.Core.PluginManager - [Thread 24] Determining hash of code files on disk
+2013-02-18 13:12:30,671 [12] INFO  Umbraco.Core.PluginManager - [Thread 24] Hash determined (took 16ms)
+2013-02-18 13:12:31,301 [12] INFO  Umbraco.Core.PluginManager - [Thread 24] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 607ms)
+2013-02-18 13:12:31,322 [12] INFO  Umbraco.Core.PluginManager - [Thread 24] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-18 13:12:32,235 [12] INFO  Umbraco.Core.PluginManager - [Thread 24] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-18 13:12:32,240 [12] INFO  Umbraco.Core.PluginManager - [Thread 24] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-18 13:12:32,257 [12] INFO  Umbraco.Core.PluginManager - [Thread 24] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-18 13:12:32,296 [12] INFO  Umbraco.Core.PluginManager - [Thread 24] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-18 13:12:32,355 [12] INFO  Umbraco.Core.PluginManager - [Thread 24] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-18 13:12:32,775 [12] INFO  Umbraco.Core.CoreBootManager - [Thread 24] Umbraco application startup complete (took 2309ms)
+2013-02-18 13:12:34,133 [12] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-18 13:14:45,812 [12] WARN  umbraco.macro - [Thread 22] Error loading MacroEngine script (file: [pub]RenderSitemap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]RenderSitemap.cshtml(37): error CS1579: foreach statement cannot operate on variables of type 'umbraco.NodeFactory.Node' because 'umbraco.NodeFactory.Node' does not contain a public definition for 'GetEnumerator'
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 13:14:52,853 [12] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-18 13:15:13,480 [12] WARN  umbraco.macro - [Thread 22] Error loading MacroEngine script (file: [pub]RenderSitemap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]RenderSitemap.cshtml(39): error CS0103: The name 'rootNode' does not exist in the current context
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 13:17:51,596 [12] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-18 13:20:11,085 [12] WARN  umbraco.macro - [Thread 19] Error loading MacroEngine script (file: [pub]RenderSitemap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[pub]RenderSitemap.cshtml(14): error CS1061: 'umbraco.NodeFactory.Node' does not contain a definition for 'ContentType' and no extension method 'ContentType' accepting a first argument of type 'umbraco.NodeFactory.Node' could be found (are you missing a using directive or an assembly reference?)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 13:29:50,519 [12] INFO  Umbraco.Core.PluginManager - [Thread 17] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2013-02-18 13:41:32,215 [12] INFO  Umbraco.Web.UmbracoApplication - [Thread 6] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-18 13:41:35,900 [14] INFO  Umbraco.Core.CoreBootManager - [Thread 3] Umbraco application starting
+2013-02-18 13:41:36,034 [14] INFO  Umbraco.Core.PluginManager - [Thread 3] Determining hash of code files on disk
+2013-02-18 13:41:36,054 [14] INFO  Umbraco.Core.PluginManager - [Thread 3] Hash determined (took 16ms)
+2013-02-18 13:41:36,536 [14] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 459ms)
+2013-02-18 13:41:36,565 [14] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 14ms)
+2013-02-18 13:41:36,807 [14] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-18 13:41:36,812 [14] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-18 13:41:36,829 [14] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-18 13:41:36,876 [14] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-18 13:41:36,934 [14] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-18 13:41:37,308 [14] INFO  Umbraco.Core.CoreBootManager - [Thread 3] Umbraco application startup complete (took 1388ms)
+2013-02-18 13:41:39,524 [14] INFO  Umbraco.Core.PluginManager - [Thread 17] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-18 13:41:46,071 [14] ERROR Umbraco.Web.UmbracoApplication - [Thread 19] An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.IO.FileNotFoundException: Could not find file 'D:\Projects\fgk\macroScripts\[main]InsertAreaMap.cshtml'.
+File name: 'D:\Projects\fgk\macroScripts\[main]InsertAreaMap.cshtml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.OpenText(String path)
+   at umbraco.cms.presentation.developer.editPython.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-02-18 13:41:49,138 [14] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 7ms)
+2013-02-18 13:41:49,253 [14] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2013-02-18 13:42:38,419 [14] WARN  umbraco.macro - [Thread 17] Error loading MacroEngine script (file: [affl]InsertHighlightedRegions.cshtml, Type: ''. Exception: System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 13:42:45,758 [14] WARN  umbraco.macro - [Thread 6] Error loading MacroEngine script (file: [affl]InsertHighlightedRegions.cshtml, Type: ''. Exception: System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 13:46:35,700 [14] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.MacroEngines.IRazorDataTypeModel, found 15 (took 7ms)
+2013-02-18 13:48:48,365 [14] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 6ms)
+2013-02-18 13:50:37,507 [14] WARN  umbraco.macro - [Thread 22] Error loading MacroEngine script (file: [affl]List.cshtml.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[affl]List.cshtml.cshtml(2): error CS0230: Type and identifier are both required in a foreach statement
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 13:50:55,607 [14] WARN  umbraco.macro - [Thread 21] Error loading MacroEngine script (file: [affl]List.cshtml.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[affl]List.cshtml.cshtml(2): error CS0118: 'umbraco.MacroEngines.BaseContext<T>.Node' is a 'property' but is used like a 'type'
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 13:50:58,214 [14] WARN  umbraco.macro - [Thread 7] Error loading MacroEngine script (file: [affl]List.cshtml.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[affl]List.cshtml.cshtml(2): error CS0118: 'umbraco.MacroEngines.BaseContext<T>.Node' is a 'property' but is used like a 'type'
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 14:05:41,788 [14] WARN  umbraco.macro - [Thread 16] Error loading MacroEngine script (file: [affl]InsertAreaMap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[affl]InsertAreaMap.cshtml(28): error CS1061: 'umbraco.NodeFactory.Node' does not contain a definition for 'title' and no extension method 'title' accepting a first argument of type 'umbraco.NodeFactory.Node' could be found (are you missing a using directive or an assembly reference?)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 14:05:42,349 [14] WARN  umbraco.macro - [Thread 16] Error loading MacroEngine script (file: [affl]InsertHighlightedRegions.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[affl]InsertHighlightedRegions.cshtml(4): error CS1586: Array creation must have array size or array initializer
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 14:05:54,829 [14] WARN  umbraco.macro - [Thread 23] Error loading MacroEngine script (file: [affl]InsertAreaMap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[affl]InsertAreaMap.cshtml(28): error CS1061: 'umbraco.NodeFactory.Node' does not contain a definition for 'title' and no extension method 'title' accepting a first argument of type 'umbraco.NodeFactory.Node' could be found (are you missing a using directive or an assembly reference?)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 14:07:24,910 [14] WARN  umbraco.macro - [Thread 10] Error loading MacroEngine script (file: [affl]InsertAreaMap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[affl]InsertAreaMap.cshtml(28): error CS1061: 'umbraco.NodeFactory.Node' does not contain a definition for 'title' and no extension method 'title' accepting a first argument of type 'umbraco.NodeFactory.Node' could be found (are you missing a using directive or an assembly reference?)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 14:07:42,056 [14] WARN  umbraco.macro - [Thread 10] Error loading MacroEngine script (file: [affl]InsertAreaMap.cshtml, Type: ''. Exception: System.Web.HttpCompileException (0x80004005): d:\Projects\fgk\macroScripts\[affl]InsertAreaMap.cshtml(28): error CS1061: 'umbraco.NodeFactory.Node' does not contain a definition for 'title' and no extension method 'title' accepting a first argument of type 'umbraco.NodeFactory.Node' could be found (are you missing a using directive or an assembly reference?)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 14:15:19,697 [14] INFO  Umbraco.Web.UmbracoApplication - [Thread 20] Application shutdown. Reason: MaxRecompilationsReached
+2013-02-18 14:15:20,926 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 3] Umbraco application starting
+2013-02-18 14:15:21,114 [6] INFO  Umbraco.Core.PluginManager - [Thread 3] Determining hash of code files on disk
+2013-02-18 14:15:21,132 [6] INFO  Umbraco.Core.PluginManager - [Thread 3] Hash determined (took 16ms)
+2013-02-18 14:15:21,757 [6] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 601ms)
+2013-02-18 14:15:21,777 [6] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+2013-02-18 14:15:22,139 [6] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-18 14:15:22,144 [6] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-18 14:15:22,162 [6] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-18 14:15:22,210 [6] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-18 14:15:22,289 [6] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 6ms)
+2013-02-18 14:15:23,164 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 3] Umbraco application startup complete (took 2218ms)
+2013-02-18 14:15:35,245 [6] INFO  Umbraco.Core.PluginManager - [Thread 11] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-18 14:19:40,964 [6] INFO  Umbraco.Core.PluginManager - [Thread 11] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-18 14:28:06,653 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-18 14:28:17,022 [6] WARN  umbraco.macro - [Thread 7] Error loading MacroEngine script (file: [affl]List.cshtml.cshtml, Type: ''. Exception: System.Web.HttpException (0x80004005): The file '/macroScripts/[affl]List.cshtml.cshtml' does not exist.
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2013-02-18 14:45:31,736 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-18 14:49:43,425 [6] INFO  Umbraco.Web.UmbracoApplication - [Thread 19] Application shutdown. Reason: CodeDirChangeOrDirectoryRename
+2013-02-18 14:49:51,094 [16] INFO  Umbraco.Core.CoreBootManager - [Thread 3] Umbraco application starting
+2013-02-18 14:49:51,228 [16] INFO  Umbraco.Core.PluginManager - [Thread 3] Determining hash of code files on disk
+2013-02-18 14:49:51,247 [16] INFO  Umbraco.Core.PluginManager - [Thread 3] Hash determined (took 16ms)
+2013-02-18 14:49:51,533 [16] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 261ms)
+2013-02-18 14:49:51,554 [16] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-18 14:49:51,763 [16] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 6ms)
+2013-02-18 14:49:51,767 [16] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-18 14:49:51,785 [16] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-18 14:49:52,104 [16] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-18 14:49:52,159 [16] INFO  Umbraco.Core.PluginManager - [Thread 3] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-18 14:49:52,250 [16] INFO  Umbraco.Core.CoreBootManager - [Thread 3] Umbraco application startup complete (took 1136ms)
+2013-02-18 14:49:56,679 [16] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 4ms)
+2013-02-18 14:50:00,386 [16] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of umbraco.interfaces.IDataType, found 81 (took 5ms)
+2013-02-18 14:50:00,414 [16] INFO  Umbraco.Core.PluginManager - [Thread 20] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)
+2013-02-18 14:56:57,353 [16] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-18 20:22:34,425 [16] INFO  Umbraco.Web.UmbracoApplication - [Thread 23] Application shutdown. Reason: HostingEnvironment
+2013-02-18 23:37:21,773 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-02-18 23:37:22,118 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-02-18 23:37:22,182 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 59ms)
+2013-02-18 23:37:24,686 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2464ms)
+2013-02-18 23:37:24,710 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+2013-02-18 23:37:25,331 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 7ms)
+2013-02-18 23:37:25,336 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2013-02-18 23:37:25,389 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 12 (took 4ms)
+2013-02-18 23:37:25,880 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 15ms)
+2013-02-18 23:37:25,988 [7] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 7ms)
+2013-02-18 23:37:26,421 [7] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 4628ms)
+2013-02-18 23:37:39,535 [7] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 4ms)
+2013-02-18 23:37:39,747 [7] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.interfaces.ITree, found 42 (took 4ms)

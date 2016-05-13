@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/subAffiliate.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="headDataAreaSub" runat="server">   
+	<link rel="stylesheet" href="/css/galleria.classic.css" />
+    <script type="text/javascript" src="/scripts/galleria-1.2.9.min.js"></script>
+    <script type="text/javascript" src="/scripts/galleria.classic.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            Galleria.run(".photoBlock", {
+                transition: "slide",
+                imageCrop: "landscape"
+            });
+        });
+    </script>   
+</asp:content>
+
+<asp:content ContentPlaceHolderId="contentAreaSub" runat="server">    
+    <p><a href="{locallink:<umbraco:Item field="parentID" runat="server" />}" class="back"><umbraco:Item field="#[galleries]backCaption" runat="server" /></a></p>
+    <umbraco:Macro Alias="[pub]Gallery" runat="server" />
+</asp:content>
